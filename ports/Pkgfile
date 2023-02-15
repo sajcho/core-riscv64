@@ -1,0 +1,30 @@
+# Description:	CRUX ports system tools - RISCV64
+# URL:		http://crux.nu
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=ports
+version=1.6
+release=2
+
+source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
+	core-riscv64.httpup \
+	opt-riscv64.httpup \
+	xorg-riscv64.httpup \
+	core-riscv64.pub \
+	opt-riscv64.pub \
+	xorg-riscv64.pub)
+
+build() {
+	cd ${name}-${version}
+
+	make V=1
+
+	make DESTDIR=$PKG MANDIR=/usr/share/man install
+
+	install -m 0644 $SRC/core-riscv64.httpup $PKG/etc/ports/core-riscv64.httpup
+	install -m 0644 $SRC/opt-riscv64.httpup $PKG/etc/ports/opt-riscv64.httpup
+	install -m 0644 $SRC/xorg-riscv64.httpup $PKG/etc/ports/xorg-riscv64.httpup
+	install -m 0644 $SRC/core-riscv64.pub $PKG/etc/ports/core-riscv64.pub
+	install -m 0644 $SRC/opt-riscv64.pub $PKG/etc/ports/opt-riscv64.pub
+	install -m 0644 $SRC/xorg-riscv64.pub $PKG/etc/ports/xorg-riscv64.pub
+}

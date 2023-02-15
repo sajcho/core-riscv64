@@ -1,0 +1,6 @@
+# opt-riscv64 ports collection
+#
+# https://github.com/sajcho/opt-riscv64
+
+ROOT_DIR=/usr/ports/opt-riscv64
+URL=https://raw.githubusercontent.com/sajcho/opt-riscv64/main

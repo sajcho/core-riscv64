@@ -1,0 +1,6 @@
+# xorg-riscv64 ports collection
+#
+# https://github.com/sajcho/xorg-riscv64
+
+ROOT_DIR=/usr/ports/xorg-riscv64
+URL=https://raw.githubusercontent.com/sajcho/xorg-riscv64/main
