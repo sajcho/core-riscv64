@@ -1,0 +1,10 @@
+d:ports
+f:93b23026d0167fb60926d0b059a6ba4f:ports/core-riscv64.pub
+f:15ddd34dce89a10e00f7ec68cd31736e:ports/opt-riscv64.pub
+f:0d8d0ee4e70ce8a722ebace7b0bb9da3:ports/xorg-riscv64.pub
+f:94c1934a688779da8a66d3fb82193c22:ports/core-riscv64.httpup
+f:32ef9183e515efedc925ca68c15f3563:ports/.footprint
+f:a3dd5bfacaae1784d675b8fe8fe2066e:ports/.signature
+f:5f829e4d97c0dff01ee34a508a5f3a06:ports/opt-riscv64.httpup
+f:e1949842c03dda456d8505b1d4156e31:ports/Pkgfile
+f:c94747b90a82ecd22d3834296bf9f74a:ports/xorg-riscv64.httpup
