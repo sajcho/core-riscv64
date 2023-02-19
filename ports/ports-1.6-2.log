@@ -1,0 +1,50 @@
+prt-get: updating /usr/ports/core-riscv64/ports
+prt-get: starting build Sun Feb 19 15:20:17 2023
+=======> Building '/home/devel/packages/ports#1.6-2.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/ports-1.6.tar.gz
+cp core-riscv64.httpup /home/devel/building/work/src
+cp opt-riscv64.httpup /home/devel/building/work/src
+cp xorg-riscv64.httpup /home/devel/building/work/src
+cp core-riscv64.pub /home/devel/building/work/src
+cp opt-riscv64.pub /home/devel/building/work/src
+cp xorg-riscv64.pub /home/devel/building/work/src
++ build
++ cd ports-1.6
++ make V=1
+sed "s/#VERSION#/1.6/" ports.in > ports
+sed "s/#VERSION#/1.6/" ports.8.in > ports.8
++ make DESTDIR=/home/devel/building/work/pkg MANDIR=/usr/share/man install
+install -D -m0755 ports /home/devel/building/work/pkg/usr/bin/ports
+install -D -m0644 ports.8 /home/devel/building/work/pkg/usr/share/man/man8/ports.8
+install -d /home/devel/building/work/pkg/etc/ports/drivers
+install -d /home/devel/building/work/pkg/usr/ports
++ install -m 0644 /home/devel/building/work/src/core-riscv64.httpup /home/devel/building/work/pkg/etc/ports/core-riscv64.httpup
++ install -m 0644 /home/devel/building/work/src/opt-riscv64.httpup /home/devel/building/work/pkg/etc/ports/opt-riscv64.httpup
++ install -m 0644 /home/devel/building/work/src/xorg-riscv64.httpup /home/devel/building/work/pkg/etc/ports/xorg-riscv64.httpup
++ install -m 0644 /home/devel/building/work/src/core-riscv64.pub /home/devel/building/work/pkg/etc/ports/core-riscv64.pub
++ install -m 0644 /home/devel/building/work/src/opt-riscv64.pub /home/devel/building/work/pkg/etc/ports/opt-riscv64.pub
++ install -m 0644 /home/devel/building/work/src/xorg-riscv64.pub /home/devel/building/work/pkg/etc/ports/xorg-riscv64.pub
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 etc/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 etc/ports/
+-rw-r--r--  0 root   root      100 Feb 19 15:20 etc/ports/xorg-riscv64.pub
+-rw-r--r--  0 root   root       99 Feb 19 15:20 etc/ports/opt-riscv64.pub
+-rw-r--r--  0 root   root      100 Feb 19 15:20 etc/ports/core-riscv64.pub
+-rw-r--r--  0 root   root      172 Feb 19 15:20 etc/ports/xorg-riscv64.httpup
+-rw-r--r--  0 root   root      168 Feb 19 15:20 etc/ports/opt-riscv64.httpup
+-rw-r--r--  0 root   root      172 Feb 19 15:20 etc/ports/core-riscv64.httpup
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 etc/ports/drivers/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/ports/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/bin/
+-rwxr-xr-x  0 root   root     4275 Feb 19 15:20 usr/bin/ports
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 19 15:20 usr/share/man/man8/
+-rw-r--r--  0 root   root      543 Feb 19 15:20 usr/share/man/man8/ports.8.gz
+=======> Building '/home/devel/packages/ports#1.6-2.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling ports 1.6-2
+prt-get: /usr/bin/pkgadd -u ports#1.6-2.riscv64.pkg.tar.zst
+prt-get: build done Sun Feb 19 15:20:19 2023
+
