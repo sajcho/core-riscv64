@@ -1,5 +1,6 @@
 d:ports
 d:prt-get
+d:glibc
 d:pkgutils
 f:93b23026d0167fb60926d0b059a6ba4f:ports/core-riscv64.pub
 f:15ddd34dce89a10e00f7ec68cd31736e:ports/opt-riscv64.pub
@@ -21,6 +22,18 @@ f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:2a657af971360332f31dd4d796513f54:prt-get/Pkgfile
 f:cb560d7197163902894ac8564722b46a:prt-get/README
 f:7c8b07df66f3044705279dc22c8c7da1:prt-get/prt-get#5.19.6-4.riscv64.pkg.tar.zst
+f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
+f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
+f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
+f:75cd4754e92fff45e3b9b3ac68676e41:glibc/.nostrip
+f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
+f:c99057fb867237053aa21f6b38fc42d5:glibc/.footprint
+f:adc9da1f411c54adbaef89da69639089:glibc/glibc#2.37-1.riscv64.pkg.tar.zst
+f:3981bbfb76e347a1bb4071f2cf65993b:glibc/.signature
+f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
+f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
+f:40d52380593cb931ece3d051df7c9f47:glibc/Pkgfile
+f:6cd89c1a055a07a652183887f9454c0b:glibc/glibc-2.37-1.log.zst
 f:2d362bf14fd3770ffd49653f4c795985:pkgutils/pkgutils-5.40.10-3.log
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:b74c53e45b3c9ee00c55f09e194df79b:pkgutils/.signature
