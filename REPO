@@ -1,4 +1,5 @@
 d:ports
+d:binutils
 d:prt-get
 d:glibc
 d:pkgutils
@@ -13,6 +14,11 @@ f:5f829e4d97c0dff01ee34a508a5f3a06:ports/opt-riscv64.httpup
 f:e1949842c03dda456d8505b1d4156e31:ports/Pkgfile
 f:ddb9f4b627f5928edcfa5699db975091:ports/ports#1.6-2.riscv64.pkg.tar.zst
 f:c94747b90a82ecd22d3834296bf9f74a:ports/xorg-riscv64.httpup
+f:02f0d7ffa67d5d183f6fe59c9ce06fd4:binutils/.footprint
+f:784d5332fcf7ef852da7480a1441fe84:binutils/binutils-2.40-1.log.zst
+f:bf28f445e419105108a96114545b17e6:binutils/.signature
+f:024cbe2be092f9b30d8374513083fa88:binutils/Pkgfile
+f:33b73da8d04f0d75d1ef1a0b909a9697:binutils/binutils#2.40-1.riscv64.pkg.tar.zst
 f:60c205b13d49eb0a441655b8ba4649f6:prt-get/prt-get.conf
 f:c93b5bb1816e15e941388f52c2cc4412:prt-get/prt-get-5.19.6-by-saux.patch
 f:e2c80fa714649a7e00d582647ec807f8:prt-get/prt-get-5.19.6-4.log
