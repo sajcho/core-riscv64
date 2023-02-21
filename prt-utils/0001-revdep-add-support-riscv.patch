@@ -1,0 +1,37 @@
+From 2fb158b978d4de2cd6a1a432893ee39125d1589d Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 9 Feb 2023 06:03:42 +0100
+Subject: [PATCH] revdep: add support riscv
+
+---
+ revdep/elf.cpp | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/revdep/elf.cpp b/revdep/elf.cpp
+index 89eddcb..7719217 100644
+--- a/revdep/elf.cpp
++++ b/revdep/elf.cpp
+@@ -52,14 +52,16 @@ static bool isValidElf(Elf *elf, int &machine) {
+ 
+ 	switch(ehdr.e_machine) {
+ #if   defined(__i386__)
+-		case EM_386:    break;
++		case EM_386:		break;
+ #elif defined(__x86_64__)
+-		case EM_386:    break;
+-		case EM_X86_64: break;
++		case EM_386:		break;
++		case EM_X86_64:		break;
+ #elif defined(__arm__)
+-		case EM_ARM:    break;
++		case EM_ARM:		break;
+ #elif defined(__aarch64__)
+ 		case EM_AARCH64:	break;
++#elif defined(__riscv)
++		case EM_RISCV:		break;
+ #else
+ #error "unsupported architecture"
+ #endif
+-- 
+2.39.1
+
