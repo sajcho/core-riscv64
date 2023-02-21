@@ -1,8 +1,16 @@
+d:gcc
 d:ports
 d:binutils
 d:prt-get
 d:glibc
 d:pkgutils
+f:8e8ebdfc4c4ce7e5ff381295883e4e15:gcc/gcc-13.0.1-0.log.zst
+f:81a89f1333b1131f9ed279b47ecb153f:gcc/.footprint
+f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
+f:e4422504a422f6f45d80f16f9ea6da69:gcc/.signature
+f:2931ee8332c3a8bf589a597c14de5e05:gcc/gcc#13.0.1-0.riscv64.pkg.tar.zst
+f:0526572e683ed1cfbdf35dc5fa6fbeb0:gcc/Pkgfile
+f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:93b23026d0167fb60926d0b059a6ba4f:ports/core-riscv64.pub
 f:15ddd34dce89a10e00f7ec68cd31736e:ports/opt-riscv64.pub
 f:0d8d0ee4e70ce8a722ebace7b0bb9da3:ports/xorg-riscv64.pub
