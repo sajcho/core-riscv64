@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpfy3X5XNW/+/ZbSY2rU3Sxkh92Ki7dYkqWSFz74lKtlBPBCeIpnlMMKfPUArvY63W6JHLVsGyiGeJ9N9J9bTog8=
+SHA256 (Pkgfile) = 707733a17255663614b070c8331e65ed2b660f8b19a7455e8eef85f0015d7310
+SHA256 (.footprint) = 5ad17e08d364fbc74b0adaaa077b0bf34c735fa6117d2dc6385273484ab337c6
+SHA256 (man-pages-6.02.tar.xz) = 66d809b62ba8681ebcbd1a8d0a0670776924ab93bfbbb54e1c31170e14303795
+SHA256 (man-pages-posix-2013-a.tar.xz) = 19633a5c75ff7deab35b1d2c3d5b7748e7bd4ef4ab598b647bb7e7f60b90a808
