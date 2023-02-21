@@ -1,0 +1,374 @@
+prt-get: updating /usr/ports/core-riscv64/liburing
+prt-get: starting build Tue Feb 21 20:03:45 2023
+=======> Building '/home/devel/packages/liburing#2.3-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/liburing-2.3.tar.gz
++ build
++ cd liburing-liburing-2.3
++ ./configure --prefix=/usr --mandir=/usr/share/man
+prefix                        /usr
+includedir                    /usr/include
+libdir                        /usr/lib
+libdevdir                     /usr/lib
+relativelibdir                
+mandir                        /usr/share/man
+datadir                       /usr/share
+stringop_overflow             yes
+array_bounds                  yes
+__kernel_rwf_t                yes
+__kernel_timespec             yes
+open_how                      yes
+statx                         yes
+glibc_statx                   yes
+C++                           yes
+has_ucontext                  yes
+NVMe uring command support    yes
+liburing_nolibc               no
+CC                            gcc
+CXX                           g++
++ make V=1
+make[1]: Entering directory '/home/devel/building/work/src/liburing-liburing-2.3/src'
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "setup.ol" -MMD -MP -MF "setup.ol.d" -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o setup.ol setup.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "queue.ol" -MMD -MP -MF "queue.ol.d" -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o queue.ol queue.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "register.ol" -MMD -MP -MF "register.ol.d" -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o register.ol register.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "syscall.ol" -MMD -MP -MF "syscall.ol.d" -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o syscall.ol syscall.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "setup.os" -MMD -MP -MF "setup.os.d" -fPIC -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o setup.os setup.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "queue.os" -MMD -MP -MF "queue.os.d" -fPIC -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o queue.os queue.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "register.os" -MMD -MP -MF "register.os.d" -fPIC -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o register.os register.c
+gcc -D_GNU_SOURCE -Iinclude/ -include ../config-host.h -MT "syscall.os" -MMD -MP -MF "syscall.os.d" -fPIC -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -c -o syscall.os syscall.c
+gcc -fPIC -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -DLIBURING_INTERNAL  -shared -Wl,--version-script=liburing.map -Wl,-soname=liburing.so.2 -o liburing.so.2.3 setup.os queue.os register.os syscall.os 
+ar r liburing.a setup.ol queue.ol register.ol syscall.ol
+/usr/bin/ar: creating liburing.a
+ranlib liburing.a
+make[1]: Leaving directory '/home/devel/building/work/src/liburing-liburing-2.3/src'
+make[1]: Entering directory '/home/devel/building/work/src/liburing-liburing-2.3/test'
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o helpers.o -c helpers.c
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 232c93d07b74.t 232c93d07b74.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 35fa71a030ca.t 35fa71a030ca.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 500f9fbadef8.t 500f9fbadef8.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 7ad0e4b2f83c.t 7ad0e4b2f83c.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 8a9973408177.t 8a9973408177.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o 917257daa0fe.t 917257daa0fe.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o a0908ae19763.t a0908ae19763.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o a4c0b3decb33.t a4c0b3decb33.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o accept.t accept.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o accept-link.t accept-link.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o accept-reuse.t accept-reuse.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o accept-test.t accept-test.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o across-fork.t across-fork.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o b19062a56726.t b19062a56726.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o b5837bd5311d.t b5837bd5311d.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o buf-ring.t buf-ring.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o ce593a6c480a.t ce593a6c480a.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o close-opath.t close-opath.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o connect.t connect.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o cq-full.t cq-full.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o cq-overflow.t cq-overflow.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o cq-peek-batch.t cq-peek-batch.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o cq-ready.t cq-ready.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o cq-size.t cq-size.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o d4ae271dfaae.t d4ae271dfaae.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o d77a67ed5f27.t d77a67ed5f27.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o defer.t defer.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o defer-taskrun.t defer-taskrun.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o double-poll-crash.t double-poll-crash.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o drop-submit.t drop-submit.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o eeed8b54e0df.t eeed8b54e0df.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o empty-eownerdead.t empty-eownerdead.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o eventfd.t eventfd.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o eventfd-disable.t eventfd-disable.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o eventfd-reg.t eventfd-reg.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o eventfd-ring.t eventfd-ring.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o exec-target.t exec-target.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o exit-no-cleanup.t exit-no-cleanup.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fadvise.t fadvise.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fallocate.t fallocate.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fc2a85cb02ef.t fc2a85cb02ef.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fd-pass.t fd-pass.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o file-register.t file-register.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o files-exit-hang-poll.t files-exit-hang-poll.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o files-exit-hang-timeout.t files-exit-hang-timeout.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o file-update.t file-update.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o file-verify.t file-verify.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fixed-buf-iter.t fixed-buf-iter.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fixed-link.t fixed-link.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fixed-reuse.t fixed-reuse.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fpos.t fpos.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o fsync.t fsync.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o hardlink.t hardlink.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o io-cancel.t io-cancel.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o iopoll.t iopoll.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o iopoll-leak.t iopoll-leak.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o io_uring_enter.t io_uring_enter.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o io_uring_passthrough.t io_uring_passthrough.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o io_uring_register.t io_uring_register.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o io_uring_setup.t io_uring_setup.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o lfs-openat.t lfs-openat.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o lfs-openat-write.t lfs-openat-write.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o link.t link.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o link_drain.t link_drain.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o link-timeout.t link-timeout.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o madvise.t madvise.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o mkdir.t mkdir.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o msg-ring.t msg-ring.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o multicqes_drain.t multicqes_drain.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o nolibc.t nolibc.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o nop-all-sizes.t nop-all-sizes.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o nop.t nop.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o openat2.t openat2.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o open-close.t open-close.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o open-direct-link.t open-direct-link.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o open-direct-pick.t open-direct-pick.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o personality.t personality.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o pipe-eof.t pipe-eof.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o pipe-reuse.t pipe-reuse.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll.t poll.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-cancel.t poll-cancel.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-cancel-all.t poll-cancel-all.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-cancel-ton.t poll-cancel-ton.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-link.t poll-link.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-many.t poll-many.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-mshot-update.t poll-mshot-update.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-mshot-overflow.t poll-mshot-overflow.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-ring.t poll-ring.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o poll-v-poll.t poll-v-poll.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o pollfree.t pollfree.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o probe.t probe.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o read-before-exit.t read-before-exit.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o read-write.t read-write.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o recv-msgall.t recv-msgall.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o recv-msgall-stream.t recv-msgall-stream.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o recv-multishot.t recv-multishot.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o register-restrictions.t register-restrictions.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o rename.t rename.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o ringbuf-read.t ringbuf-read.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o ring-leak2.t ring-leak2.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o ring-leak.t ring-leak.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o rsrc_tags.t rsrc_tags.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o rw_merge_test.t rw_merge_test.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o self.t self.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sendmsg_fs_cve.t sendmsg_fs_cve.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o send_recv.t send_recv.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o send_recvmsg.t send_recvmsg.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o shared-wq.t shared-wq.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o short-read.t short-read.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o shutdown.t shutdown.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sigfd-deadlock.t sigfd-deadlock.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o skip-cqe.t skip-cqe.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o socket.t socket.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o socket-rw.t socket-rw.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o socket-rw-eagain.t socket-rw-eagain.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o socket-rw-offset.t socket-rw-offset.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o splice.t splice.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sq-full.t sq-full.c helpers.o -L../src/ -luring -lpthread
+g++ -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -std=c++11 -DLIBURING_BUILD_TEST -o sq-full-cpp.t sq-full-cpp.cc helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sqpoll-cancel-hang.t sqpoll-cancel-hang.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sqpoll-disable-exit.t sqpoll-disable-exit.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sq-poll-dup.t sq-poll-dup.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sqpoll-exit-hang.t sqpoll-exit-hang.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sq-poll-kthread.t sq-poll-kthread.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sq-poll-share.t sq-poll-share.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sqpoll-sleep.t sqpoll-sleep.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sq-space_left.t sq-space_left.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o stdout.t stdout.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o submit-and-wait.t submit-and-wait.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o submit-link-fail.t submit-link-fail.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o submit-reuse.t submit-reuse.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o sync-cancel.t sync-cancel.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o symlink.t symlink.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o teardowns.t teardowns.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o thread-exit.t thread-exit.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o timeout.t timeout.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o timeout-new.t timeout-new.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o timeout-overflow.t timeout-overflow.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o tty-write-dpoll.t tty-write-dpoll.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o unlink.t unlink.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o wakeup-hang.t wakeup-hang.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o xattr.t xattr.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o single-issuer.t single-issuer.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o send-zerocopy.t send-zerocopy.c helpers.o -L../src/ -luring -lpthread
+gcc -D_GNU_SOURCE -D__SANE_USERSPACE_TYPES__ -I../src/include/ -include ../config-host.h -O2 -mabi=lp64d -march=rv64gc -Wno-unused-parameter -Wno-sign-compare -Wstringop-overflow=0 -Warray-bounds=0 -DLIBURING_BUILD_TEST -o statx.t statx.c helpers.o -L../src/ -luring -lpthread
+make[1]: Leaving directory '/home/devel/building/work/src/liburing-liburing-2.3/test'
+make[1]: Entering directory '/home/devel/building/work/src/liburing-liburing-2.3/examples'
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o io_uring-cp io_uring-cp.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o io_uring-test io_uring-test.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o io_uring-udp io_uring-udp.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o link-cp link-cp.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o poll-bench poll-bench.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o send-zerocopy send-zerocopy.c -L../src/ -luring
+gcc -D_GNU_SOURCE -I../src/include/ -O2 -mabi=lp64d -march=rv64gc -o ucontext-cp ucontext-cp.c -L../src/ -luring
+make[1]: Leaving directory '/home/devel/building/work/src/liburing-liburing-2.3/examples'
++ make DESTDIR=/home/devel/building/work/pkg install
+sed -e "s%@prefix@%/usr%g" \
+    -e "s%@libdir@%/usr/lib%g" \
+    -e "s%@includedir@%/usr/include%g" \
+    -e "s%@NAME@%liburing%g" \
+    -e "s%@VERSION@%2.3%g" \
+    liburing.pc.in >liburing.pc
+make[1]: Entering directory '/home/devel/building/work/src/liburing-liburing-2.3/src'
+install -D -m 644 include/liburing/io_uring.h /home/devel/building/work/pkg/usr/include/liburing/io_uring.h
+install -D -m 644 include/liburing.h /home/devel/building/work/pkg/usr/include/liburing.h
+install -D -m 644 include/liburing/compat.h /home/devel/building/work/pkg/usr/include/liburing/compat.h
+install -D -m 644 include/liburing/barrier.h /home/devel/building/work/pkg/usr/include/liburing/barrier.h
+install -D -m 644 liburing.a /home/devel/building/work/pkg/usr/lib/liburing.a
+install -D -m 755 liburing.so.2.3 /home/devel/building/work/pkg/usr/lib/liburing.so.2.3
+ln -sf liburing.so.2.3 /home/devel/building/work/pkg/usr/lib/liburing.so.2
+ln -sf liburing.so.2.3 /home/devel/building/work/pkg/usr/lib/liburing.so
+make[1]: Leaving directory '/home/devel/building/work/src/liburing-liburing-2.3/src'
+install -D -m 644 liburing.pc /home/devel/building/work/pkg/usr/lib/pkgconfig/liburing.pc
+install -m 755 -d /home/devel/building/work/pkg/usr/share/man/man2
+install -m 644 man/*.2 /home/devel/building/work/pkg/usr/share/man/man2
+install -m 755 -d /home/devel/building/work/pkg/usr/share/man/man3
+install -m 644 man/*.3 /home/devel/building/work/pkg/usr/share/man/man3
+install -m 755 -d /home/devel/building/work/pkg/usr/share/man/man7
+install -m 644 man/*.7 /home/devel/building/work/pkg/usr/share/man/man7
++ find /home/devel/building/work/pkg -type f -name '*.a' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/include/
+-rw-r--r--  0 root   root    39287 Feb 21 20:04 usr/include/liburing.h
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/include/liburing/
+-rw-r--r--  0 root   root     2495 Feb 21 20:04 usr/include/liburing/barrier.h
+-rw-r--r--  0 root   root      154 Feb 21 20:04 usr/include/liburing/compat.h
+-rw-r--r--  0 root   root    16725 Feb 21 20:04 usr/include/liburing/io_uring.h
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 Feb 21 20:04 usr/lib/liburing.so -> liburing.so.2.3
+lrwxrwxrwx  0 root   root        0 Feb 21 20:04 usr/lib/liburing.so.2 -> liburing.so.2.3
+-rwxr-xr-x  0 root   root    18552 Feb 21 20:04 usr/lib/liburing.so.2.3
+-rw-r--r--  0 root   root      225 Feb 21 20:04 usr/lib/pkgconfig/liburing.pc
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/share/man/man7/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 Feb 21 20:04 usr/share/man/man2/
+-rw-r--r--  0 root   root    12852 Feb 21 20:04 usr/share/man/man2/io_uring_enter.2.gz
+-rw-r--r--  0 root   root    12853 Feb 21 20:04 usr/share/man/man2/io_uring_enter2.2.gz
+-rw-r--r--  0 root   root     6907 Feb 21 20:04 usr/share/man/man2/io_uring_register.2.gz
+-rw-r--r--  0 root   root     7200 Feb 21 20:04 usr/share/man/man2/io_uring_setup.2.gz
+-rw-r--r--  0 root   root      678 Feb 21 20:04 usr/share/man/man3/io_uring_buf_ring_add.3.gz
+-rw-r--r--  0 root   root      477 Feb 21 20:04 usr/share/man/man3/io_uring_buf_ring_advance.3.gz
+-rw-r--r--  0 root   root      626 Feb 21 20:04 usr/share/man/man3/io_uring_buf_ring_cq_advance.3.gz
+-rw-r--r--  0 root   root      439 Feb 21 20:04 usr/share/man/man3/io_uring_buf_ring_init.3.gz
+-rw-r--r--  0 root   root      405 Feb 21 20:04 usr/share/man/man3/io_uring_buf_ring_mask.3.gz
+-rw-r--r--  0 root   root      639 Feb 21 20:04 usr/share/man/man3/io_uring_cq_advance.3.gz
+-rw-r--r--  0 root   root      454 Feb 21 20:04 usr/share/man/man3/io_uring_cq_has_overflow.3.gz
+-rw-r--r--  0 root   root      417 Feb 21 20:04 usr/share/man/man3/io_uring_cq_ready.3.gz
+-rw-r--r--  0 root   root      606 Feb 21 20:04 usr/share/man/man3/io_uring_cqe_get_data.3.gz
+-rw-r--r--  0 root   root      608 Feb 21 20:04 usr/share/man/man3/io_uring_cqe_get_data64.3.gz
+-rw-r--r--  0 root   root      557 Feb 21 20:04 usr/share/man/man3/io_uring_cqe_seen.3.gz
+-rw-r--r--  0 root   root      366 Feb 21 20:04 usr/share/man/man3/io_uring_free_probe.3.gz
+-rw-r--r--  0 root   root      556 Feb 21 20:04 usr/share/man/man3/io_uring_get_events.3.gz
+-rw-r--r--  0 root   root      485 Feb 21 20:04 usr/share/man/man3/io_uring_get_probe.3.gz
+-rw-r--r--  0 root   root      747 Feb 21 20:04 usr/share/man/man3/io_uring_get_sqe.3.gz
+-rw-r--r--  0 root   root      478 Feb 21 20:04 usr/share/man/man3/io_uring_opcode_supported.3.gz
+-rw-r--r--  0 root   root      581 Feb 21 20:04 usr/share/man/man3/io_uring_peek_cqe.3.gz
+-rw-r--r--  0 root   root     2331 Feb 21 20:04 usr/share/man/man3/io_uring_prep_accept.3.gz
+-rw-r--r--  0 root   root     2338 Feb 21 20:04 usr/share/man/man3/io_uring_prep_accept_direct.3.gz
+-rw-r--r--  0 root   root     1476 Feb 21 20:04 usr/share/man/man3/io_uring_prep_cancel.3.gz
+-rw-r--r--  0 root   root     1478 Feb 21 20:04 usr/share/man/man3/io_uring_prep_cancel64.3.gz
+-rw-r--r--  0 root   root      761 Feb 21 20:04 usr/share/man/man3/io_uring_prep_close.3.gz
+-rw-r--r--  0 root   root      768 Feb 21 20:04 usr/share/man/man3/io_uring_prep_close_direct.3.gz
+-rw-r--r--  0 root   root      979 Feb 21 20:04 usr/share/man/man3/io_uring_prep_connect.3.gz
+-rw-r--r--  0 root   root      743 Feb 21 20:04 usr/share/man/man3/io_uring_prep_fadvise.3.gz
+-rw-r--r--  0 root   root      714 Feb 21 20:04 usr/share/man/man3/io_uring_prep_fallocate.3.gz
+-rw-r--r--  0 root   root     1289 Feb 21 20:04 usr/share/man/man3/io_uring_prep_files_update.3.gz
+-rw-r--r--  0 root   root      960 Feb 21 20:04 usr/share/man/man3/io_uring_prep_fsync.3.gz
+-rw-r--r--  0 root   root     1063 Feb 21 20:04 usr/share/man/man3/io_uring_prep_link.3.gz
+-rw-r--r--  0 root   root     1065 Feb 21 20:04 usr/share/man/man3/io_uring_prep_linkat.3.gz
+-rw-r--r--  0 root   root      720 Feb 21 20:04 usr/share/man/man3/io_uring_prep_madvise.3.gz
+-rw-r--r--  0 root   root     1026 Feb 21 20:04 usr/share/man/man3/io_uring_prep_mkdir.3.gz
+-rw-r--r--  0 root   root     1028 Feb 21 20:04 usr/share/man/man3/io_uring_prep_mkdirat.3.gz
+-rw-r--r--  0 root   root      974 Feb 21 20:04 usr/share/man/man3/io_uring_prep_msg_ring.3.gz
+-rw-r--r--  0 root   root     2341 Feb 21 20:04 usr/share/man/man3/io_uring_prep_multishot_accept.3.gz
+-rw-r--r--  0 root   root     2348 Feb 21 20:04 usr/share/man/man3/io_uring_prep_multishot_accept_direct.3.gz
+-rw-r--r--  0 root   root      398 Feb 21 20:04 usr/share/man/man3/io_uring_prep_nop.3.gz
+-rw-r--r--  0 root   root     1650 Feb 21 20:04 usr/share/man/man3/io_uring_prep_openat.3.gz
+-rw-r--r--  0 root   root     1677 Feb 21 20:04 usr/share/man/man3/io_uring_prep_openat2.3.gz
+-rw-r--r--  0 root   root     1684 Feb 21 20:04 usr/share/man/man3/io_uring_prep_openat2_direct.3.gz
+-rw-r--r--  0 root   root     1657 Feb 21 20:04 usr/share/man/man3/io_uring_prep_openat_direct.3.gz
+-rw-r--r--  0 root   root     1072 Feb 21 20:04 usr/share/man/man3/io_uring_prep_poll_add.3.gz
+-rw-r--r--  0 root   root     1078 Feb 21 20:04 usr/share/man/man3/io_uring_prep_poll_multishot.3.gz
+-rw-r--r--  0 root   root      810 Feb 21 20:04 usr/share/man/man3/io_uring_prep_poll_remove.3.gz
+-rw-r--r--  0 root   root     1196 Feb 21 20:04 usr/share/man/man3/io_uring_prep_poll_update.3.gz
+-rw-r--r--  0 root   root     1702 Feb 21 20:04 usr/share/man/man3/io_uring_prep_provide_buffers.3.gz
+-rw-r--r--  0 root   root      980 Feb 21 20:04 usr/share/man/man3/io_uring_prep_read.3.gz
+-rw-r--r--  0 root   root      909 Feb 21 20:04 usr/share/man/man3/io_uring_prep_read_fixed.3.gz
+-rw-r--r--  0 root   root     1313 Feb 21 20:04 usr/share/man/man3/io_uring_prep_readv.3.gz
+-rw-r--r--  0 root   root     1469 Feb 21 20:04 usr/share/man/man3/io_uring_prep_readv2.3.gz
+-rw-r--r--  0 root   root     1463 Feb 21 20:04 usr/share/man/man3/io_uring_prep_recv.3.gz
+-rw-r--r--  0 root   root     1473 Feb 21 20:04 usr/share/man/man3/io_uring_prep_recv_multishot.3.gz
+-rw-r--r--  0 root   root     1775 Feb 21 20:04 usr/share/man/man3/io_uring_prep_recvmsg.3.gz
+-rw-r--r--  0 root   root     1785 Feb 21 20:04 usr/share/man/man3/io_uring_prep_recvmsg_multishot.3.gz
+-rw-r--r--  0 root   root      697 Feb 21 20:04 usr/share/man/man3/io_uring_prep_remove_buffers.3.gz
+-rw-r--r--  0 root   root     1117 Feb 21 20:04 usr/share/man/man3/io_uring_prep_rename.3.gz
+-rw-r--r--  0 root   root     1119 Feb 21 20:04 usr/share/man/man3/io_uring_prep_renameat.3.gz
+-rw-r--r--  0 root   root      709 Feb 21 20:04 usr/share/man/man3/io_uring_prep_send.3.gz
+-rw-r--r--  0 root   root      780 Feb 21 20:04 usr/share/man/man3/io_uring_prep_send_zc.3.gz
+-rw-r--r--  0 root   root      974 Feb 21 20:04 usr/share/man/man3/io_uring_prep_sendmsg.3.gz
+-rw-r--r--  0 root   root      681 Feb 21 20:04 usr/share/man/man3/io_uring_prep_shutdown.3.gz
+-rw-r--r--  0 root   root     1326 Feb 21 20:04 usr/share/man/man3/io_uring_prep_socket.3.gz
+-rw-r--r--  0 root   root     1333 Feb 21 20:04 usr/share/man/man3/io_uring_prep_socket_direct.3.gz
+-rw-r--r--  0 root   root     1339 Feb 21 20:04 usr/share/man/man3/io_uring_prep_socket_direct_alloc.3.gz
+-rw-r--r--  0 root   root      908 Feb 21 20:04 usr/share/man/man3/io_uring_prep_splice.3.gz
+-rw-r--r--  0 root   root     1035 Feb 21 20:04 usr/share/man/man3/io_uring_prep_statx.3.gz
+-rw-r--r--  0 root   root     1032 Feb 21 20:04 usr/share/man/man3/io_uring_prep_symlink.3.gz
+-rw-r--r--  0 root   root     1034 Feb 21 20:04 usr/share/man/man3/io_uring_prep_symlinkat.3.gz
+-rw-r--r--  0 root   root      751 Feb 21 20:04 usr/share/man/man3/io_uring_prep_sync_file_range.3.gz
+-rw-r--r--  0 root   root      857 Feb 21 20:04 usr/share/man/man3/io_uring_prep_tee.3.gz
+-rw-r--r--  0 root   root     1263 Feb 21 20:04 usr/share/man/man3/io_uring_prep_timeout.3.gz
+-rw-r--r--  0 root   root     1303 Feb 21 20:04 usr/share/man/man3/io_uring_prep_timeout_remove.3.gz
+-rw-r--r--  0 root   root     1303 Feb 21 20:04 usr/share/man/man3/io_uring_prep_timeout_update.3.gz
+-rw-r--r--  0 root   root     1029 Feb 21 20:04 usr/share/man/man3/io_uring_prep_unlink.3.gz
+-rw-r--r--  0 root   root     1031 Feb 21 20:04 usr/share/man/man3/io_uring_prep_unlinkat.3.gz
+-rw-r--r--  0 root   root      984 Feb 21 20:04 usr/share/man/man3/io_uring_prep_write.3.gz
+-rw-r--r--  0 root   root      917 Feb 21 20:04 usr/share/man/man3/io_uring_prep_write_fixed.3.gz
+-rw-r--r--  0 root   root     1317 Feb 21 20:04 usr/share/man/man3/io_uring_prep_writev.3.gz
+-rw-r--r--  0 root   root     1472 Feb 21 20:04 usr/share/man/man3/io_uring_prep_writev2.3.gz
+-rw-r--r--  0 root   root      473 Feb 21 20:04 usr/share/man/man3/io_uring_queue_exit.3.gz
+-rw-r--r--  0 root   root     1291 Feb 21 20:04 usr/share/man/man3/io_uring_queue_init.3.gz
+-rw-r--r--  0 root   root     1298 Feb 21 20:04 usr/share/man/man3/io_uring_queue_init_params.3.gz
+-rw-r--r--  0 root   root      831 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_cmsg_firsthdr.3.gz
+-rw-r--r--  0 root   root      830 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_cmsg_nexthdr.3.gz
+-rw-r--r--  0 root   root      822 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_name.3.gz
+-rw-r--r--  0 root   root      821 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_out.3.gz
+-rw-r--r--  0 root   root      825 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_payload.3.gz
+-rw-r--r--  0 root   root      832 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_payload_length.3.gz
+-rw-r--r--  0 root   root      826 Feb 21 20:04 usr/share/man/man3/io_uring_recvmsg_validate.3.gz
+-rw-r--r--  0 root   root     1448 Feb 21 20:04 usr/share/man/man3/io_uring_register_buf_ring.3.gz
+-rw-r--r--  0 root   root      806 Feb 21 20:04 usr/share/man/man3/io_uring_register_buffers.3.gz
+-rw-r--r--  0 root   root      812 Feb 21 20:04 usr/share/man/man3/io_uring_register_eventfd.3.gz
+-rw-r--r--  0 root   root      818 Feb 21 20:04 usr/share/man/man3/io_uring_register_eventfd_async.3.gz
+-rw-r--r--  0 root   root      839 Feb 21 20:04 usr/share/man/man3/io_uring_register_file_alloc_range.3.gz
+-rw-r--r--  0 root   root      795 Feb 21 20:04 usr/share/man/man3/io_uring_register_files.3.gz
+-rw-r--r--  0 root   root      802 Feb 21 20:04 usr/share/man/man3/io_uring_register_files_sparse.3.gz
+-rw-r--r--  0 root   root      827 Feb 21 20:04 usr/share/man/man3/io_uring_register_iowq_aff.3.gz
+-rw-r--r--  0 root   root     1132 Feb 21 20:04 usr/share/man/man3/io_uring_register_iowq_max_workers.3.gz
+-rw-r--r--  0 root   root      851 Feb 21 20:04 usr/share/man/man3/io_uring_register_ring_fd.3.gz
+-rw-r--r--  0 root   root      877 Feb 21 20:04 usr/share/man/man3/io_uring_register_sync_cancel.3.gz
+-rw-r--r--  0 root   root      528 Feb 21 20:04 usr/share/man/man3/io_uring_sq_ready.3.gz
+-rw-r--r--  0 root   root      421 Feb 21 20:04 usr/share/man/man3/io_uring_sq_space_left.3.gz
+-rw-r--r--  0 root   root      573 Feb 21 20:04 usr/share/man/man3/io_uring_sqe_set_data.3.gz
+-rw-r--r--  0 root   root      575 Feb 21 20:04 usr/share/man/man3/io_uring_sqe_set_data64.3.gz
+-rw-r--r--  0 root   root     1660 Feb 21 20:04 usr/share/man/man3/io_uring_sqe_set_flags.3.gz
+-rw-r--r--  0 root   root      615 Feb 21 20:04 usr/share/man/man3/io_uring_sqring_wait.3.gz
+-rw-r--r--  0 root   root      831 Feb 21 20:04 usr/share/man/man3/io_uring_submit.3.gz
+-rw-r--r--  0 root   root      521 Feb 21 20:04 usr/share/man/man3/io_uring_submit_and_get_events.3.gz
+-rw-r--r--  0 root   root      556 Feb 21 20:04 usr/share/man/man3/io_uring_submit_and_wait.3.gz
+-rw-r--r--  0 root   root      821 Feb 21 20:04 usr/share/man/man3/io_uring_submit_and_wait_timeout.3.gz
+-rw-r--r--  0 root   root      438 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_buf_ring.3.gz
+-rw-r--r--  0 root   root      419 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_buffers.3.gz
+-rw-r--r--  0 root   root      814 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_eventfd.3.gz
+-rw-r--r--  0 root   root      409 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_files.3.gz
+-rw-r--r--  0 root   root      829 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_iowq_aff.3.gz
+-rw-r--r--  0 root   root      536 Feb 21 20:04 usr/share/man/man3/io_uring_unregister_ring_fd.3.gz
+-rw-r--r--  0 root   root      634 Feb 21 20:04 usr/share/man/man3/io_uring_wait_cqe.3.gz
+-rw-r--r--  0 root   root      666 Feb 21 20:04 usr/share/man/man3/io_uring_wait_cqe_nr.3.gz
+-rw-r--r--  0 root   root      771 Feb 21 20:04 usr/share/man/man3/io_uring_wait_cqe_timeout.3.gz
+-rw-r--r--  0 root   root      749 Feb 21 20:04 usr/share/man/man3/io_uring_wait_cqes.3.gz
+-rw-r--r--  0 root   root     8333 Feb 21 20:04 usr/share/man/man7/io_uring.7.gz
+=======> Building '/home/devel/packages/liburing#2.3-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling liburing 2.3-1
+prt-get: /usr/bin/pkgadd -u liburing#2.3-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 20:04:30 2023
+
