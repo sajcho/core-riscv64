@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpQIIzLcZTl50n7bv4RlN3TmSfVNkf6ZIh62OmwQGb949lKwNR3DvMFDddJzcP2e+ypNXlCSbNnF5r6M/TXvS5AA=
+SHA256 (Pkgfile) = 467722d425b47bcf2c9f4b4e78ae0176f697abacb2b7d477ec03e211d4f0fc6a
+SHA256 (.footprint) = 2f2595d48b1d9747afa0d6b676a290528c98d1151c567954c594803a07fa9255
+SHA256 (nasm-2.16.01.tar.xz) = c77745f4802375efeee2ec5c0ad6b7f037ea9c87c92b149a9637ff099f162558
