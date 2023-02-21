@@ -1,0 +1,52 @@
+# Description:	A System V Release 4.0 curses emulation library
+# URL:		http://www.gnu.org/software/ncurses/ncurses.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=ncurses
+version=6.4
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-widec \
+		--enable-pc-files \
+		--with-shared \
+		--with-cxx-shared \
+		--with-cxx-binding \
+		--with-ticlib=tic \
+		--with-termlib=tinfo \
+		--with-pkg-config-libdir=/usr/lib/pkgconfig \
+		--without-normal \
+		--without-debug \
+		--without-ada \
+		--without-tests
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/lib
+
+	# move library to /lib and create symlinks
+	mv $PKG/usr/lib/libncursesw.so.* $PKG/lib
+	ln -sf ../../lib/libncursesw.so.${version} $PKG/usr/lib/libncursesw.so
+	ln -s libncursesw.so.${version} $PKG/lib/libncurses.so.${version%%.*}
+
+	# linker scripts and .pc files for non-wide ncurses
+	for LIB in ncurses form panel menu ; do
+		echo "INPUT(-l${LIB}w)" > $PKG/usr/lib/lib${LIB}.so
+		ln -s ${LIB}w.pc $PKG/usr/lib/pkgconfig/${LIB}.pc
+	done
+
+	# linker script for the curses library
+	echo "INPUT(-lncursesw)" > $PKG/usr/lib/libcursesw.so
+	ln -s libncurses.so $PKG/usr/lib/libcurses.so
+
+	# The files are provided by the port "foot"
+	rm $PKG/usr/share/terminfo/f/{foot,foot-direct}
+}
