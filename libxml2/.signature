@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpY9bBGUku3cAO5h9uRjX94RJ8dJ7/Ecy3g8AiVgTz95p5Z5zhuqt+I6tkQFi0NFGQuFJQGlxedRxz1hOfzAx/wg=
+SHA256 (Pkgfile) = 232c45c490424dbe6c8067c38df41d982c3666bd685ab23905d53730853b9b7c
+SHA256 (.footprint) = e9df8450d5c860b8343aa483f31dd327e9b55a40ac6704c79a0ca3ca2dc6243e
+SHA256 (libxml2-2.10.3.tar.xz) = 5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c
