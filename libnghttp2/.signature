@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpfC/wi1yTGimu2gepWjcHPt9kXP5YS2V/9UNG/2nceikM16hfo6YdOtbVlY5oeu+sm2DJplijALp8k9u9JkwjgY=
+SHA256 (Pkgfile) = 55626f5bae2cb7459a70bac96ef32362809d748d26c36e6871d75970b4ae233c
+SHA256 (.footprint) = 20d9d476819b9f7733e64937d526de63b93e540e707507c7f7bd06b44b20356d
+SHA256 (nghttp2-1.51.0.tar.xz) = 66aa76d97c143f42295405a31413e5e7d157968dad9f957bb4b015b598882e6b
