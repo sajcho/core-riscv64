@@ -1,0 +1,16 @@
+prt-get: updating /usr/ports/core-riscv64/ca-certificates
+prt-get: starting build Tue Feb 21 13:17:43 2023
+=======> Building '/home/devel/packages/ca-certificates#20230110-1.riscv64.pkg.tar.zst'.
+cp cacert.pem /home/devel/building/work/src
++ build
++ install -D -m 0644 /home/devel/building/work/src/cacert.pem /home/devel/building/work/pkg/etc/ssl/cert.pem
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 13:17 etc/
+drwxr-xr-x  0 root   root        0 Feb 21 13:17 etc/ssl/
+-rw-r--r--  0 root   root   216583 Feb 21 13:17 etc/ssl/cert.pem
+=======> Building '/home/devel/packages/ca-certificates#20230110-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling ca-certificates 20230110-1
+prt-get: /usr/bin/pkgadd -u ca-certificates#20230110-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 13:17:44 2023
+
