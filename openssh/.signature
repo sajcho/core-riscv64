@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpd/GqG3t9YpAnDgr1jK+MVc7coq/LyCIk0pgdDQCkMrp5cADfKUguznSErsBomU/xbheMnKdiJsANs9Ta8ifTgI=
+SHA256 (Pkgfile) = 94d17557ca5055e5396b9e0c3bec127dab2d2e12f792d7c062bf864e93e32cab
+SHA256 (.footprint) = 90ea1d6b301a23394d2c200b3d2e942623f648c0be5edf0474abac2d76212eb0
+SHA256 (openssh-9.1p1.tar.gz) = 19f85009c7e3e23787f0236fbb1578392ab4d4bf9f8ec5fe6bc1cd7e8bfdd288
+SHA256 (sshd.pam) = 2b1053e21c1b1399281e06cae5c254f7e1109bb27c83ccb49969962d58595415
+SHA256 (sshd.run) = 220dde8d4495bab6f08e063860c0ad54cc70ef8b7913a00e27126f1d5eb0af5f
