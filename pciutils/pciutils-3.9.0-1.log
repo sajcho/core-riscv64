@@ -1,0 +1,243 @@
+prt-get: updating /usr/ports/core-riscv64/pciutils
+prt-get: starting build Tue Feb 21 21:44:34 2023
+=======> Building '/home/devel/packages/pciutils#3.9.0-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/pciutils-3.9.0.tar.xz
+cp update-pciids.sh /home/devel/building/work/src
++ build
++ cd pciutils-3.9.0
++ make V=1 -j1 PREFIX=/usr SHAREDIR=/usr/share/hwdata SHARED=yes 'OPT=-O2 -mabi=lp64d -march=rv64gc' ZLIB=no
+cd lib && ./configure
+Configuring libpci for your system... riscv64--linux 6.1.5-saux riscv64 linux
+Looking for access methods... sysfs proc mem-ports dump
+Checking for zlib support... no (set manually)
+Checking for DNS support... yes (auto-detected)
+Checking for libkmod... yes (auto-detected)
+Checking for udev hwdb support... yes (auto-detected)
+Checking whether to build a shared library... yes (set manually)
+/usr/bin/make -C lib all
+make[1]: Entering directory '/home/devel/building/work/src/pciutils-3.9.0/lib'
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o init.o init.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o access.o access.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o generic.o generic.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o dump.o dump.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names.o names.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o filter.o filter.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-hash.o names-hash.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-parse.o names-parse.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-net.o names-net.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-cache.o names-cache.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-hwdb.o names-hwdb.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o params.o params.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o caps.o caps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o sysfs.o sysfs.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o proc.o proc.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o mmio-ports.o mmio-ports.c
+cc -shared -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden  -Wl,-soname,libpci.so.3 -Wl,--version-script=libpci.ver -o libpci.so.3.9.0 init.o access.o generic.o dump.o names.o filter.o names-hash.o names-parse.o names-net.o names-cache.o names-hwdb.o params.o caps.o sysfs.o proc.o mmio-ports.o -lresolv -ludev
+sed <libpci.pc.in >libpci.pc -e 's,@PREFIX@,/usr,' \
+	-e 's,@INCDIR@,/usr/include,' \
+	-e 's,@LIBDIR@,/usr/lib,' \
+	-e 's,@IDSDIR@,/usr/share/hwdata,' \
+	-e 's,@VERSION@,3.9.0,' \
+	-e 's,@LDLIBS@,,' \
+	-e 's,@WITH_LIBS@,-lresolv -ludev,'
+make[1]: Leaving directory '/home/devel/building/work/src/pciutils-3.9.0/lib'
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o lspci.o lspci.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-vpd.o ls-vpd.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-caps.o ls-caps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-caps-vendor.o ls-caps-vendor.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-ecaps.o ls-ecaps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes    -c -o ls-kernel.o ls-kernel.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-tree.o ls-tree.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-map.o ls-map.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o common.o common.c
+cc   lspci.o ls-vpd.o ls-caps.o ls-caps-vendor.o ls-ecaps.o ls-kernel.o ls-tree.o ls-map.o common.o lib/libpci.so.3.9.0 -lkmod -o lspci
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o setpci.o setpci.c
+cc   setpci.o common.o lib/libpci.so.3.9.0  -o setpci
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o example.o example.c
+cc   example.o lib/libpci.so.3.9.0  -o example
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <lspci.man >lspci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'lspci.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'lspci.7'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <setpci.man >setpci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'setpci.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'setpci.7'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pcilib.man >pcilib.7 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'pcilib.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'pcilib.8'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pci.ids.man >pci.ids.5 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'pci.ids.7'.
+Makefile:131: warning: pattern recipe did not update peer target 'pci.ids.8'.
+sed <update-pciids.sh >update-pciids "s@^DEST=.*@DEST=/usr/share/hwdata/pci.ids@;s@^PCI_COMPRESSED_IDS=.*@PCI_COMPRESSED_IDS=@"
+chmod +x update-pciids
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <update-pciids.man >update-pciids.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'update-pciids.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'update-pciids.7'.
++ make clean
+rm -f `find . -name "*~" -o -name "*.[oa]" -o -name "\#*\#" -o -name TAGS -o -name core -o -name "*.orig"`
+rm -f update-pciids lspci setpci example lib/config.* *.[578] pci.ids.gz lib/*.pc lib/*.so lib/*.so.* lib/*.dll lib/*.def lib/dllrsrc.rc *-rsrc.rc tags
+rm -rf maint/dist
++ make V=1 -j1 PREFIX=/usr SHAREDIR=/usr/share/hwdata SHARED=yes 'OPT=-O2 -mabi=lp64d -march=rv64gc' ZLIB=no DESTDIR=/home/devel/building/work/pkg install install-lib
+cd lib && ./configure
+Configuring libpci for your system... riscv64--linux 6.1.5-saux riscv64 linux
+Looking for access methods... sysfs proc mem-ports dump
+Checking for zlib support... no (set manually)
+Checking for DNS support... yes (auto-detected)
+Checking for libkmod... yes (auto-detected)
+Checking for udev hwdb support... yes (auto-detected)
+Checking whether to build a shared library... yes (set manually)
+/usr/bin/make -C lib all
+make[1]: Entering directory '/home/devel/building/work/src/pciutils-3.9.0/lib'
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o init.o init.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o access.o access.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o generic.o generic.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o dump.o dump.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names.o names.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o filter.o filter.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-hash.o names-hash.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-parse.o names-parse.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-net.o names-net.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-cache.o names-cache.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o names-hwdb.o names-hwdb.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o params.o params.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o caps.o caps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o sysfs.o sysfs.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o proc.o proc.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden   -c -o mmio-ports.o mmio-ports.c
+cc -shared -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden  -Wl,-soname,libpci.so.3 -Wl,--version-script=libpci.ver -o libpci.so.3.9.0 init.o access.o generic.o dump.o names.o filter.o names-hash.o names-parse.o names-net.o names-cache.o names-hwdb.o params.o caps.o sysfs.o proc.o mmio-ports.o -lresolv -ludev
+sed <libpci.pc.in >libpci.pc -e 's,@PREFIX@,/usr,' \
+	-e 's,@INCDIR@,/usr/include,' \
+	-e 's,@LIBDIR@,/usr/lib,' \
+	-e 's,@IDSDIR@,/usr/share/hwdata,' \
+	-e 's,@VERSION@,3.9.0,' \
+	-e 's,@LDLIBS@,,' \
+	-e 's,@WITH_LIBS@,-lresolv -ludev,'
+make[1]: Leaving directory '/home/devel/building/work/src/pciutils-3.9.0/lib'
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o lspci.o lspci.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-vpd.o ls-vpd.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-caps.o ls-caps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-caps-vendor.o ls-caps-vendor.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-ecaps.o ls-ecaps.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes    -c -o ls-kernel.o ls-kernel.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-tree.o ls-tree.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o ls-map.o ls-map.c
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o common.o common.c
+cc   lspci.o ls-vpd.o ls-caps.o ls-caps-vendor.o ls-ecaps.o ls-kernel.o ls-tree.o ls-map.o common.o lib/libpci.so.3.9.0 -lkmod -o lspci
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o setpci.o setpci.c
+cc   setpci.o common.o lib/libpci.so.3.9.0  -o setpci
+cc -O2 -mabi=lp64d -march=rv64gc -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes   -c -o example.o example.c
+cc   example.o lib/libpci.so.3.9.0  -o example
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <lspci.man >lspci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'lspci.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'lspci.7'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <setpci.man >setpci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'setpci.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'setpci.7'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pcilib.man >pcilib.7 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'pcilib.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'pcilib.8'.
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pci.ids.man >pci.ids.5 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'pci.ids.7'.
+Makefile:131: warning: pattern recipe did not update peer target 'pci.ids.8'.
+sed <update-pciids.sh >update-pciids "s@^DEST=.*@DEST=/usr/share/hwdata/pci.ids@;s@^PCI_COMPRESSED_IDS=.*@PCI_COMPRESSED_IDS=@"
+chmod +x update-pciids
+M=`echo 2022-11-20 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <update-pciids.man >update-pciids.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.9.0/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids#"
+Makefile:131: warning: pattern recipe did not update peer target 'update-pciids.5'.
+Makefile:131: warning: pattern recipe did not update peer target 'update-pciids.7'.
+install -d -m 755 /home/devel/building/work/pkg/usr/lib
+install -c -m 644 lib/libpci.so.3.9.0 /home/devel/building/work/pkg/usr/lib
+install -d -m 755 /home/devel/building/work/pkg/usr/bin /home/devel/building/work/pkg/usr/sbin /home/devel/building/work/pkg/usr/share/hwdata /home/devel/building/work/pkg/usr/share/man/man8 /home/devel/building/work/pkg/usr/share/man/man7 /home/devel/building/work/pkg/usr/share/man/man5
+install -c -m 755 -s lspci /home/devel/building/work/pkg/usr/bin
+install -c -m 755 -s setpci /home/devel/building/work/pkg/usr/sbin
+install -c -m 755 update-pciids /home/devel/building/work/pkg/usr/sbin
+install -c -m 644 pci.ids /home/devel/building/work/pkg/usr/share/hwdata
+install -c -m 644 lspci.8 setpci.8 update-pciids.8 /home/devel/building/work/pkg/usr/share/man/man8
+install -c -m 644 pcilib.7 /home/devel/building/work/pkg/usr/share/man/man7
+install -c -m 644 pci.ids.5 /home/devel/building/work/pkg/usr/share/man/man5
+ln -sf libpci.so.3.9.0 /home/devel/building/work/pkg/usr/lib/libpci.so.3
+install -d -m 755 /home/devel/building/work/pkg/usr/include/pci /home/devel/building/work/pkg/usr/lib/pkgconfig
+install -c -m 644 lib/config.h lib/header.h lib/pci.h lib/types.h /home/devel/building/work/pkg/usr/include/pci
+install -c -m 644 lib/libpci.pc /home/devel/building/work/pkg/usr/lib/pkgconfig
+ln -sf libpci.so.3.9.0 /home/devel/building/work/pkg/usr/lib/libpci.so.3
+ln -sf libpci.so.3 /home/devel/building/work/pkg/usr/lib/libpci.so
++ chmod 0755 /home/devel/building/work/pkg/usr/lib/libpci.so
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/hwdata/
++ wget https://pci-ids.ucw.cz/v2.2/pci.ids -O /home/devel/building/work/pkg/usr/share/hwdata/pci.ids
+--2023-02-21 21:45:57--  https://pci-ids.ucw.cz/v2.2/pci.ids
+Resolving pci-ids.ucw.cz (pci-ids.ucw.cz)... 46.255.230.98, 2a00:da80:fff0:2::2
+Connecting to pci-ids.ucw.cz (pci-ids.ucw.cz)|46.255.230.98|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1358708 (1.3M) [text/plain]
+Saving to: '/home/devel/building/work/pkg/usr/share/hwdata/pci.ids'
+
+     0K .......... .......... .......... .......... ..........  3% 1.20M 1s
+    50K .......... .......... .......... .......... ..........  7% 3.46M 1s
+   100K .......... .......... .......... .......... .......... 11% 3.69M 1s
+   150K .......... .......... .......... .......... .......... 15% 5.87M 0s
+   200K .......... .......... .......... .......... .......... 18% 6.06M 0s
+   250K .......... .......... .......... .......... .......... 22% 25.6M 0s
+   300K .......... .......... .......... .......... .......... 26% 28.3M 0s
+   350K .......... .......... .......... .......... .......... 30% 16.3M 0s
+   400K .......... .......... .......... .......... .......... 33% 34.6M 0s
+   450K .......... .......... .......... .......... .......... 37% 10.6M 0s
+   500K .......... .......... .......... .......... .......... 41% 13.1M 0s
+   550K .......... .......... .......... .......... .......... 45% 7.86M 0s
+   600K .......... .......... .......... .......... .......... 48% 27.6M 0s
+   650K .......... .......... .......... .......... .......... 52% 20.7M 0s
+   700K .......... .......... .......... .......... .......... 56% 16.7M 0s
+   750K .......... .......... .......... .......... .......... 60% 20.0M 0s
+   800K .......... .......... .......... .......... .......... 64% 18.3M 0s
+   850K .......... .......... .......... .......... .......... 67% 16.3M 0s
+   900K .......... .......... .......... .......... .......... 71% 19.4M 0s
+   950K .......... .......... .......... .......... .......... 75% 16.1M 0s
+  1000K .......... .......... .......... .......... .......... 79% 19.7M 0s
+  1050K .......... .......... .......... .......... .......... 82% 19.1M 0s
+  1100K .......... .......... .......... .......... .......... 86% 16.3M 0s
+  1150K .......... .......... .......... .......... .......... 90% 19.6M 0s
+  1200K .......... .......... .......... .......... .......... 94% 15.3M 0s
+  1250K .......... .......... .......... .......... .......... 97% 19.7M 0s
+  1300K .......... .......... ......                          100% 21.9M=0.1s
+
+2023-02-21 21:45:57 (8.93 MB/s) - '/home/devel/building/work/pkg/usr/share/hwdata/pci.ids' saved [1358708/1358708]
+
++ install -D -m 0754 /home/devel/building/work/src/update-pciids.sh /home/devel/building/work/pkg/etc/cron/weekly/update-pciids.sh
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 etc/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 etc/cron/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 etc/cron/weekly/
+-rwxr-xr--  0 root   root       36 Feb 21 21:45 etc/cron/weekly/update-pciids.sh
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/include/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/sbin/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/lib/
+lrwxrwxrwx  0 root   root        0 Feb 21 21:45 usr/lib/libpci.so -> libpci.so.3
+lrwxrwxrwx  0 root   root        0 Feb 21 21:45 usr/lib/libpci.so.3 -> libpci.so.3.9.0
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root    52344 Feb 21 21:45 usr/lib/libpci.so.3.9.0
+-rw-r--r--  0 root   root      205 Feb 21 21:45 usr/lib/pkgconfig/libpci.pc
+-rwxr-xr-x  0 root   root    86296 Feb 21 21:45 usr/bin/lspci
+-rwxr-xr-x  0 root   root     1754 Feb 21 21:45 usr/sbin/update-pciids
+-rwxr-xr-x  0 root   root    22984 Feb 21 21:45 usr/sbin/setpci
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/hwdata/
+-rw-r--r--  0 root   root  1358708 Feb 19 02:15 usr/share/hwdata/pci.ids
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/man/man7/
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/share/man/man8/
+-rw-r--r--  0 root   root     4513 Feb 21 21:45 usr/share/man/man8/lspci.8.gz
+-rw-r--r--  0 root   root     2885 Feb 21 21:45 usr/share/man/man8/setpci.8.gz
+-rw-r--r--  0 root   root      501 Feb 21 21:45 usr/share/man/man8/update-pciids.8.gz
+-rw-r--r--  0 root   root     2487 Feb 21 21:45 usr/share/man/man7/pcilib.7.gz
+-rw-r--r--  0 root   root     1560 Feb 21 21:45 usr/share/man/man5/pci.ids.5.gz
+drwxr-xr-x  0 root   root        0 Feb 21 21:45 usr/include/pci/
+-rw-r--r--  0 root   root     1950 Feb 21 21:45 usr/include/pci/types.h
+-rw-r--r--  0 root   root    12621 Feb 21 21:45 usr/include/pci/pci.h
+-rw-r--r--  0 root   root    82835 Feb 21 21:45 usr/include/pci/header.h
+-rw-r--r--  0 root   root      612 Feb 21 21:45 usr/include/pci/config.h
+=======> Building '/home/devel/packages/pciutils#3.9.0-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling pciutils 3.9.0-1
+prt-get: /usr/bin/pkgadd -u pciutils#3.9.0-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 21:45:58 2023
+

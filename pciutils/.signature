@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpXKNfiXDY2Sx6xA1yOfy+Aj9uu6GrxUVBMzrHktxf8dmRhBL6F5cO/2ReeABQhfSJljMBNWrxSbJwfcI/51GVwA=
+SHA256 (Pkgfile) = 791f401918f1af9bf6643f9676b43753eec5396b756e41e84b02c749ffdcb13d
+SHA256 (.footprint) = b7c09cbc562996a98ad46418d1557b8df9858b5f645e7f6b79b981d9c878a8b5
+SHA256 (pciutils-3.9.0.tar.xz) = cdea7ae97239dee23249a09c68a19a287a3f109fbeb2c232ebb616cb38599012
+SHA256 (update-pciids.sh) = 7996a9e31b27603cf1bd142cca35710fb453891208ba9a95507904a9c65e8215
