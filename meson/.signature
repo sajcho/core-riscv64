@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpbDEwN0d54Rb5JWGlOCshDFkgJ/NO4+pOukFfETmrDFOES9QpsjdK2ckeHlLgu3rXmJutk/PUo8ClQE5fc3nsQI=
+SHA256 (Pkgfile) = 92d2244cfd74ff2f3b42acf09e6aef5d0fbccea6008c7bed8d1c5241e1695981
+SHA256 (.footprint) = 5de7a1c0a35cc8d177c22cf2986fe5bca396df5e037dbdc082a0025375ffeeb1
+SHA256 (meson-1.0.0.tar.gz) = aa50a4ba4557c25e7d48446abfde857957dcdf58385fffbe670ba0e8efacce05
+SHA256 (build-meson) = 89f11273204bd65d379d494bbdeae633bb429a80b98f8c248f53ae6d2ced9fa9

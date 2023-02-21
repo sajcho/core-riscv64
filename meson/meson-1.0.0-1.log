@@ -1,0 +1,1466 @@
+prt-get: updating /usr/ports/core-riscv64/meson
+prt-get: starting build Tue Feb 21 21:24:14 2023
+=======> Building '/home/devel/packages/meson#1.0.0-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/meson-1.0.0.tar.gz
+cp build-meson /home/devel/building/work/src
++ build
++ cd meson-1.0.0
++ /usr/bin/python3 setup.py build
+/usr/lib/python3.11/site-packages/setuptools/config/setupcfg.py:515: SetuptoolsDeprecationWarning: The license_file parameter is deprecated, use license_files instead.
+  warnings.warn(msg, warning_class)
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/mesonbuild
+copying mesonbuild/rewriter.py -> build/lib/mesonbuild
+copying mesonbuild/programs.py -> build/lib/mesonbuild
+copying mesonbuild/optinterpreter.py -> build/lib/mesonbuild
+copying mesonbuild/munstable_coredata.py -> build/lib/mesonbuild
+copying mesonbuild/mtest.py -> build/lib/mesonbuild
+copying mesonbuild/msubprojects.py -> build/lib/mesonbuild
+copying mesonbuild/msetup.py -> build/lib/mesonbuild
+copying mesonbuild/mparser.py -> build/lib/mesonbuild
+copying mesonbuild/mlog.py -> build/lib/mesonbuild
+copying mesonbuild/mintro.py -> build/lib/mesonbuild
+copying mesonbuild/minstall.py -> build/lib/mesonbuild
+copying mesonbuild/minit.py -> build/lib/mesonbuild
+copying mesonbuild/mesonmain.py -> build/lib/mesonbuild
+copying mesonbuild/mesonlib.py -> build/lib/mesonbuild
+copying mesonbuild/mesondata.py -> build/lib/mesonbuild
+copying mesonbuild/mdist.py -> build/lib/mesonbuild
+copying mesonbuild/mdevenv.py -> build/lib/mesonbuild
+copying mesonbuild/mconf.py -> build/lib/mesonbuild
+copying mesonbuild/mcompile.py -> build/lib/mesonbuild
+copying mesonbuild/environment.py -> build/lib/mesonbuild
+copying mesonbuild/envconfig.py -> build/lib/mesonbuild
+copying mesonbuild/depfile.py -> build/lib/mesonbuild
+copying mesonbuild/coredata.py -> build/lib/mesonbuild
+copying mesonbuild/build.py -> build/lib/mesonbuild
+copying mesonbuild/arglist.py -> build/lib/mesonbuild
+copying mesonbuild/_typing.py -> build/lib/mesonbuild
+copying mesonbuild/_pathlib.py -> build/lib/mesonbuild
+copying mesonbuild/__init__.py -> build/lib/mesonbuild
+creating build/lib/mesonbuild/wrap
+copying mesonbuild/wrap/wraptool.py -> build/lib/mesonbuild/wrap
+copying mesonbuild/wrap/wrap.py -> build/lib/mesonbuild/wrap
+copying mesonbuild/wrap/__init__.py -> build/lib/mesonbuild/wrap
+creating build/lib/mesonbuild/utils
+copying mesonbuild/utils/win32.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/vsenv.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/universal.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/posix.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/platform.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/core.py -> build/lib/mesonbuild/utils
+copying mesonbuild/utils/__init__.py -> build/lib/mesonbuild/utils
+creating build/lib/mesonbuild/templates
+copying mesonbuild/templates/valatemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/sampleimpl.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/samplefactory.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/rusttemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/objctemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/objcpptemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/mesontemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/javatemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/fortrantemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/dlangtemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/cudatemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/ctemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/cstemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/cpptemplates.py -> build/lib/mesonbuild/templates
+copying mesonbuild/templates/__init__.py -> build/lib/mesonbuild/templates
+creating build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/yasm.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/vcstagger.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/uninstall.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/test_loaded_modules.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/tags.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/symbolextractor.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/scanbuild.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/run_tool.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/regen_checker.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/msgfmthelper.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/meson_exe.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/itstool.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/hotdochelper.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/gtkdochelper.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/gettext.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/externalproject.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/env2mfile.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/dirchanger.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/depscan.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/depfixer.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/delwithsuffix.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/coverage.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/copy.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/cmake_run_ctgt.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/cleantrees.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/clangtidy.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/clangformat.py -> build/lib/mesonbuild/scripts
+copying mesonbuild/scripts/__init__.py -> build/lib/mesonbuild/scripts
+creating build/lib/mesonbuild/modules
+copying mesonbuild/modules/windows.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/wayland.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/sourceset.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/simd.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/rust.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/qt6.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/qt5.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/qt4.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/qt.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/python3.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/python.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/pkgconfig.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/modtest.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/keyval.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/java.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/icestorm.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/i18n.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/hotdoc.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/gnome.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/fs.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/external_project.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/dlang.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/cuda.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/cmake.py -> build/lib/mesonbuild/modules
+copying mesonbuild/modules/__init__.py -> build/lib/mesonbuild/modules
+creating build/lib/mesonbuild/linkers
+copying mesonbuild/linkers/linkers.py -> build/lib/mesonbuild/linkers
+copying mesonbuild/linkers/detect.py -> build/lib/mesonbuild/linkers
+copying mesonbuild/linkers/__init__.py -> build/lib/mesonbuild/linkers
+creating build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/operator.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/interpreterbase.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/helpers.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/exceptions.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/disabler.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/decorators.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/baseobjects.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/_unholder.py -> build/lib/mesonbuild/interpreterbase
+copying mesonbuild/interpreterbase/__init__.py -> build/lib/mesonbuild/interpreterbase
+creating build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/type_checking.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/mesonmain.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/kwargs.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/interpreterobjects.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/interpreter.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/dependencyfallbacks.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/compiler.py -> build/lib/mesonbuild/interpreter
+copying mesonbuild/interpreter/__init__.py -> build/lib/mesonbuild/interpreter
+creating build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/ui.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/scalapack.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/qt.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/platform.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/pkgconfig.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/mpi.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/misc.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/hdf5.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/framework.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/factory.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/dub.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/dev.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/detect.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/cuda.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/configtool.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/coarrays.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/cmake.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/boost.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/base.py -> build/lib/mesonbuild/dependencies
+copying mesonbuild/dependencies/__init__.py -> build/lib/mesonbuild/dependencies
+creating build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/vala.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/swift.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/rust.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/objcpp.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/objc.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/java.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/fortran.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/detect.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/d.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/cython.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/cuda.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/cs.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/cpp.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/compilers.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/c_function_attributes.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/c.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/asm.py -> build/lib/mesonbuild/compilers
+copying mesonbuild/compilers/__init__.py -> build/lib/mesonbuild/compilers
+creating build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/tracetargets.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/traceparser.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/toolchain.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/interpreter.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/generator.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/fileapi.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/executor.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/common.py -> build/lib/mesonbuild/cmake
+copying mesonbuild/cmake/__init__.py -> build/lib/mesonbuild/cmake
+creating build/lib/mesonbuild/backend
+copying mesonbuild/backend/xcodebackend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2022backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2019backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2017backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2015backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2013backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2012backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/vs2010backend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/ninjabackend.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/backends.py -> build/lib/mesonbuild/backend
+copying mesonbuild/backend/__init__.py -> build/lib/mesonbuild/backend
+creating build/lib/mesonbuild/ast
+copying mesonbuild/ast/visitor.py -> build/lib/mesonbuild/ast
+copying mesonbuild/ast/printer.py -> build/lib/mesonbuild/ast
+copying mesonbuild/ast/postprocess.py -> build/lib/mesonbuild/ast
+copying mesonbuild/ast/introspection.py -> build/lib/mesonbuild/ast
+copying mesonbuild/ast/interpreter.py -> build/lib/mesonbuild/ast
+copying mesonbuild/ast/__init__.py -> build/lib/mesonbuild/ast
+creating build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/string.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/range.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/integer.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/dict.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/boolean.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/array.py -> build/lib/mesonbuild/interpreter/primitives
+copying mesonbuild/interpreter/primitives/__init__.py -> build/lib/mesonbuild/interpreter/primitives
+creating build/lib/mesonbuild/dependencies/data
+copying mesonbuild/dependencies/data/__init__.py -> build/lib/mesonbuild/dependencies/data
+creating build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/xc16.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/visualstudio.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/ti.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/pgi.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/islinker.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/intel.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/gnu.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/emscripten.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/elbrus.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/compcert.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/clike.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/clang.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/ccrx.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/arm.py -> build/lib/mesonbuild/compilers/mixins
+copying mesonbuild/compilers/mixins/__init__.py -> build/lib/mesonbuild/compilers/mixins
+creating build/lib/mesonbuild/cmake/data
+copying mesonbuild/cmake/data/__init__.py -> build/lib/mesonbuild/cmake/data
+copying mesonbuild/scripts/cmd_or_ps.ps1 -> build/lib/mesonbuild/scripts
+copying mesonbuild/dependencies/data/CMakePathInfo.txt -> build/lib/mesonbuild/dependencies/data
+copying mesonbuild/dependencies/data/CMakeListsLLVM.txt -> build/lib/mesonbuild/dependencies/data
+copying mesonbuild/dependencies/data/CMakeLists.txt -> build/lib/mesonbuild/dependencies/data
+copying mesonbuild/cmake/data/preload.cmake -> build/lib/mesonbuild/cmake/data
++ /usr/bin/python3 setup.py install --prefix=/usr --optimize=1 --skip-build --root=/home/devel/building/work/pkg
+/usr/lib/python3.11/site-packages/setuptools/config/setupcfg.py:515: SetuptoolsDeprecationWarning: The license_file parameter is deprecated, use license_files instead.
+  warnings.warn(msg, warning_class)
+running install
+/usr/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/devel/building/work/pkg/usr
+creating /home/devel/building/work/pkg/usr/lib
+creating /home/devel/building/work/pkg/usr/lib/python3.11
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/interpreter.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/introspection.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/postprocess.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/printer.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+copying build/lib/mesonbuild/ast/visitor.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/backends.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/ninjabackend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2010backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2012backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2013backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2015backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2017backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2019backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/vs2022backend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+copying build/lib/mesonbuild/backend/xcodebackend.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/data
+copying build/lib/mesonbuild/cmake/data/preload.cmake -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/data
+copying build/lib/mesonbuild/cmake/data/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/data
+copying build/lib/mesonbuild/cmake/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/common.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/executor.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/fileapi.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/generator.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/interpreter.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/toolchain.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/traceparser.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+copying build/lib/mesonbuild/cmake/tracetargets.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/arm.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/ccrx.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/clang.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/clike.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/compcert.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/elbrus.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/emscripten.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/gnu.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/intel.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/islinker.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/pgi.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/ti.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/visualstudio.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/mixins/xc16.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins
+copying build/lib/mesonbuild/compilers/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/asm.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/c.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/c_function_attributes.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/compilers.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/cpp.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/cs.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/cuda.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/cython.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/d.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/detect.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/fortran.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/java.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/objc.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/objcpp.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/rust.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/swift.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+copying build/lib/mesonbuild/compilers/vala.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data
+copying build/lib/mesonbuild/dependencies/data/CMakeLists.txt -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data
+copying build/lib/mesonbuild/dependencies/data/CMakeListsLLVM.txt -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data
+copying build/lib/mesonbuild/dependencies/data/CMakePathInfo.txt -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data
+copying build/lib/mesonbuild/dependencies/data/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data
+copying build/lib/mesonbuild/dependencies/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/base.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/boost.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/cmake.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/coarrays.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/configtool.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/cuda.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/detect.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/dev.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/dub.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/factory.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/framework.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/hdf5.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/misc.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/mpi.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/pkgconfig.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/platform.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/qt.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/scalapack.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+copying build/lib/mesonbuild/dependencies/ui.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/array.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/boolean.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/dict.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/integer.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/range.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/primitives/string.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives
+copying build/lib/mesonbuild/interpreter/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/compiler.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/dependencyfallbacks.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/interpreter.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/interpreterobjects.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/kwargs.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/mesonmain.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+copying build/lib/mesonbuild/interpreter/type_checking.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/_unholder.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/baseobjects.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/decorators.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/disabler.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/exceptions.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/helpers.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/interpreterbase.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+copying build/lib/mesonbuild/interpreterbase/operator.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers
+copying build/lib/mesonbuild/linkers/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers
+copying build/lib/mesonbuild/linkers/detect.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers
+copying build/lib/mesonbuild/linkers/linkers.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/cmake.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/cuda.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/dlang.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/external_project.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/fs.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/gnome.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/hotdoc.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/i18n.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/icestorm.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/java.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/keyval.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/modtest.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/pkgconfig.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/python.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/python3.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/qt.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/qt4.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/qt5.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/qt6.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/rust.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/simd.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/sourceset.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/wayland.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+copying build/lib/mesonbuild/modules/windows.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/cmd_or_ps.ps1 -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/clangformat.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/clangtidy.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/cleantrees.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/cmake_run_ctgt.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/copy.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/coverage.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/delwithsuffix.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/depfixer.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/depscan.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/dirchanger.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/env2mfile.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/externalproject.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/gettext.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/gtkdochelper.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/hotdochelper.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/itstool.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/meson_exe.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/msgfmthelper.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/regen_checker.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/run_tool.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/scanbuild.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/symbolextractor.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/tags.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/test_loaded_modules.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/uninstall.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/vcstagger.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+copying build/lib/mesonbuild/scripts/yasm.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/cpptemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/cstemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/ctemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/cudatemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/dlangtemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/fortrantemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/javatemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/mesontemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/objcpptemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/objctemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/rusttemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/samplefactory.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/sampleimpl.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+copying build/lib/mesonbuild/templates/valatemplates.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/core.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/platform.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/posix.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/universal.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/vsenv.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+copying build/lib/mesonbuild/utils/win32.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils
+creating /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap
+copying build/lib/mesonbuild/wrap/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap
+copying build/lib/mesonbuild/wrap/wrap.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap
+copying build/lib/mesonbuild/wrap/wraptool.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap
+copying build/lib/mesonbuild/__init__.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/_pathlib.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/_typing.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/arglist.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/build.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/coredata.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/depfile.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/envconfig.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/environment.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mcompile.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mconf.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mdevenv.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mdist.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mesondata.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mesonlib.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mesonmain.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/minit.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/minstall.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mintro.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mlog.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mparser.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/msetup.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/msubprojects.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/mtest.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/munstable_coredata.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/optinterpreter.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/programs.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+copying build/lib/mesonbuild/rewriter.py -> /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/interpreter.py to interpreter.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/introspection.py to introspection.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/postprocess.py to postprocess.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/printer.py to printer.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/ast/visitor.py to visitor.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/backends.py to backends.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/ninjabackend.py to ninjabackend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2010backend.py to vs2010backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2012backend.py to vs2012backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2013backend.py to vs2013backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2015backend.py to vs2015backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2017backend.py to vs2017backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2019backend.py to vs2019backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/vs2022backend.py to vs2022backend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/backend/xcodebackend.py to xcodebackend.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/data/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/common.py to common.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/executor.py to executor.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/fileapi.py to fileapi.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/generator.py to generator.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/interpreter.py to interpreter.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/toolchain.py to toolchain.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/traceparser.py to traceparser.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/cmake/tracetargets.py to tracetargets.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/arm.py to arm.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/ccrx.py to ccrx.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/clang.py to clang.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/clike.py to clike.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/compcert.py to compcert.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/elbrus.py to elbrus.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/emscripten.py to emscripten.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/gnu.py to gnu.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/intel.py to intel.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/islinker.py to islinker.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/pgi.py to pgi.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/ti.py to ti.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/visualstudio.py to visualstudio.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/xc16.py to xc16.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/asm.py to asm.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/c.py to c.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/c_function_attributes.py to c_function_attributes.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/compilers.py to compilers.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/cpp.py to cpp.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/cs.py to cs.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/cuda.py to cuda.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/cython.py to cython.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/d.py to d.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/detect.py to detect.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/fortran.py to fortran.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/java.py to java.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/objc.py to objc.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/objcpp.py to objcpp.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/rust.py to rust.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/swift.py to swift.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/compilers/vala.py to vala.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/base.py to base.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/boost.py to boost.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/cmake.py to cmake.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/coarrays.py to coarrays.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/configtool.py to configtool.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/cuda.py to cuda.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/detect.py to detect.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/dev.py to dev.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/dub.py to dub.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/factory.py to factory.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/framework.py to framework.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/hdf5.py to hdf5.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/misc.py to misc.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/mpi.py to mpi.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/pkgconfig.py to pkgconfig.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/platform.py to platform.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/qt.py to qt.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/scalapack.py to scalapack.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/dependencies/ui.py to ui.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/array.py to array.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/boolean.py to boolean.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/dict.py to dict.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/integer.py to integer.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/range.py to range.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/string.py to string.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/compiler.py to compiler.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/dependencyfallbacks.py to dependencyfallbacks.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/interpreter.py to interpreter.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/interpreterobjects.py to interpreterobjects.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/kwargs.py to kwargs.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/mesonmain.py to mesonmain.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreter/type_checking.py to type_checking.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/_unholder.py to _unholder.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/baseobjects.py to baseobjects.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/decorators.py to decorators.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/disabler.py to disabler.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/exceptions.py to exceptions.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/helpers.py to helpers.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/interpreterbase.py to interpreterbase.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/operator.py to operator.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers/detect.py to detect.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/linkers/linkers.py to linkers.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/cmake.py to cmake.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/cuda.py to cuda.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/dlang.py to dlang.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/external_project.py to external_project.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/fs.py to fs.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/gnome.py to gnome.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/hotdoc.py to hotdoc.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/i18n.py to i18n.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/icestorm.py to icestorm.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/java.py to java.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/keyval.py to keyval.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/modtest.py to modtest.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/pkgconfig.py to pkgconfig.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/python.py to python.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/python3.py to python3.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/qt.py to qt.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/qt4.py to qt4.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/qt5.py to qt5.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/qt6.py to qt6.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/rust.py to rust.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/simd.py to simd.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/sourceset.py to sourceset.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/wayland.py to wayland.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/modules/windows.py to windows.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/clangformat.py to clangformat.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/clangtidy.py to clangtidy.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/cleantrees.py to cleantrees.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/cmake_run_ctgt.py to cmake_run_ctgt.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/copy.py to copy.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/coverage.py to coverage.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/delwithsuffix.py to delwithsuffix.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/depfixer.py to depfixer.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/depscan.py to depscan.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/dirchanger.py to dirchanger.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/env2mfile.py to env2mfile.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/externalproject.py to externalproject.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/gettext.py to gettext.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/gtkdochelper.py to gtkdochelper.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/hotdochelper.py to hotdochelper.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/itstool.py to itstool.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/meson_exe.py to meson_exe.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/msgfmthelper.py to msgfmthelper.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/regen_checker.py to regen_checker.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/run_tool.py to run_tool.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/scanbuild.py to scanbuild.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/symbolextractor.py to symbolextractor.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/tags.py to tags.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/test_loaded_modules.py to test_loaded_modules.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/uninstall.py to uninstall.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/vcstagger.py to vcstagger.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/scripts/yasm.py to yasm.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/cpptemplates.py to cpptemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/cstemplates.py to cstemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/ctemplates.py to ctemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/cudatemplates.py to cudatemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/dlangtemplates.py to dlangtemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/fortrantemplates.py to fortrantemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/javatemplates.py to javatemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/mesontemplates.py to mesontemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/objcpptemplates.py to objcpptemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/objctemplates.py to objctemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/rusttemplates.py to rusttemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/samplefactory.py to samplefactory.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/sampleimpl.py to sampleimpl.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/templates/valatemplates.py to valatemplates.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/core.py to core.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/platform.py to platform.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/posix.py to posix.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/universal.py to universal.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/vsenv.py to vsenv.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/utils/win32.py to win32.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap/wrap.py to wrap.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/wrap/wraptool.py to wraptool.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/__init__.py to __init__.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/_pathlib.py to _pathlib.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/_typing.py to _typing.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/arglist.py to arglist.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/build.py to build.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/coredata.py to coredata.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/depfile.py to depfile.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/envconfig.py to envconfig.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/environment.py to environment.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mcompile.py to mcompile.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mconf.py to mconf.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mdevenv.py to mdevenv.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mdist.py to mdist.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mesondata.py to mesondata.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mesonlib.py to mesonlib.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mesonmain.py to mesonmain.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/minit.py to minit.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/minstall.py to minstall.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mintro.py to mintro.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mlog.py to mlog.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mparser.py to mparser.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/msetup.py to msetup.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/msubprojects.py to msubprojects.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/mtest.py to mtest.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/munstable_coredata.py to munstable_coredata.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/optinterpreter.py to optinterpreter.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/programs.py to programs.cpython-311.pyc
+byte-compiling /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/mesonbuild/rewriter.py to rewriter.cpython-311.pyc
+writing byte-compilation script '/tmp/tmpve1kvtwm.py'
+/usr/bin/python3 /tmp/tmpve1kvtwm.py
+removing /tmp/tmpve1kvtwm.py
+running install_data
+creating /home/devel/building/work/pkg/usr/share
+creating /home/devel/building/work/pkg/usr/share/man
+creating /home/devel/building/work/pkg/usr/share/man/man1
+copying man/meson.1 -> /home/devel/building/work/pkg/usr/share/man/man1
+creating /home/devel/building/work/pkg/usr/share/polkit-1
+creating /home/devel/building/work/pkg/usr/share/polkit-1/actions
+copying data/com.mesonbuild.install.policy -> /home/devel/building/work/pkg/usr/share/polkit-1/actions
+running install_egg_info
+running egg_info
+writing meson.egg-info/PKG-INFO
+writing dependency_links to meson.egg-info/dependency_links.txt
+writing entry points to meson.egg-info/entry_points.txt
+writing requirements to meson.egg-info/requires.txt
+writing top-level names to meson.egg-info/top_level.txt
+reading manifest file 'meson.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'COPYING'
+writing manifest file 'meson.egg-info/SOURCES.txt'
+Copying meson.egg-info to /home/devel/building/work/pkg/usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info
+running install_scripts
+Installing meson script to /home/devel/building/work/pkg/usr/bin
++ install -D -m 0755 /home/devel/building/work/src/build-meson -t /home/devel/building/work/pkg/usr/bin
++ install -d /home/devel/building/work/pkg/usr/share/vim/vimfiles
++ cp -rt /home/devel/building/work/pkg/usr/share/vim/vimfiles data/syntax-highlighting/vim/ftdetect/ data/syntax-highlighting/vim/ftplugin/ data/syntax-highlighting/vim/indent/ data/syntax-highlighting/vim/syntax/
++ install -m 0644 -Dt /home/devel/building/work/pkg/usr/share/bash-completion/completions data/shell-completions/bash/meson
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/
+-rw-r--r--  0 root   root    43381 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/rewriter.py
+-rw-r--r--  0 root   root    16890 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/programs.py
+-rw-r--r--  0 root   root    10585 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/optinterpreter.py
+-rw-r--r--  0 root   root     4593 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/munstable_coredata.py
+-rw-r--r--  0 root   root    85260 Dec 16 22:26 usr/lib/python3.11/site-packages/mesonbuild/mtest.py
+-rw-r--r--  0 root   root    31486 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/msubprojects.py
+-rw-r--r--  0 root   root    16191 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/msetup.py
+-rw-r--r--  0 root   root    33450 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/mparser.py
+-rw-r--r--  0 root   root    15715 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/mlog.py
+-rw-r--r--  0 root   root    26413 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/mintro.py
+-rw-r--r--  0 root   root    34332 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/minstall.py
+-rw-r--r--  0 root   root     7969 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/minit.py
+-rw-r--r--  0 root   root    12985 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/mesonmain.py
+-rw-r--r--  0 root   root     1087 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/mesonlib.py
+-rw-r--r--  0 root   root     1727 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/mesondata.py
+-rw-r--r--  0 root   root    14267 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/mdist.py
+-rw-r--r--  0 root   root     9222 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/mdevenv.py
+-rw-r--r--  0 root   root    14494 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/mconf.py
+-rw-r--r--  0 root   root    13428 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/mcompile.py
+-rw-r--r--  0 root   root    36705 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/environment.py
+-rw-r--r--  0 root   root    14076 Oct 24 19:28 usr/lib/python3.11/site-packages/mesonbuild/envconfig.py
+-rw-r--r--  0 root   root     2850 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/depfile.py
+-rw-r--r--  0 root   root    56937 Dec 23 16:13 usr/lib/python3.11/site-packages/mesonbuild/coredata.py
+-rw-r--r--  0 root   root   127398 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/build.py
+-rw-r--r--  0 root   root    13400 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/arglist.py
+-rw-r--r--  0 root   root     2402 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/_typing.py
+-rw-r--r--  0 root   root     2384 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/_pathlib.py
+-rw-r--r--  0 root   root        0 Apr 21  2022 usr/lib/python3.11/site-packages/mesonbuild/__init__.py
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/
+-rw-r--r--  0 root   root     4981 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/ast/visitor.py
+-rw-r--r--  0 root   root    14761 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/ast/printer.py
+-rw-r--r--  0 root   root     3967 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/ast/postprocess.py
+-rw-r--r--  0 root   root    16610 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/ast/introspection.py
+-rw-r--r--  0 root   root    18495 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/ast/interpreter.py
+-rw-r--r--  0 root   root     1212 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/ast/__init__.py
+-rw-r--r--  0 root   root    10333 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/visitor.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    29469 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/printer.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7706 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/postprocess.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    22784 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/introspection.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    25347 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/interpreter.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      720 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    10333 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/visitor.cpython-311.pyc
+-rw-r--r--  0 root   root    29469 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/printer.cpython-311.pyc
+-rw-r--r--  0 root   root     7706 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/postprocess.cpython-311.pyc
+-rw-r--r--  0 root   root    22784 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/introspection.cpython-311.pyc
+-rw-r--r--  0 root   root    25347 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/interpreter.cpython-311.pyc
+-rw-r--r--  0 root   root      720 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/ast/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/
+-rw-r--r--  0 root   root    85650 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/backend/xcodebackend.py
+-rw-r--r--  0 root   root     2753 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2022backend.py
+-rw-r--r--  0 root   root     2753 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2019backend.py
+-rw-r--r--  0 root   root     3005 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2017backend.py
+-rw-r--r--  0 root   root     1822 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2015backend.py
+-rw-r--r--  0 root   root     1823 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2013backend.py
+-rw-r--r--  0 root   root     1824 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2012backend.py
+-rw-r--r--  0 root   root    83037 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/backend/vs2010backend.py
+-rw-r--r--  0 root   root   172217 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/backend/ninjabackend.py
+-rw-r--r--  0 root   root    93835 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/backend/backends.py
+-rw-r--r--  0 root   root        0 Apr 21  2022 usr/lib/python3.11/site-packages/mesonbuild/backend/__init__.py
+-rw-r--r--  0 root   root   119203 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/xcodebackend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4590 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2022backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4590 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2019backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4777 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2017backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2362 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2015backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2013backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2012backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    97365 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2010backend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   221953 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/ninjabackend.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   124974 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/backends.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      173 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   119203 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/xcodebackend.cpython-311.pyc
+-rw-r--r--  0 root   root     4590 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2022backend.cpython-311.pyc
+-rw-r--r--  0 root   root     4590 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2019backend.cpython-311.pyc
+-rw-r--r--  0 root   root     4777 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2017backend.cpython-311.pyc
+-rw-r--r--  0 root   root     2362 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2015backend.cpython-311.pyc
+-rw-r--r--  0 root   root     2358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2013backend.cpython-311.pyc
+-rw-r--r--  0 root   root     2358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2012backend.cpython-311.pyc
+-rw-r--r--  0 root   root    97365 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/vs2010backend.cpython-311.pyc
+-rw-r--r--  0 root   root   221953 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/ninjabackend.cpython-311.pyc
+-rw-r--r--  0 root   root   124974 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/backends.cpython-311.pyc
+-rw-r--r--  0 root   root      173 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/backend/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/
+-rw-r--r--  0 root   root     4965 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/cmake/tracetargets.py
+-rw-r--r--  0 root   root    34080 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/cmake/traceparser.py
+-rw-r--r--  0 root   root    10115 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/cmake/toolchain.py
+-rw-r--r--  0 root   root    56513 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/cmake/interpreter.py
+-rw-r--r--  0 root   root     6611 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/cmake/generator.py
+-rw-r--r--  0 root   root    12959 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/cmake/fileapi.py
+-rw-r--r--  0 root   root    11118 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/cmake/executor.py
+-rw-r--r--  0 root   root    14733 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/cmake/common.py
+-rw-r--r--  0 root   root     1753 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/cmake/__init__.py
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/__pycache__/
+-rw-r--r--  0 root   root        0 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/__init__.py
+-rw-r--r--  0 root   root     2065 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/preload.cmake
+-rw-r--r--  0 root   root      176 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      176 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/data/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root     8521 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/tracetargets.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    46137 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/traceparser.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    14777 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/toolchain.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    85044 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/interpreter.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    12329 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/generator.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    17402 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/fileapi.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    15324 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/executor.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    27337 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/common.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1308 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     8521 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/tracetargets.cpython-311.pyc
+-rw-r--r--  0 root   root    46137 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/traceparser.cpython-311.pyc
+-rw-r--r--  0 root   root    14777 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/toolchain.cpython-311.pyc
+-rw-r--r--  0 root   root    85044 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/interpreter.cpython-311.pyc
+-rw-r--r--  0 root   root    12329 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/generator.cpython-311.pyc
+-rw-r--r--  0 root   root    17402 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/fileapi.cpython-311.pyc
+-rw-r--r--  0 root   root    15324 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/executor.cpython-311.pyc
+-rw-r--r--  0 root   root    27337 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/common.cpython-311.pyc
+-rw-r--r--  0 root   root     1308 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/cmake/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/
+-rw-r--r--  0 root   root     5534 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/vala.py
+-rw-r--r--  0 root   root     4911 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/swift.py
+-rw-r--r--  0 root   root     7949 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/rust.py
+-rw-r--r--  0 root   root     5264 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/objcpp.py
+-rw-r--r--  0 root   root     5199 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/objc.py
+-rw-r--r--  0 root   root     4679 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/java.py
+-rw-r--r--  0 root   root    23725 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/fortran.py
+-rw-r--r--  0 root   root    61857 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/detect.py
+-rw-r--r--  0 root   root    42670 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/d.py
+-rw-r--r--  0 root   root     2927 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/compilers/cython.py
+-rw-r--r--  0 root   root    41505 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/cuda.py
+-rw-r--r--  0 root   root     5245 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/cs.py
+-rw-r--r--  0 root   root    39649 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/cpp.py
+-rw-r--r--  0 root   root    58015 Nov  1 19:00 usr/lib/python3.11/site-packages/mesonbuild/compilers/compilers.py
+-rw-r--r--  0 root   root     5308 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/compilers/c_function_attributes.py
+-rw-r--r--  0 root   root    32213 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/c.py
+-rw-r--r--  0 root   root     7262 Nov  6 13:39 usr/lib/python3.11/site-packages/mesonbuild/compilers/asm.py
+-rw-r--r--  0 root   root     2420 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/compilers/__init__.py
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/
+-rw-r--r--  0 root   root     4258 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/xc16.py
+-rw-r--r--  0 root   root    18134 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/visualstudio.py
+-rw-r--r--  0 root   root     5010 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/ti.py
+-rw-r--r--  0 root   root     3709 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/pgi.py
+-rw-r--r--  0 root   root     4713 Oct 24 19:28 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/islinker.py
+-rw-r--r--  0 root   root     7012 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/intel.py
+-rw-r--r--  0 root   root    21272 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/gnu.py
+-rw-r--r--  0 root   root     4116 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/emscripten.py
+-rw-r--r--  0 root   root     4332 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/elbrus.py
+-rw-r--r--  0 root   root     4480 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/compcert.py
+-rw-r--r--  0 root   root    62378 Dec 23 16:10 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/clike.py
+-rw-r--r--  0 root   root     8162 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/clang.py
+-rw-r--r--  0 root   root     4452 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/ccrx.py
+-rw-r--r--  0 root   root     7235 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/arm.py
+-rw-r--r--  0 root   root        0 Apr 21  2022 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__init__.py
+-rw-r--r--  0 root   root     5478 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/xc16.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    25466 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/visualstudio.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6914 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/ti.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5432 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/pgi.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     8846 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/islinker.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     8573 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/intel.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    27689 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/gnu.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5794 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/emscripten.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7401 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/elbrus.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5722 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/compcert.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    75455 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/clike.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    10344 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/clang.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5614 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/ccrx.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9539 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/arm.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      182 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5478 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/xc16.cpython-311.pyc
+-rw-r--r--  0 root   root    25466 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/visualstudio.cpython-311.pyc
+-rw-r--r--  0 root   root     6914 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/ti.cpython-311.pyc
+-rw-r--r--  0 root   root     5432 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/pgi.cpython-311.pyc
+-rw-r--r--  0 root   root     8846 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/islinker.cpython-311.pyc
+-rw-r--r--  0 root   root     8573 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/intel.cpython-311.pyc
+-rw-r--r--  0 root   root    27699 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/gnu.cpython-311.pyc
+-rw-r--r--  0 root   root     5794 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/emscripten.cpython-311.pyc
+-rw-r--r--  0 root   root     7401 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/elbrus.cpython-311.pyc
+-rw-r--r--  0 root   root     5722 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/compcert.cpython-311.pyc
+-rw-r--r--  0 root   root    75455 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/clike.cpython-311.pyc
+-rw-r--r--  0 root   root    10344 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/clang.cpython-311.pyc
+-rw-r--r--  0 root   root     5614 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/ccrx.cpython-311.pyc
+-rw-r--r--  0 root   root     9539 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/arm.cpython-311.pyc
+-rw-r--r--  0 root   root      182 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/mixins/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root     9153 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/vala.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     8286 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/swift.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    11788 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/rust.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6554 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/objcpp.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6490 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/objc.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7553 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/java.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    29352 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/fortran.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    62782 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/detect.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    49743 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/d.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5313 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cython.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    39636 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cuda.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9118 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cs.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    48615 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cpp.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    75594 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/compilers.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4907 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/c_function_attributes.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    42023 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/c.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    14358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/asm.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1784 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9153 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/vala.cpython-311.pyc
+-rw-r--r--  0 root   root     8286 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/swift.cpython-311.pyc
+-rw-r--r--  0 root   root    11788 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/rust.cpython-311.pyc
+-rw-r--r--  0 root   root     6554 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/objcpp.cpython-311.pyc
+-rw-r--r--  0 root   root     6490 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/objc.cpython-311.pyc
+-rw-r--r--  0 root   root     7553 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/java.cpython-311.pyc
+-rw-r--r--  0 root   root    29352 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/fortran.cpython-311.pyc
+-rw-r--r--  0 root   root    62782 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/detect.cpython-311.pyc
+-rw-r--r--  0 root   root    49743 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/d.cpython-311.pyc
+-rw-r--r--  0 root   root     5313 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cython.cpython-311.pyc
+-rw-r--r--  0 root   root    39636 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cuda.cpython-311.pyc
+-rw-r--r--  0 root   root     9118 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cs.cpython-311.pyc
+-rw-r--r--  0 root   root    48615 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/cpp.cpython-311.pyc
+-rw-r--r--  0 root   root    75594 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/compilers.cpython-311.pyc
+-rw-r--r--  0 root   root     4907 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/c_function_attributes.cpython-311.pyc
+-rw-r--r--  0 root   root    42023 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/c.cpython-311.pyc
+-rw-r--r--  0 root   root    14358 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/asm.cpython-311.pyc
+-rw-r--r--  0 root   root     1784 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/compilers/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/
+-rw-r--r--  0 root   root    10275 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/ui.py
+-rw-r--r--  0 root   root     6063 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/dependencies/scalapack.py
+-rw-r--r--  0 root   root    19627 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/qt.py
+-rw-r--r--  0 root   root     2266 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/platform.py
+-rw-r--r--  0 root   root    23851 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/pkgconfig.py
+-rw-r--r--  0 root   root     8856 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/dependencies/mpi.py
+-rw-r--r--  0 root   root    29248 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/misc.py
+-rw-r--r--  0 root   root     7587 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/hdf5.py
+-rw-r--r--  0 root   root     5525 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/framework.py
+-rw-r--r--  0 root   root     7008 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/factory.py
+-rw-r--r--  0 root   root    17064 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/dub.py
+-rw-r--r--  0 root   root    28083 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/dependencies/dev.py
+-rw-r--r--  0 root   root     9640 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/detect.py
+-rw-r--r--  0 root   root    13339 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/cuda.py
+-rw-r--r--  0 root   root     7504 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/dependencies/configtool.py
+-rw-r--r--  0 root   root     3562 Nov  2  2021 usr/lib/python3.11/site-packages/mesonbuild/dependencies/coarrays.py
+-rw-r--r--  0 root   root    29418 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/cmake.py
+-rw-r--r--  0 root   root    39603 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/boost.py
+-rw-r--r--  0 root   root    27564 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/base.py
+-rw-r--r--  0 root   root    10044 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__init__.py
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/__pycache__/
+-rw-r--r--  0 root   root        0 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/__init__.py
+-rw-r--r--  0 root   root     1170 Aug 15  2020 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/CMakePathInfo.txt
+-rw-r--r--  0 root   root     2319 Jun  7  2022 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/CMakeListsLLVM.txt
+-rw-r--r--  0 root   root     2954 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/CMakeLists.txt
+-rw-r--r--  0 root   root      183 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      183 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/data/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root    14118 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/ui.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7954 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/scalapack.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    28595 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/qt.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2773 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/platform.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    26446 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/pkgconfig.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    12602 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/mpi.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    41129 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/misc.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9689 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/hdf5.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6106 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/framework.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     8022 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/factory.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    20305 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/dub.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    37309 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/dev.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    10823 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/detect.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    21647 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/cuda.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9552 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/configtool.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4015 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/coarrays.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    40270 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/cmake.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    49675 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/boost.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    38515 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/base.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4259 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    14118 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/ui.cpython-311.pyc
+-rw-r--r--  0 root   root     7954 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/scalapack.cpython-311.pyc
+-rw-r--r--  0 root   root    28595 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/qt.cpython-311.pyc
+-rw-r--r--  0 root   root     2773 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/platform.cpython-311.pyc
+-rw-r--r--  0 root   root    26446 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/pkgconfig.cpython-311.pyc
+-rw-r--r--  0 root   root    12602 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/mpi.cpython-311.pyc
+-rw-r--r--  0 root   root    41129 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/misc.cpython-311.pyc
+-rw-r--r--  0 root   root     9689 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/hdf5.cpython-311.pyc
+-rw-r--r--  0 root   root     6106 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/framework.cpython-311.pyc
+-rw-r--r--  0 root   root     8022 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/factory.cpython-311.pyc
+-rw-r--r--  0 root   root    20305 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/dub.cpython-311.pyc
+-rw-r--r--  0 root   root    37309 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/dev.cpython-311.pyc
+-rw-r--r--  0 root   root    10823 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/detect.cpython-311.pyc
+-rw-r--r--  0 root   root    21647 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/cuda.cpython-311.pyc
+-rw-r--r--  0 root   root     9552 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/configtool.cpython-311.pyc
+-rw-r--r--  0 root   root     4015 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/coarrays.cpython-311.pyc
+-rw-r--r--  0 root   root    40270 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/cmake.cpython-311.pyc
+-rw-r--r--  0 root   root    49675 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/boost.cpython-311.pyc
+-rw-r--r--  0 root   root    38515 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/base.cpython-311.pyc
+-rw-r--r--  0 root   root     4259 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/dependencies/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/
+-rw-r--r--  0 root   root    18007 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreter/type_checking.py
+-rw-r--r--  0 root   root    21907 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/mesonmain.py
+-rw-r--r--  0 root   root     7411 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreter/kwargs.py
+-rw-r--r--  0 root   root    42294 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreter/interpreterobjects.py
+-rw-r--r--  0 root   root   162643 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/interpreter/interpreter.py
+-rw-r--r--  0 root   root    19547 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/interpreter/dependencyfallbacks.py
+-rw-r--r--  0 root   root    37646 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreter/compiler.py
+-rw-r--r--  0 root   root     1810 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__init__.py
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/
+-rw-r--r--  0 root   root     8388 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/string.py
+-rw-r--r--  0 root   root     1028 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/range.py
+-rw-r--r--  0 root   root     2765 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/integer.py
+-rw-r--r--  0 root   root     2820 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/dict.py
+-rw-r--r--  0 root   root     1871 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/boolean.py
+-rw-r--r--  0 root   root     3769 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/array.py
+-rw-r--r--  0 root   root      743 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__init__.py
+-rw-r--r--  0 root   root    16432 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/string.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2463 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/range.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/integer.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5812 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/dict.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4390 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/boolean.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7244 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/array.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      902 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    16432 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/string.cpython-311.pyc
+-rw-r--r--  0 root   root     2463 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/range.cpython-311.pyc
+-rw-r--r--  0 root   root     5977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/integer.cpython-311.pyc
+-rw-r--r--  0 root   root     5812 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/dict.cpython-311.pyc
+-rw-r--r--  0 root   root     4390 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/boolean.cpython-311.pyc
+-rw-r--r--  0 root   root     7244 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/array.cpython-311.pyc
+-rw-r--r--  0 root   root      902 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/primitives/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root    25472 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/type_checking.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    31395 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/mesonmain.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    17753 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/kwargs.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    70604 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/interpreterobjects.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   208095 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/interpreter.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    23487 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/dependencyfallbacks.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    56031 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/compiler.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1245 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    25472 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/type_checking.cpython-311.pyc
+-rw-r--r--  0 root   root    31395 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/mesonmain.cpython-311.pyc
+-rw-r--r--  0 root   root    17753 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/kwargs.cpython-311.pyc
+-rw-r--r--  0 root   root    70604 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/interpreterobjects.cpython-311.pyc
+-rw-r--r--  0 root   root   208095 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/interpreter.cpython-311.pyc
+-rw-r--r--  0 root   root    23487 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/dependencyfallbacks.cpython-311.pyc
+-rw-r--r--  0 root   root    56031 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/compiler.cpython-311.pyc
+-rw-r--r--  0 root   root     1245 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreter/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/
+-rw-r--r--  0 root   root      554 Nov  2  2021 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/operator.py
+-rw-r--r--  0 root   root    28081 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/interpreterbase.py
+-rw-r--r--  0 root   root     2096 Nov  2  2021 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/helpers.py
+-rw-r--r--  0 root   root      935 Aug 18  2021 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/exceptions.py
+-rw-r--r--  0 root   root     1484 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/disabler.py
+-rw-r--r--  0 root   root    37518 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/decorators.py
+-rw-r--r--  0 root   root     8205 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/baseobjects.py
+-rw-r--r--  0 root   root     1569 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/_unholder.py
+-rw-r--r--  0 root   root     2896 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__init__.py
+-rw-r--r--  0 root   root      830 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/operator.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    41181 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/interpreterbase.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3980 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/helpers.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1420 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/exceptions.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1935 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/disabler.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    50705 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/decorators.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    12250 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/baseobjects.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1812 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/_unholder.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2464 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      830 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/operator.cpython-311.pyc
+-rw-r--r--  0 root   root    41181 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/interpreterbase.cpython-311.pyc
+-rw-r--r--  0 root   root     3980 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/helpers.cpython-311.pyc
+-rw-r--r--  0 root   root     1420 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/exceptions.cpython-311.pyc
+-rw-r--r--  0 root   root     1935 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/disabler.cpython-311.pyc
+-rw-r--r--  0 root   root    50705 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/decorators.cpython-311.pyc
+-rw-r--r--  0 root   root    12250 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/baseobjects.cpython-311.pyc
+-rw-r--r--  0 root   root     1812 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/_unholder.cpython-311.pyc
+-rw-r--r--  0 root   root     2464 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/interpreterbase/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/
+-rw-r--r--  0 root   root    55097 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/linkers/linkers.py
+-rw-r--r--  0 root   root    10540 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/linkers/detect.py
+-rw-r--r--  0 root   root     3121 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/linkers/__init__.py
+-rw-r--r--  0 root   root    98860 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/linkers.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    11853 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/detect.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2482 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    98860 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/linkers.cpython-311.pyc
+-rw-r--r--  0 root   root    11853 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/detect.cpython-311.pyc
+-rw-r--r--  0 root   root     2482 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/linkers/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/
+-rw-r--r--  0 root   root     9595 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/windows.py
+-rw-r--r--  0 root   root     6130 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/wayland.py
+-rw-r--r--  0 root   root    12100 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/sourceset.py
+-rw-r--r--  0 root   root     3615 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/simd.py
+-rw-r--r--  0 root   root     9416 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/rust.py
+-rw-r--r--  0 root   root      889 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/qt6.py
+-rw-r--r--  0 root   root      879 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/qt5.py
+-rw-r--r--  0 root   root      879 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/qt4.py
+-rw-r--r--  0 root   root    30067 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/modules/qt.py
+-rw-r--r--  0 root   root     3288 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/python3.py
+-rw-r--r--  0 root   root    34989 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/modules/python.py
+-rw-r--r--  0 root   root    37491 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/pkgconfig.py
+-rw-r--r--  0 root   root     1418 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/modtest.py
+-rw-r--r--  0 root   root     2575 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/keyval.py
+-rw-r--r--  0 root   root     4919 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/java.py
+-rw-r--r--  0 root   root     4577 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/icestorm.py
+-rw-r--r--  0 root   root    15313 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/i18n.py
+-rw-r--r--  0 root   root    18911 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/modules/hotdoc.py
+-rw-r--r--  0 root   root   103038 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/gnome.py
+-rw-r--r--  0 root   root    12634 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/fs.py
+-rw-r--r--  0 root   root    13544 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/modules/external_project.py
+-rw-r--r--  0 root   root     5096 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/dlang.py
+-rw-r--r--  0 root   root    18438 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/modules/cuda.py
+-rw-r--r--  0 root   root    17658 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/modules/cmake.py
+-rw-r--r--  0 root   root    10680 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/modules/__init__.py
+-rw-r--r--  0 root   root    12762 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/windows.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7979 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/wayland.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    17989 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/sourceset.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4282 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/simd.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    12675 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/rust.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      989 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt6.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt5.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt4.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    36355 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4234 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/python3.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    45453 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/python.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    46466 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/pkgconfig.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2120 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/modtest.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4231 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/keyval.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6425 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/java.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5893 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/icestorm.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    18562 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/i18n.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    31165 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/hotdoc.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   121795 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/gnome.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    20081 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/fs.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    20014 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/external_project.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7147 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/dlang.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    16085 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/cuda.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    27542 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/cmake.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    15462 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    12762 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/windows.cpython-311.pyc
+-rw-r--r--  0 root   root     7979 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/wayland.cpython-311.pyc
+-rw-r--r--  0 root   root    17989 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/sourceset.cpython-311.pyc
+-rw-r--r--  0 root   root     4282 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/simd.cpython-311.pyc
+-rw-r--r--  0 root   root    12675 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/rust.cpython-311.pyc
+-rw-r--r--  0 root   root      989 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt6.cpython-311.pyc
+-rw-r--r--  0 root   root      977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt5.cpython-311.pyc
+-rw-r--r--  0 root   root      977 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt4.cpython-311.pyc
+-rw-r--r--  0 root   root    36355 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/qt.cpython-311.pyc
+-rw-r--r--  0 root   root     4234 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/python3.cpython-311.pyc
+-rw-r--r--  0 root   root    45453 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/python.cpython-311.pyc
+-rw-r--r--  0 root   root    46466 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/pkgconfig.cpython-311.pyc
+-rw-r--r--  0 root   root     2120 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/modtest.cpython-311.pyc
+-rw-r--r--  0 root   root     4231 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/keyval.cpython-311.pyc
+-rw-r--r--  0 root   root     6425 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/java.cpython-311.pyc
+-rw-r--r--  0 root   root     5893 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/icestorm.cpython-311.pyc
+-rw-r--r--  0 root   root    18562 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/i18n.cpython-311.pyc
+-rw-r--r--  0 root   root    31165 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/hotdoc.cpython-311.pyc
+-rw-r--r--  0 root   root   121795 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/gnome.cpython-311.pyc
+-rw-r--r--  0 root   root    20081 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/fs.cpython-311.pyc
+-rw-r--r--  0 root   root    20014 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/external_project.cpython-311.pyc
+-rw-r--r--  0 root   root     7147 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/dlang.cpython-311.pyc
+-rw-r--r--  0 root   root    16085 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/cuda.cpython-311.pyc
+-rw-r--r--  0 root   root    27542 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/cmake.cpython-311.pyc
+-rw-r--r--  0 root   root    15462 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/modules/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/
+-rw-r--r--  0 root   root      568 Oct 24 19:28 usr/lib/python3.11/site-packages/mesonbuild/scripts/yasm.py
+-rw-r--r--  0 root   root     1702 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/vcstagger.py
+-rw-r--r--  0 root   root     1640 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/uninstall.py
+-rw-r--r--  0 root   root      306 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/scripts/test_loaded_modules.py
+-rw-r--r--  0 root   root     1708 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/scripts/tags.py
+-rw-r--r--  0 root   root    13011 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/scripts/symbolextractor.py
+-rw-r--r--  0 root   root     2432 Aug 18  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/scanbuild.py
+-rw-r--r--  0 root   root     2529 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/scripts/run_tool.py
+-rw-r--r--  0 root   root     2616 Apr 27  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/regen_checker.py
+-rw-r--r--  0 root   root     1406 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/msgfmthelper.py
+-rw-r--r--  0 root   root     4529 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/scripts/meson_exe.py
+-rw-r--r--  0 root   root     3059 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/itstool.py
+-rw-r--r--  0 root   root     1172 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/hotdochelper.py
+-rw-r--r--  0 root   root    11591 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/gtkdochelper.py
+-rw-r--r--  0 root   root     3922 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/gettext.py
+-rw-r--r--  0 root   root     4126 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/externalproject.py
+-rw-r--r--  0 root   root    14780 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/scripts/env2mfile.py
+-rw-r--r--  0 root   root      942 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/dirchanger.py
+-rw-r--r--  0 root   root     9654 Aug 13  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/depscan.py
+-rw-r--r--  0 root   root    20415 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/scripts/depfixer.py
+-rw-r--r--  0 root   root     1133 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/delwithsuffix.py
+-rw-r--r--  0 root   root    10006 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/scripts/coverage.py
+-rw-r--r--  0 root   root      379 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/copy.py
+-rw-r--r--  0 root   root     3236 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/scripts/cmake_run_ctgt.py
+-rw-r--r--  0 root   root     1473 Apr 27  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/cleantrees.py
+-rw-r--r--  0 root   root     1195 Dec 26  2021 usr/lib/python3.11/site-packages/mesonbuild/scripts/clangtidy.py
+-rw-r--r--  0 root   root     2185 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/scripts/clangformat.py
+-rw-r--r--  0 root   root      808 Jun 27  2022 usr/lib/python3.11/site-packages/mesonbuild/scripts/__init__.py
+-rw-r--r--  0 root   root      510 Oct  2 21:19 usr/lib/python3.11/site-packages/mesonbuild/scripts/cmd_or_ps.ps1
+-rw-r--r--  0 root   root     1354 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/yasm.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2868 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/vcstagger.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2274 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/uninstall.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      826 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/test_loaded_modules.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3446 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/tags.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    18443 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/symbolextractor.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3694 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/scanbuild.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4983 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/run_tool.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3578 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/regen_checker.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1791 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/msgfmthelper.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7036 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/meson_exe.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4366 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/itstool.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2362 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/hotdochelper.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    15391 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/gtkdochelper.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5858 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/gettext.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7474 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/externalproject.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    21093 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/env2mfile.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1008 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/dirchanger.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    11523 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/depscan.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    30940 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/depfixer.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1370 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/delwithsuffix.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     9892 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/coverage.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      795 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/copy.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4975 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/cmake_run_ctgt.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2019 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/cleantrees.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1499 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/clangtidy.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2893 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/clangformat.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      607 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1354 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/yasm.cpython-311.pyc
+-rw-r--r--  0 root   root     2868 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/vcstagger.cpython-311.pyc
+-rw-r--r--  0 root   root     2274 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/uninstall.cpython-311.pyc
+-rw-r--r--  0 root   root      826 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/test_loaded_modules.cpython-311.pyc
+-rw-r--r--  0 root   root     3446 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/tags.cpython-311.pyc
+-rw-r--r--  0 root   root    18443 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/symbolextractor.cpython-311.pyc
+-rw-r--r--  0 root   root     3694 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/scanbuild.cpython-311.pyc
+-rw-r--r--  0 root   root     4983 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/run_tool.cpython-311.pyc
+-rw-r--r--  0 root   root     3578 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/regen_checker.cpython-311.pyc
+-rw-r--r--  0 root   root     1791 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/msgfmthelper.cpython-311.pyc
+-rw-r--r--  0 root   root     7036 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/meson_exe.cpython-311.pyc
+-rw-r--r--  0 root   root     4366 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/itstool.cpython-311.pyc
+-rw-r--r--  0 root   root     2362 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/hotdochelper.cpython-311.pyc
+-rw-r--r--  0 root   root    15391 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/gtkdochelper.cpython-311.pyc
+-rw-r--r--  0 root   root     5858 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/gettext.cpython-311.pyc
+-rw-r--r--  0 root   root     7474 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/externalproject.cpython-311.pyc
+-rw-r--r--  0 root   root    21093 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/env2mfile.cpython-311.pyc
+-rw-r--r--  0 root   root     1008 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/dirchanger.cpython-311.pyc
+-rw-r--r--  0 root   root    11523 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/depscan.cpython-311.pyc
+-rw-r--r--  0 root   root    30940 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/depfixer.cpython-311.pyc
+-rw-r--r--  0 root   root     1370 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/delwithsuffix.cpython-311.pyc
+-rw-r--r--  0 root   root     9892 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/coverage.cpython-311.pyc
+-rw-r--r--  0 root   root      795 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/copy.cpython-311.pyc
+-rw-r--r--  0 root   root     4975 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/cmake_run_ctgt.cpython-311.pyc
+-rw-r--r--  0 root   root     2019 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/cleantrees.cpython-311.pyc
+-rw-r--r--  0 root   root     1499 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/clangtidy.cpython-311.pyc
+-rw-r--r--  0 root   root     2893 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/clangformat.cpython-311.pyc
+-rw-r--r--  0 root   root      607 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/scripts/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/
+-rw-r--r--  0 root   root     4273 Jun 19  2022 usr/lib/python3.11/site-packages/mesonbuild/templates/valatemplates.py
+-rw-r--r--  0 root   root      870 Apr  1  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/sampleimpl.py
+-rw-r--r--  0 root   root     1743 Dec 26  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/samplefactory.py
+-rw-r--r--  0 root   root     3967 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/rusttemplates.py
+-rw-r--r--  0 root   root     5255 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/objctemplates.py
+-rw-r--r--  0 root   root     5357 Nov  2  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/objcpptemplates.py
+-rw-r--r--  0 root   root     3492 Dec 26  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/mesontemplates.py
+-rw-r--r--  0 root   root     4583 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/javatemplates.py
+-rw-r--r--  0 root   root     4482 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/fortrantemplates.py
+-rw-r--r--  0 root   root     4621 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/dlangtemplates.py
+-rw-r--r--  0 root   root     5503 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/templates/cudatemplates.py
+-rw-r--r--  0 root   root     5190 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/ctemplates.py
+-rw-r--r--  0 root   root     4557 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/cstemplates.py
+-rw-r--r--  0 root   root     5495 Jul 20  2021 usr/lib/python3.11/site-packages/mesonbuild/templates/cpptemplates.py
+-rw-r--r--  0 root   root        0 Apr 21  2022 usr/lib/python3.11/site-packages/mesonbuild/templates/__init__.py
+-rw-r--r--  0 root   root     4840 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/valatemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      954 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/sampleimpl.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1818 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/samplefactory.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4542 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/rusttemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5919 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/objctemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6009 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/objcpptemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3462 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/mesontemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5344 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/javatemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5081 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/fortrantemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5233 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/dlangtemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cudatemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5875 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/ctemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5324 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cstemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     6122 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cpptemplates.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      175 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4840 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/valatemplates.cpython-311.pyc
+-rw-r--r--  0 root   root      954 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/sampleimpl.cpython-311.pyc
+-rw-r--r--  0 root   root     1818 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/samplefactory.cpython-311.pyc
+-rw-r--r--  0 root   root     4542 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/rusttemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5919 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/objctemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     6009 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/objcpptemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     3462 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/mesontemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5344 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/javatemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5081 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/fortrantemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5233 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/dlangtemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     6126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cudatemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5875 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/ctemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     5324 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cstemplates.cpython-311.pyc
+-rw-r--r--  0 root   root     6122 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/cpptemplates.cpython-311.pyc
+-rw-r--r--  0 root   root      175 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/templates/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/
+-rw-r--r--  0 root   root     1457 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/utils/win32.py
+-rw-r--r--  0 root   root     3906 Oct 25 16:35 usr/lib/python3.11/site-packages/mesonbuild/utils/vsenv.py
+-rw-r--r--  0 root   root    83227 Dec 16 18:51 usr/lib/python3.11/site-packages/mesonbuild/utils/universal.py
+-rw-r--r--  0 root   root     1436 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/utils/posix.py
+-rw-r--r--  0 root   root     1196 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/utils/platform.py
+-rw-r--r--  0 root   root     6103 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/utils/core.py
+-rw-r--r--  0 root   root        0 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/utils/__init__.py
+-rw-r--r--  0 root   root     1970 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/win32.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     5021 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/vsenv.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   119127 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/universal.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1878 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/posix.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1422 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/platform.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    10126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/core.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      171 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1970 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/win32.cpython-311.pyc
+-rw-r--r--  0 root   root     5021 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/vsenv.cpython-311.pyc
+-rw-r--r--  0 root   root   119127 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/universal.cpython-311.pyc
+-rw-r--r--  0 root   root     1878 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/posix.cpython-311.pyc
+-rw-r--r--  0 root   root     1422 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/platform.cpython-311.pyc
+-rw-r--r--  0 root   root    10126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/core.cpython-311.pyc
+-rw-r--r--  0 root   root      171 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/utils/__pycache__/__init__.cpython-311.pyc
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/
+-rw-r--r--  0 root   root    10148 Oct 24 19:25 usr/lib/python3.11/site-packages/mesonbuild/wrap/wraptool.py
+-rw-r--r--  0 root   root    37675 Dec 10 16:38 usr/lib/python3.11/site-packages/mesonbuild/wrap/wrap.py
+-rw-r--r--  0 root   root     2070 Apr 21  2022 usr/lib/python3.11/site-packages/mesonbuild/wrap/__init__.py
+-rw-r--r--  0 root   root    15640 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/wraptool.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    56669 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/wrap.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     1179 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    15640 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/wraptool.cpython-311.pyc
+-rw-r--r--  0 root   root    56669 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/wrap.cpython-311.pyc
+-rw-r--r--  0 root   root     1179 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/wrap/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root    66126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/rewriter.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    19800 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/programs.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    16119 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/optinterpreter.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     7146 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/munstable_coredata.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   134852 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mtest.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    48896 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/msubprojects.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    22796 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/msetup.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    58381 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mparser.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    24407 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mlog.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    42342 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mintro.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    49553 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/minstall.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    10847 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/minit.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    17130 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesonmain.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      557 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesonlib.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2473 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesondata.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    21993 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mdist.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    15408 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mdevenv.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    23996 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mconf.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    19219 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mcompile.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    44179 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/environment.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    21161 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/envconfig.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     3620 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/depfile.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    87474 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/coredata.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root   167855 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/build.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    16756 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/arglist.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     4643 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/_typing.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root     2489 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/_pathlib.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root      165 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/__init__.cpython-311.opt-1.pyc
+-rw-r--r--  0 root   root    66126 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/rewriter.cpython-311.pyc
+-rw-r--r--  0 root   root    19800 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/programs.cpython-311.pyc
+-rw-r--r--  0 root   root    16119 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/optinterpreter.cpython-311.pyc
+-rw-r--r--  0 root   root     7146 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/munstable_coredata.cpython-311.pyc
+-rw-r--r--  0 root   root   134852 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mtest.cpython-311.pyc
+-rw-r--r--  0 root   root    48896 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/msubprojects.cpython-311.pyc
+-rw-r--r--  0 root   root    22796 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/msetup.cpython-311.pyc
+-rw-r--r--  0 root   root    58381 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mparser.cpython-311.pyc
+-rw-r--r--  0 root   root    24407 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mlog.cpython-311.pyc
+-rw-r--r--  0 root   root    42342 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mintro.cpython-311.pyc
+-rw-r--r--  0 root   root    49553 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/minstall.cpython-311.pyc
+-rw-r--r--  0 root   root    10847 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/minit.cpython-311.pyc
+-rw-r--r--  0 root   root    17130 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesonmain.cpython-311.pyc
+-rw-r--r--  0 root   root      557 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesonlib.cpython-311.pyc
+-rw-r--r--  0 root   root     2473 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mesondata.cpython-311.pyc
+-rw-r--r--  0 root   root    21993 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mdist.cpython-311.pyc
+-rw-r--r--  0 root   root    15408 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mdevenv.cpython-311.pyc
+-rw-r--r--  0 root   root    23996 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mconf.cpython-311.pyc
+-rw-r--r--  0 root   root    19219 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/mcompile.cpython-311.pyc
+-rw-r--r--  0 root   root    44179 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/environment.cpython-311.pyc
+-rw-r--r--  0 root   root    21161 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/envconfig.cpython-311.pyc
+-rw-r--r--  0 root   root     3620 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/depfile.cpython-311.pyc
+-rw-r--r--  0 root   root    87474 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/coredata.cpython-311.pyc
+-rw-r--r--  0 root   root   167855 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/build.cpython-311.pyc
+-rw-r--r--  0 root   root    16756 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/arglist.cpython-311.pyc
+-rw-r--r--  0 root   root     4643 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/_typing.cpython-311.pyc
+-rw-r--r--  0 root   root     2489 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/_pathlib.cpython-311.pyc
+-rw-r--r--  0 root   root      165 Feb 21 21:24 usr/lib/python3.11/site-packages/mesonbuild/__pycache__/__init__.cpython-311.pyc
+-rw-r--r--  0 root   root     1443 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/PKG-INFO
+-rw-r--r--  0 root   root   209769 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/SOURCES.txt
+-rw-r--r--  0 root   root        1 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/dependency_links.txt
+-rw-r--r--  0 root   root       52 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/entry_points.txt
+-rw-r--r--  0 root   root      105 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/requires.txt
+-rw-r--r--  0 root   root       11 Feb 21 21:24 usr/lib/python3.11/site-packages/meson-1.0.0-py3.11.egg-info/top_level.txt
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/bash-completion/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/polkit-1/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/man/man1/
+-rw-r--r--  0 root   root     2085 Dec 10 16:47 usr/share/man/man1/meson.1.gz
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/polkit-1/actions/
+-rw-r--r--  0 root   root      896 Aug 15  2020 usr/share/polkit-1/actions/com.mesonbuild.install.policy
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/vimfiles/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/vimfiles/syntax/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/vimfiles/indent/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/vimfiles/ftplugin/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/vim/vimfiles/ftdetect/
+-rw-r--r--  0 root   root      161 Feb 21 21:24 usr/share/vim/vimfiles/ftdetect/meson.vim
+-rw-r--r--  0 root   root     1146 Feb 21 21:24 usr/share/vim/vimfiles/ftplugin/meson.vim
+-rw-r--r--  0 root   root     5319 Feb 21 21:24 usr/share/vim/vimfiles/indent/meson.vim
+-rw-r--r--  0 root   root     4058 Feb 21 21:24 usr/share/vim/vimfiles/syntax/meson.vim
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/share/bash-completion/completions/
+-rw-r--r--  0 root   root     9600 Feb 21 21:24 usr/share/bash-completion/completions/meson
+-rwxr-xr-x  0 root   root      612 Feb 21 21:24 usr/bin/build-meson
+-rwxr-xr-x  0 root   root      948 Feb 21 21:24 usr/bin/meson
+=======> Building '/home/devel/packages/meson#1.0.0-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling meson 1.0.0-1
+prt-get: /usr/bin/pkgadd -u meson#1.0.0-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 21:24:28 2023
+
