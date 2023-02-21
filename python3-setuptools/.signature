@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpfCagBf2mtuMBTiiuWT3byk6LcM9X4UzwnCBetIFMhxobYCoiy0emzasIexgtnLOglxSzdlovVEYZCv6jwm6hQU=
+SHA256 (Pkgfile) = 261ffa985611a6b84322361d0ec4deed0848c14e1fe8dbcf00ddb7b3f534f752
+SHA256 (.footprint) = e6fa1fc227bf57e0b01de3b4351c4ac8bbe0c7766092e7e8a89fb0a93df633da
+SHA256 (setuptools-66.1.1.tar.gz) = ac4008d396bc9cd983ea483cb7139c0240a07bbc74ffb6232fceffedc6cf03a8
