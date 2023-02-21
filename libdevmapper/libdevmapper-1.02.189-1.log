@@ -1,0 +1,1790 @@
+prt-get: updating /usr/ports/core-riscv64/libdevmapper
+prt-get: starting build Tue Feb 21 19:31:22 2023
+=======> Building '/home/devel/packages/libdevmapper#1.02.189-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/LVM2.2.03.18.tgz
++ build
++ cd LVM2.2.03.18
++ ./configure --prefix=/usr --exec-prefix= --datarootdir=/usr --with-udev-prefix= --mandir=/usr/share/man --disable-readline --disable-selinux --enable-pkgconfig --disable-static_link --enable-udev_sync --enable-udev_rules --with-user=root --with-group=root
+checking build system type... riscv64-unknown-linux-gnu
+checking host system type... riscv64-unknown-linux-gnu
+checking target system type... riscv64-unknown-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for gawk... gawk
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for ranlib... ranlib
+checking for readelf... readelf
+checking for ar... ar
+checking for cflow... no
+checking for cscope... no
+checking for chmod... /bin/chmod
+checking for wc... /usr/bin/wc
+checking for sort... /usr/bin/sort
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for vfork.h... no
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... yes
+checking for assert.h... yes
+checking for ctype.h... yes
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for libgen.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for paths.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdio.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for syslog.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for sys/wait.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/timerfd.h... yes
+checking for sys/vfs.h... yes
+checking for linux/magic.h... yes
+checking for linux/fiemap.h... yes
+checking for libaio.h... no
+checking for asm/byteorder.h... yes
+checking for linux/fs.h... yes
+checking for malloc.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for struct stat.st_rdev... yes
+checking for ptrdiff_t... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for ssize_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ffs... yes
+checking for ftruncate... yes
+checking for gethostname... yes
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for pselect... yes
+checking for realpath... yes
+checking for rmdir... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for uname... yes
+checking for ffs... yes
+checking for mallinfo2... yes
+checking for prlimit... yes
+checking for versionsort... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether closedir returns void... no
+checking for working chown... yes
+checking for fork... yes
+checking for vfork... yes
+checking for alarm... yes
+checking for getpagesize... (cached) yes
+checking for vprintf... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... yes
+checking for working mktime... yes
+checking for working mmap... yes
+checking for GNU libc compatible realloc... yes
+checking whether stat accepts an empty string... no
+checking for working strtod... yes
+checking whether to enable dependency tracking... yes
+checking whether to build silently... yes
+checking whether to use static linking... no
+checking whether gcc accepts -pie flag... yes
+checking whether gcc accepts -Wl,-z,relro,-z,now ld flags... yes
+checking file owner... root
+checking group owner... root
+checking device node uid... 0
+checking device node gid... 0
+checking device node mode... 0600
+checking when to create device nodes... on resume
+checking default for use_devicesfile... 0
+checking default name mangling... auto
+checking whether to include snapshots... internal
+checking whether to include mirrors... internal
+checking whether to include thin provisioning... internal
+checking for thin_check... no
+configure: WARNING: thin_check not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for thin_dump... no
+configure: WARNING: thin_dump not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for thin_repair... no
+configure: WARNING: thin_repair not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for thin_restore... no
+configure: WARNING: thin_restore not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking whether thin_check supports the needs-check flag... yes
+checking whether to include cache... internal
+checking for cache_check... no
+configure: WARNING: cache_check not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for cache_dump... no
+configure: WARNING: cache_dump not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for cache_repair... no
+configure: WARNING: cache_repair not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking for cache_restore... no
+configure: WARNING: cache_restore not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking whether cache_check supports the needs-check flag... yes
+checking whether to include vdo... internal
+checking for vdoformat... no
+configure: WARNING: vdoformat not found in path /sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin
+checking whether to include writecache... internal
+checking whether to include integrity... internal
+checking whether to enable realtime support... yes
+checking whether to enable OCF resource agents... no
+checking for default run directory... /run
+checking whether to build cluster mirror log daemon... no
+checking whether to enable debugging... no
+checking whether gcc accepts -Wjump-misses-init flag... yes
+checking whether gcc accepts -Wclobbered flag... yes
+checking whether gcc accepts -Wsync-nand flag... yes
+checking for C optimisation flag... 
+checking whether to use symbol versioning... gnu
+checking whether to gather gcov profiling data... no
+checking whether to enable valgrind awareness of pools... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for PKGCONFIGINIT... no
+pkg-config initialized
+checking for VALGRIND... no
+checking whether to use device-mapper... yes
+checking whether to build lvmpolld... no
+checking whether to build lvmlockdsanlock... no
+checking whether to build lvmlockddlm... no
+checking whether to build lvmlockddlmcontrol... no
+checking whether to build lvmlockdidm... no
+checking whether to build lvmlockd... no
+checking whether to build dmfilemapd... no
+checking whether to build notifydbus... no
+checking for systemd/sd-journal.h... no
+checking whether to log to systemd journal... no
+checking for systemd/sd-id128.h... no
+checking whether to support systemd appmachineid... no
+checking for BLKID... yes
+checking whether to enable libblkid detection of signatures when wiping... yes
+checking whether to use udev-systemd protocol for jobs in background... no
+checking whether to enable synchronisation with udev processing... yes
+checking for UDEV... yes
+checking for udev_device_get_is_initialized in -ludev... yes
+checking whether to enable installation of udev rules required for synchronisation... yes
+checking whether to enable executable path detection in udev rules... no
+checking whether udev supports built-in blkid... yes
+checking whether to enable O_DIRECT... yes
+checking whether to compile liblvm2cmd.so... no
+checking whether to include Python D-Bus support... no
+checking whether to install fsadm... yes
+checking whether to install lvm_import_vdo... yes
+checking whether to install blkdeactivate... yes
+checking whether to use dmeventd... no
+checking for getline in -lc... yes
+checking for canonicalize_file_name in -lc... yes
+checking for dlopen in -ldl... yes
+checking for log10 in -lm... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking whether to enable selinux support... no
+checking for BLKZEROOUT in sys/ioctl.h.... yes
+checking whether to use BLKZEROOUT for device zeroing... yes
+checking for clock_gettime... yes
+checking for struct stat has st_ctim.... yes
+checking for getopt.h... (cached) yes
+./configure: 14303: test: no: unexpected operator
+checking whether to enable internationalisation... no
+checking whether to enable readline... no
+checking whether to enable editline... no
+checking for dlfcn.h... yes
+checking for sys/ipc.h... yes
+checking for sys/sem.h... yes
+checking for modprobe... /sbin/modprobe
+checking for default lock directory... /run/lock/lvm
+checking for kernel interface choice... ioctl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating make.tmpl
+config.status: creating libdm/make.tmpl
+config.status: creating daemons/Makefile
+config.status: creating daemons/cmirrord/Makefile
+config.status: creating daemons/dmeventd/Makefile
+config.status: creating daemons/dmeventd/libdevmapper-event.pc
+config.status: creating daemons/dmeventd/plugins/Makefile
+config.status: creating daemons/dmeventd/plugins/lvm2/Makefile
+config.status: creating daemons/dmeventd/plugins/raid/Makefile
+config.status: creating daemons/dmeventd/plugins/mirror/Makefile
+config.status: creating daemons/dmeventd/plugins/snapshot/Makefile
+config.status: creating daemons/dmeventd/plugins/thin/Makefile
+config.status: creating daemons/dmeventd/plugins/vdo/Makefile
+config.status: creating daemons/lvmdbusd/Makefile
+config.status: creating daemons/lvmdbusd/lvmdbusd
+config.status: creating daemons/lvmdbusd/lvmdb.py
+config.status: creating daemons/lvmdbusd/lvm_shell_proxy.py
+config.status: creating daemons/lvmdbusd/path.py
+config.status: creating daemons/lvmpolld/Makefile
+config.status: creating daemons/lvmlockd/Makefile
+config.status: creating conf/Makefile
+config.status: creating conf/example.conf
+config.status: creating conf/lvmlocal.conf
+config.status: creating conf/command_profile_template.profile
+config.status: creating conf/metadata_profile_template.profile
+config.status: creating include/Makefile
+config.status: creating lib/Makefile
+config.status: creating include/lvm-version.h
+config.status: creating libdaemon/Makefile
+config.status: creating libdaemon/client/Makefile
+config.status: creating libdaemon/server/Makefile
+config.status: creating libdm/Makefile
+config.status: creating libdm/dm-tools/Makefile
+config.status: creating libdm/libdevmapper.pc
+config.status: creating man/Makefile
+config.status: creating po/Makefile
+config.status: creating scripts/lvm2-pvscan.service
+config.status: creating scripts/blkdeactivate.sh
+config.status: creating scripts/blk_availability_init_red_hat
+config.status: creating scripts/blk_availability_systemd_red_hat.service
+config.status: creating scripts/cmirrord_init_red_hat
+config.status: creating scripts/com.redhat.lvmdbus1.service
+config.status: creating scripts/dm_event_systemd_red_hat.service
+config.status: creating scripts/dm_event_systemd_red_hat.socket
+config.status: creating scripts/lvm2_cmirrord_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmdbusd_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_init_red_hat
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.socket
+config.status: creating scripts/lvmlockd.service
+config.status: creating scripts/lvmlocks.service
+config.status: creating scripts/lvm2_monitoring_init_red_hat
+config.status: creating scripts/lvm2_monitoring_systemd_red_hat.service
+config.status: creating scripts/lvm2_tmpfiles_red_hat.conf
+config.status: creating scripts/lvmdump.sh
+config.status: creating scripts/Makefile
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating udev/Makefile
+config.status: creating include/configure.h
+configure: WARNING: Support for thin provisioning is limited since some thin provisioning tools are missing!
+configure: WARNING: Support for cache is limited since some cache tools are missing!
+configure: WARNING: Unrecognized 'vdoformat' tool is REQUIRED for VDO logical volume creation!
+configure: WARNING: Only libdm part can be build without libaio:  make [install_]device-mapper
++ make V=1 device-mapper
+/usr/bin/make -C libdm device-mapper
+/usr/bin/make -C man device-mapper
+make[1]: Entering directory '/home/devel/building/work/src/LVM2.2.03.18/libdm'
+make[1]: Entering directory '/home/devel/building/work/src/LVM2.2.03.18/man'
+    [CC] bitset.c
+    [CC] list.c
+    [CC] hash.c
+    [CC] libdm-common.c
+    [CC] libdm-config.c
+    [CC] libdm-file.c
+    [CC] libdm-deptree.c
+gcc -MT datastruct/bitset.o -MMD -MP -MF datastruct/bitset.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  datastruct/bitset.c -o datastruct/bitset.o
+gcc -MT libdm-common.o -MMD -MP -MF libdm-common.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-common.c -o libdm-common.o
+gcc -MT datastruct/list.o -MMD -MP -MF datastruct/list.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  datastruct/list.c -o datastruct/list.o
+gcc -MT libdm-config.o -MMD -MP -MF libdm-config.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-config.c -o libdm-config.o
+gcc -MT libdm-file.o -MMD -MP -MF libdm-file.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-file.c -o libdm-file.o
+gcc -MT datastruct/hash.o -MMD -MP -MF datastruct/hash.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  datastruct/hash.c -o datastruct/hash.o
+gcc -MT libdm-deptree.o -MMD -MP -MF libdm-deptree.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-deptree.c -o libdm-deptree.o
+    [MAN] dmsetup.8
+/bin/sed -e "s+#VERSION#+2.03.18(2)-git (2022-11-10)+" -e "s+#DEFAULT_SYS_DIR#+/etc/lvm+" -e "s+#DEFAULT_ARCHIVE_DIR#+/etc/lvm/archive+" -e "s+#DEFAULT_BACKUP_DIR#+/etc/lvm/backup+" -e "s+#DEFAULT_PROFILE_DIR#+/etc/lvm/profile+" -e "s+#DEFAULT_CACHE_DIR#+/etc/lvm/cache+" -e "s+#DEFAULT_LOCK_DIR#+/run/lock/lvm+" -e "s+#LVM_PATH#+/bin/lvm+" -e "s+#DEFAULT_RUN_DIR#+/run/lvm+" -e "s+#DEFAULT_PID_DIR#+/run+" -e "s+#SYSTEMD_GENERATOR_DIR#+/lib/systemd/system-generators+" -e "s+#DEFAULT_LIBLINE#+readline+" -e "s+#DEFAULT_MANGLING#+auto+" dmsetup.8_main > dmsetup.8
+/bin/sed -i -e "/^.TH/ !s+-+\\\-+g" -e "s+\\\[\]-+\\\-+g" -e "s+\(^\|[^[:alnum:]\-]\)\([[:alpha:]]\{1,\}\)\\\-\((\|[([:alpha:]]\{2,\}\)+\1\2-\3+g" -e "s+\([[:alpha:]]\)-\(pool\)+\1\\\-\2+g" -e "s+[\][[]\(<\{0,1\}\)\\\-+\\\[\1-+g" -e "s+\(vg.\{1,\}[^\]\)-lv+\1\\\-lv+g" -e "s+systemd-machine+systemd\\\-machine+g" -e "s+machine-id+machine\\\-id+g" -e "s+lvm-full+lvm\\\-full+g" -e "s+lvm-lvpoll+lvm\\\-lvpoll+g" -e "s+\([[:digit:]]\)\s\([KMGTPE]iB\)+\1\\\ \2+g" dmsetup.8
+    [MAN] dmstats.8
+/bin/sed -e "s+#VERSION#+2.03.18(2)-git (2022-11-10)+" -e "s+#DEFAULT_SYS_DIR#+/etc/lvm+" -e "s+#DEFAULT_ARCHIVE_DIR#+/etc/lvm/archive+" -e "s+#DEFAULT_BACKUP_DIR#+/etc/lvm/backup+" -e "s+#DEFAULT_PROFILE_DIR#+/etc/lvm/profile+" -e "s+#DEFAULT_CACHE_DIR#+/etc/lvm/cache+" -e "s+#DEFAULT_LOCK_DIR#+/run/lock/lvm+" -e "s+#LVM_PATH#+/bin/lvm+" -e "s+#DEFAULT_RUN_DIR#+/run/lvm+" -e "s+#DEFAULT_PID_DIR#+/run+" -e "s+#SYSTEMD_GENERATOR_DIR#+/lib/systemd/system-generators+" -e "s+#DEFAULT_LIBLINE#+readline+" -e "s+#DEFAULT_MANGLING#+auto+" dmstats.8_main > dmstats.8
+/bin/sed -i -e "/^.TH/ !s+-+\\\-+g" -e "s+\\\[\]-+\\\-+g" -e "s+\(^\|[^[:alnum:]\-]\)\([[:alpha:]]\{1,\}\)\\\-\((\|[([:alpha:]]\{2,\}\)+\1\2-\3+g" -e "s+\([[:alpha:]]\)-\(pool\)+\1\\\-\2+g" -e "s+[\][[]\(<\{0,1\}\)\\\-+\\\[\1-+g" -e "s+\(vg.\{1,\}[^\]\)-lv+\1\\\-lv+g" -e "s+systemd-machine+systemd\\\-machine+g" -e "s+machine-id+machine\\\-id+g" -e "s+lvm-full+lvm\\\-full+g" -e "s+lvm-lvpoll+lvm\\\-lvpoll+g" -e "s+\([[:digit:]]\)\s\([KMGTPE]iB\)+\1\\\ \2+g" dmstats.8
+    [MAN] blkdeactivate.8
+/bin/sed -e "s+#VERSION#+2.03.18(2)-git (2022-11-10)+" -e "s+#DEFAULT_SYS_DIR#+/etc/lvm+" -e "s+#DEFAULT_ARCHIVE_DIR#+/etc/lvm/archive+" -e "s+#DEFAULT_BACKUP_DIR#+/etc/lvm/backup+" -e "s+#DEFAULT_PROFILE_DIR#+/etc/lvm/profile+" -e "s+#DEFAULT_CACHE_DIR#+/etc/lvm/cache+" -e "s+#DEFAULT_LOCK_DIR#+/run/lock/lvm+" -e "s+#LVM_PATH#+/bin/lvm+" -e "s+#DEFAULT_RUN_DIR#+/run/lvm+" -e "s+#DEFAULT_PID_DIR#+/run+" -e "s+#SYSTEMD_GENERATOR_DIR#+/lib/systemd/system-generators+" -e "s+#DEFAULT_LIBLINE#+readline+" -e "s+#DEFAULT_MANGLING#+auto+" blkdeactivate.8_main > blkdeactivate.8
+In file included from ../libdm/misc/dmlib.h:97,
+                 from libdm-deptree.c:15:
+libdm-deptree.c: In function '_nodes_are_linked':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:393:9: note: in expansion of macro 'dm_list_iterate_items'
+  393 |         dm_list_iterate_items(dlink, &parent->uses)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/bin/sed -i -e "/^.TH/ !s+-+\\\-+g" -e "s+\\\[\]-+\\\-+g" -e "s+\(^\|[^[:alnum:]\-]\)\([[:alpha:]]\{1,\}\)\\\-\((\|[([:alpha:]]\{2,\}\)+\1\2-\3+g" -e "s+\([[:alpha:]]\)-\(pool\)+\1\\\-\2+g" -e "s+[\][[]\(<\{0,1\}\)\\\-+\\\[\1-+g" -e "s+\(vg.\{1,\}[^\]\)-lv+\1\\\-lv+g" -e "s+systemd-machine+systemd\\\-machine+g" -e "s+machine-id+machine\\\-id+g" -e "s+lvm-full+lvm\\\-full+g" -e "s+lvm-lvpoll+lvm\\\-lvpoll+g" -e "s+\([[:digit:]]\)\s\([KMGTPE]iB\)+\1\\\ \2+g" blkdeactivate.8
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:393:9: note: in expansion of macro 'dm_list_iterate_items'
+  393 |         dm_list_iterate_items(dlink, &parent->uses)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c: In function '_unlink':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:434:9: note: in expansion of macro 'dm_list_iterate_items'
+  434 |         dm_list_iterate_items(dlink, list)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:434:9: note: in expansion of macro 'dm_list_iterate_items'
+  434 |         dm_list_iterate_items(dlink, list)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c: In function '_children_suspended':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:727:9: note: in expansion of macro 'dm_list_iterate_items'
+  727 |         dm_list_iterate_items(dlink, list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:727:9: note: in expansion of macro 'dm_list_iterate_items'
+  727 |         dm_list_iterate_items(dlink, list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c: In function 'dm_tree_next_child':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:797:27: note: in expansion of macro 'dm_list_item'
+  797 |         return (*dlink) ? dm_list_item(*dlink, struct dm_tree_link)->node : NULL;
+      |                           ^~~~~~~~~~~~
+libdm-deptree.c: In function '_node_has_closed_parents':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:946:9: note: in expansion of macro 'dm_list_iterate_items'
+  946 |         dm_list_iterate_items(dlink, &node->used_by) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:946:9: note: in expansion of macro 'dm_list_iterate_items'
+  946 |         dm_list_iterate_items(dlink, &node->used_by) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../libdm/misc/dmlib.h:97,
+                 from libdm-common.c:16:
+libdm-common.c: In function '_stack_node_op':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-common.c:1521:31: note: in expansion of macro 'dm_list_item'
+ 1521 |                         nop = dm_list_item(noph, struct node_op_parms);
+      |                               ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-common.c:1535:31: note: in expansion of macro 'dm_list_item'
+ 1535 |                         nop = dm_list_item(noph, struct node_op_parms);
+      |                               ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-common.c:1553:31: note: in expansion of macro 'dm_list_item'
+ 1553 |                         nop = dm_list_item(noph, struct node_op_parms);
+      |                               ^~~~~~~~~~~~
+libdm-common.c: In function '_pop_node_ops':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-common.c:1604:23: note: in expansion of macro 'dm_list_item'
+ 1604 |                 nop = dm_list_item(noph, struct node_op_parms);
+      |                       ^~~~~~~~~~~~
+    [MAN] dmeventd.8
+/bin/sed -e "s+#VERSION#+2.03.18(2)-git (2022-11-10)+" -e "s+#DEFAULT_SYS_DIR#+/etc/lvm+" -e "s+#DEFAULT_ARCHIVE_DIR#+/etc/lvm/archive+" -e "s+#DEFAULT_BACKUP_DIR#+/etc/lvm/backup+" -e "s+#DEFAULT_PROFILE_DIR#+/etc/lvm/profile+" -e "s+#DEFAULT_CACHE_DIR#+/etc/lvm/cache+" -e "s+#DEFAULT_LOCK_DIR#+/run/lock/lvm+" -e "s+#LVM_PATH#+/bin/lvm+" -e "s+#DEFAULT_RUN_DIR#+/run/lvm+" -e "s+#DEFAULT_PID_DIR#+/run+" -e "s+#SYSTEMD_GENERATOR_DIR#+/lib/systemd/system-generators+" -e "s+#DEFAULT_LIBLINE#+readline+" -e "s+#DEFAULT_MANGLING#+auto+" dmeventd.8_main > dmeventd.8
+libdm-deptree.c: In function '_get_last_load_segment':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:1536:16: note: in expansion of macro 'dm_list_item'
+ 1536 |         return dm_list_item(dm_list_last(&node->props.segs), struct load_segment);
+      |                ^~~~~~~~~~~~
+libdm-deptree.c: In function '_node_send_messages':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:1600:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1600 |         dm_list_iterate_items(tmsg, &seg->thin_messages) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:1600:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1600 |         dm_list_iterate_items(tmsg, &seg->thin_messages) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c: In function '_emit_areas_line':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:2070:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2070 |         dm_list_iterate_items(area, &seg->areas) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:2070:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2070 |         dm_list_iterate_items(area, &seg->areas) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/bin/sed -i -e "/^.TH/ !s+-+\\\-+g" -e "s+\\\[\]-+\\\-+g" -e "s+\(^\|[^[:alnum:]\-]\)\([[:alpha:]]\{1,\}\)\\\-\((\|[([:alpha:]]\{2,\}\)+\1\2-\3+g" -e "s+\([[:alpha:]]\)-\(pool\)+\1\\\-\2+g" -e "s+[\][[]\(<\{0,1\}\)\\\-+\\\[\1-+g" -e "s+\(vg.\{1,\}[^\]\)-lv+\1\\\-lv+g" -e "s+systemd-machine+systemd\\\-machine+g" -e "s+machine-id+machine\\\-id+g" -e "s+lvm-full+lvm\\\-full+g" -e "s+lvm-lvpoll+lvm\\\-lvpoll+g" -e "s+\([[:digit:]]\)\s\([KMGTPE]iB\)+\1\\\ \2+g" dmeventd.8
+libdm-deptree.c: In function '_target_version':
+libdm-deptree.c:2277:53: warning: cast increases required alignment of target type [-Wcast-align]
+ 2277 |                      last_target = target, target = (struct dm_versions *)((char *) target + target->next))
+      |                                                     ^
+    [MAN] dmfilemapd.8
+/bin/sed -e "s+#VERSION#+2.03.18(2)-git (2022-11-10)+" -e "s+#DEFAULT_SYS_DIR#+/etc/lvm+" -e "s+#DEFAULT_ARCHIVE_DIR#+/etc/lvm/archive+" -e "s+#DEFAULT_BACKUP_DIR#+/etc/lvm/backup+" -e "s+#DEFAULT_PROFILE_DIR#+/etc/lvm/profile+" -e "s+#DEFAULT_CACHE_DIR#+/etc/lvm/cache+" -e "s+#DEFAULT_LOCK_DIR#+/run/lock/lvm+" -e "s+#LVM_PATH#+/bin/lvm+" -e "s+#DEFAULT_RUN_DIR#+/run/lvm+" -e "s+#DEFAULT_PID_DIR#+/run+" -e "s+#SYSTEMD_GENERATOR_DIR#+/lib/systemd/system-generators+" -e "s+#DEFAULT_LIBLINE#+readline+" -e "s+#DEFAULT_MANGLING#+auto+" dmfilemapd.8_main > dmfilemapd.8
+libdm-deptree.c: In function '_load_node':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:2731:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2731 |         dm_list_iterate_items(seg, &dnode->props.segs)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:2731:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2731 |         dm_list_iterate_items(seg, &dnode->props.segs)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/bin/sed -i -e "/^.TH/ !s+-+\\\-+g" -e "s+\\\[\]-+\\\-+g" -e "s+\(^\|[^[:alnum:]\-]\)\([[:alpha:]]\{1,\}\)\\\-\((\|[([:alpha:]]\{2,\}\)+\1\2-\3+g" -e "s+\([[:alpha:]]\)-\(pool\)+\1\\\-\2+g" -e "s+[\][[]\(<\{0,1\}\)\\\-+\\\[\1-+g" -e "s+\(vg.\{1,\}[^\]\)-lv+\1\\\-lv+g" -e "s+systemd-machine+systemd\\\-machine+g" -e "s+machine-id+machine\\\-id+g" -e "s+lvm-full+lvm\\\-full+g" -e "s+lvm-lvpoll+lvm\\\-lvpoll+g" -e "s+\([[:digit:]]\)\s\([KMGTPE]iB\)+\1\\\ \2+g" dmfilemapd.8
+libdm-deptree.c: In function 'dm_tree_node_add_thin_pool_target_v1':
+make[1]: Leaving directory '/home/devel/building/work/src/LVM2.2.03.18/man'
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:3540:17: note: in expansion of macro 'dm_list_iterate_items'
+ 3540 |                 dm_list_iterate_items(mseg, &seg->metadata->props.segs) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-deptree.c:3540:17: note: in expansion of macro 'dm_list_iterate_items'
+ 3540 |                 dm_list_iterate_items(mseg, &seg->metadata->props.segs) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+    [CC] libdm-report.c
+gcc -MT libdm-report.o -MMD -MP -MF libdm-report.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-report.c -o libdm-report.o
+    [CC] libdm-stats.c
+gcc -MT libdm-stats.o -MMD -MP -MF libdm-stats.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-stats.c -o libdm-stats.o
+libdm-report.c: In function '_report_field_string_list':
+libdm-report.c:536:32: warning: cast increases required alignment of target type [-Wcast-align]
+  536 |                 repstr_extra = (struct pos_len *) (repstr + repstr_str_len + 1);
+      |                                ^
+In file included from ../libdm/misc/dmlib.h:97,
+                 from libdm-report.c:16:
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:556:9: note: in expansion of macro 'dm_list_iterate_items'
+  556 |         dm_list_iterate_items(sl, data) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:556:9: note: in expansion of macro 'dm_list_iterate_items'
+  556 |         dm_list_iterate_items(sl, data) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:585:24: warning: cast increases required alignment of target type [-Wcast-align]
+  585 |         repstr_extra = (struct pos_len *) (repstr + repstr_str_len + 1);
+      |                        ^
+libdm-report.c: In function '_add_sort_key':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1115:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1115 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1115:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1115 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_help_requested':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1277:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1277 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1277:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1277 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_cmp_field_string_list_strict_all':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:1767:36: note: in expansion of macro 'dm_list_item'
+ 1767 |                         sel_item = dm_list_item(dm_list_first(&sel->str_list.list), struct dm_str_list);
+      |                                    ^~~~~~~~~~~~
+    [CC] libdm-string.c
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1778:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1778 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1778:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1778 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+gcc -MT libdm-string.o -MMD -MP -MF libdm-string.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-string.c -o libdm-string.o
+libdm-report.c: In function '_cmp_field_string_list_subset_all':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:1800:36: note: in expansion of macro 'dm_list_item'
+ 1800 |                         sel_item = dm_list_item(dm_list_first(&sel->str_list.list), struct dm_str_list);
+      |                                    ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1807:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1807 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1807:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1807 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_cmp_field_string_list_any':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1832:17: note: in expansion of macro 'dm_list_iterate_items'
+ 1832 |                 dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1832:17: note: in expansion of macro 'dm_list_iterate_items'
+ 1832 |                 dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1839:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1839 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1839:9: note: in expansion of macro 'dm_list_iterate_items'
+ 1839 |         dm_list_iterate_items(sel_item, &sel->str_list.list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_check_selection':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1958:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1958 |                         dm_list_iterate_items(f, fields) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1958:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1958 |                         dm_list_iterate_items(f, fields) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1967:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1967 |                         dm_list_iterate_items(iter_n, &sn->selection.set)
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1967:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1967 |                         dm_list_iterate_items(iter_n, &sn->selection.set)
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1973:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1973 |                         dm_list_iterate_items(iter_n, &sn->selection.set)
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:1973:25: note: in expansion of macro 'dm_list_iterate_items'
+ 1973 |                         dm_list_iterate_items(iter_n, &sn->selection.set)
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_do_report_object':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2039:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2039 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2039:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2039 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_do_report_compact_fields':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2149:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2149 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2149:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2149 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2164:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2164 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2164:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2164 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2165:17: note: in expansion of macro 'dm_list_iterate_items'
+ 2165 |                 dm_list_iterate_items(field, &row->fields) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2165:17: note: in expansion of macro 'dm_list_iterate_items'
+ 2165 |                 dm_list_iterate_items(field, &row->fields) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_field_to_compact_match':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2193:17: note: in expansion of macro 'dm_list_iterate_items'
+ 2193 |                 dm_list_iterate_items(fp, &rh->field_props) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2193:17: note: in expansion of macro 'dm_list_iterate_items'
+ 2193 |                 dm_list_iterate_items(fp, &rh->field_props) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_tok_value_string_list':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2816:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2816 |         dm_list_iterate_items(item, &ssl->str_list.list)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:2816:9: note: in expansion of macro 'dm_list_iterate_items'
+ 2816 |         dm_list_iterate_items(item, &ssl->str_list.list)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_create_field_selection':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:3529:9: note: in expansion of macro 'dm_list_iterate_items'
+ 3529 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+    [CC] libdm-targets.c
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:3529:9: note: in expansion of macro 'dm_list_iterate_items'
+ 3529 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+gcc -MT libdm-targets.o -MMD -MP -MF libdm-targets.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-targets.c -o libdm-targets.o
+libdm-report.c: In function '_reset_field_props':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4148:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4148 |         dm_list_iterate_items(fp, &rh->field_props)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4148:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4148 |         dm_list_iterate_items(fp, &rh->field_props)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function 'dm_report_set_selection':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4162:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4162 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4162:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4162 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_report_headings':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4246:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4246 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4246:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4246 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4259:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4259 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4259:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4259 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_recalculate_fields':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4318:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4318 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4318:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4318 |         dm_list_iterate_items(row, &rh->rows) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4319:17: note: in expansion of macro 'dm_list_iterate_items'
+ 4319 |                 dm_list_iterate_items(field, &row->fields) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4319:17: note: in expansion of macro 'dm_list_iterate_items'
+ 4319 |                 dm_list_iterate_items(field, &row->fields) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_sort_rows':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4411:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4411 |         dm_list_iterate_items(row, &rh->rows)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4411:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4411 |         dm_list_iterate_items(row, &rh->rows)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../libdm/misc/dmlib.h:97,
+                 from libdm-stats.c:18:
+libdm-stats.c: In function '_stats_group_check_overlap':
+libdm-report.c: In function '_output_field_json_fmt':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2554:18: note: in expansion of macro 'dm_list_struct_base'
+ 2554 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field), \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-stats.c:3955:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 3955 |         dm_list_iterate_items_safe(ext, tmp, &ext_list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4646:35: warning: cast increases required alignment of target type [-Wcast-align]
+ 4646 |                         pos_len = (struct pos_len *) (field->report_string +
+      |                                   ^
+    [CC] libdm-timestamp.c
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2555:18: note: in expansion of macro 'dm_list_struct_base'
+ 2555 |              t = dm_list_struct_base(v->field.n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-stats.c:3955:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 3955 |         dm_list_iterate_items_safe(ext, tmp, &ext_list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function '_output_as_rows':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4743:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4743 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2557:25: note: in expansion of macro 'dm_list_struct_base'
+ 2557 |              v = t, t = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                         ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-stats.c:3955:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 3955 |         dm_list_iterate_items_safe(ext, tmp, &ext_list) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -MT libdm-timestamp.o -MMD -MP -MF libdm-timestamp.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  libdm-timestamp.c -o libdm-timestamp.o
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-stats.c:3956:24: note: in expansion of macro 'dm_list_item'
+ 3956 |                 next = dm_list_item(dm_list_next(&ext_list, &ext->list),
+      |                        ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4743:9: note: in expansion of macro 'dm_list_iterate_items'
+ 4743 |         dm_list_iterate_items(fp, &rh->field_props) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4745:25: note: in expansion of macro 'dm_list_iterate_items'
+ 4745 |                         dm_list_iterate_items(row, &rh->rows) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4745:25: note: in expansion of macro 'dm_list_iterate_items'
+ 4745 |                         dm_list_iterate_items(row, &rh->rows) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:4746:41: note: in expansion of macro 'dm_list_item'
+ 4746 |                                 field = dm_list_item(dm_list_first(&row->fields), struct dm_report_field);
+      |                                         ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4770:17: note: in expansion of macro 'dm_list_iterate_items'
+ 4770 |                 dm_list_iterate_items(row, &rh->rows) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:4770:17: note: in expansion of macro 'dm_list_iterate_items'
+ 4770 |                 dm_list_iterate_items(row, &rh->rows) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:4771:38: note: in expansion of macro 'dm_list_item'
+ 4771 |                         if ((field = dm_list_item(dm_list_first(&row->fields), struct dm_report_field))) {
+      |                                      ^~~~~~~~~~~~
+libdm-report.c: In function '_output_as_columns':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:4816:23: note: in expansion of macro 'dm_list_item'
+ 4816 |                 row = dm_list_item(rowh, struct row);
+      |                       ^~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:4836:33: note: in expansion of macro 'dm_list_item'
+ 4836 |                         field = dm_list_item(fh, struct dm_report_field);
+      |                                 ^~~~~~~~~~~~
+libdm-report.c: In function '_get_topmost_report_group_item':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2491:28: note: in expansion of macro 'dm_list_struct_base'
+ 2491 | #define dm_list_item(v, t) dm_list_struct_base((v), t, list)
+      |                            ^~~~~~~~~~~~~~~~~~~
+libdm-report.c:4906:24: note: in expansion of macro 'dm_list_item'
+ 4906 |                 item = dm_list_item(dm_list_first(&group->items), struct report_group_item);
+      |                        ^~~~~~~~~~~~
+libdm-report.c: In function '_report_group_push_single':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5082:9: note: in expansion of macro 'dm_list_iterate_items'
+ 5082 |         dm_list_iterate_items(item_iter, &item->group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5082:9: note: in expansion of macro 'dm_list_iterate_items'
+ 5082 |         dm_list_iterate_items(item_iter, &item->group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function 'dm_report_group_push':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5164:9: note: in expansion of macro 'dm_list_iterate_items'
+ 5164 |         dm_list_iterate_items(tmp_item, &group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5164:9: note: in expansion of macro 'dm_list_iterate_items'
+ 5164 |         dm_list_iterate_items(tmp_item, &group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+libdm-report.c: In function 'dm_report_group_output_and_pop_all':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2554:18: note: in expansion of macro 'dm_list_struct_base'
+ 2554 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field), \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5273:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 5273 |         dm_list_iterate_items_safe(item, tmp_item, &group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2555:18: note: in expansion of macro 'dm_list_struct_base'
+ 2555 |              t = dm_list_struct_base(v->field.n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5273:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 5273 |         dm_list_iterate_items_safe(item, tmp_item, &group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2557:25: note: in expansion of macro 'dm_list_struct_base'
+ 2557 |              v = t, t = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                         ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2565:9: note: in expansion of macro 'dm_list_iterate_items_gen_safe'
+ 2565 |         dm_list_iterate_items_gen_safe(v, t, (head), list)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libdm-report.c:5273:9: note: in expansion of macro 'dm_list_iterate_items_safe'
+ 5273 |         dm_list_iterate_items_safe(item, tmp_item, &group->items) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+    [CC] dbg_malloc.c
+gcc -MT mm/dbg_malloc.o -MMD -MP -MF mm/dbg_malloc.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  mm/dbg_malloc.c -o mm/dbg_malloc.o
+    [CC] pool.c
+gcc -MT mm/pool.o -MMD -MP -MF mm/pool.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  mm/pool.c -o mm/pool.o
+In function '_find_dm_tree_node_by_uuid',
+    inlined from 'dm_tree_find_node_by_uuid' at libdm-deptree.c:773:9:
+libdm-deptree.c:573:32: warning: 'strncpy' specified bound 129 equals destination size [-Wstringop-truncation]
+  573 |                         (void) strncpy(uuid_without_suffix, uuid, sizeof(uuid_without_suffix));
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [CC] matcher.c
+gcc -MT regex/matcher.o -MMD -MP -MF regex/matcher.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  regex/matcher.c -o regex/matcher.o
+    [CC] parse_rx.c
+gcc -MT regex/parse_rx.o -MMD -MP -MF regex/parse_rx.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  regex/parse_rx.c -o regex/parse_rx.o
+In file included from ../libdm/misc/dmlib.h:97,
+                 from mm/pool.c:16:
+mm/pool.c: In function 'dm_pools_check_leaks':
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2536:18: note: in expansion of macro 'dm_list_struct_base'
+ 2536 |         for (v = dm_list_struct_base((head)->n, __typeof__(*v), field); \
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+mm/pool.c:95:9: note: in expansion of macro 'dm_list_iterate_items'
+   95 |         dm_list_iterate_items(p, &_dm_pools) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2485:6: warning: cast increases required alignment of target type [-Wcast-align]
+ 2485 |     ((t *)((char *)(v) - offsetof(t, head)))
+      |      ^
+../libdm/libdevmapper.h:2538:18: note: in expansion of macro 'dm_list_struct_base'
+ 2538 |              v = dm_list_struct_base(v->field.n, __typeof__(*v), field))
+      |                  ^~~~~~~~~~~~~~~~~~~
+../libdm/libdevmapper.h:2545:40: note: in expansion of macro 'dm_list_iterate_items_gen'
+ 2545 | #define dm_list_iterate_items(v, head) dm_list_iterate_items_gen(v, (head), list)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+mm/pool.c:95:9: note: in expansion of macro 'dm_list_iterate_items'
+   95 |         dm_list_iterate_items(p, &_dm_pools) {
+      |         ^~~~~~~~~~~~~~~~~~~~~
+    [CC] ttree.c
+gcc -MT regex/ttree.o -MMD -MP -MF regex/ttree.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  regex/ttree.c -o regex/ttree.o
+    [CC] libdm-iface.c
+gcc -MT ioctl/libdm-iface.o -MMD -MP -MF ioctl/libdm-iface.d -c -I./ioctl -I. -I.. -I../include -include configure.h   -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64  -Wall -Wcast-align -Wfloat-equal -Wformat-security -Winline -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wpointer-arith -Wredundant-decls -Wshadow -Wundef -Wwrite-strings -Wclobbered -Wempty-body -Wignored-qualifiers -Wlogical-op -Wtype-limits -Wsync-nand -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wstrict-prototypes -Wuninitialized -Wjump-misses-init -Wmissing-parameter-type -Wold-style-declaration -Woverride-init -O2 -mabi=lp64d -march=rv64gc -fPIC  ioctl/libdm-iface.c -o ioctl/libdm-iface.o
+set -e; \
+( cat ./.exported_symbols; \
+  if test -n "./libdevmapper.h"; then \
+	gcc -E -P -I./ioctl -I. -I.. -I../include -include configure.h -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64 ./libdevmapper.h | \
+	/bin/sed -ne "/^typedef|}/!s/.*[ *]\(dm_[a-z0-9_]*\)(.*/\1/p"; \
+  fi \
+) > .exported_symbols_generated
+set -e;\
+R=$(/usr/bin/sort .exported_symbols_generated .exported_symbols.Base .exported_symbols.DM_1_02_100 .exported_symbols.DM_1_02_101 .exported_symbols.DM_1_02_103 .exported_symbols.DM_1_02_104 .exported_symbols.DM_1_02_105 .exported_symbols.DM_1_02_106 .exported_symbols.DM_1_02_107 .exported_symbols.DM_1_02_110 .exported_symbols.DM_1_02_113 .exported_symbols.DM_1_02_124 .exported_symbols.DM_1_02_128 .exported_symbols.DM_1_02_129 .exported_symbols.DM_1_02_131 .exported_symbols.DM_1_02_133 .exported_symbols.DM_1_02_135 .exported_symbols.DM_1_02_138 .exported_symbols.DM_1_02_141 .exported_symbols.DM_1_02_147 .exported_symbols.DM_1_02_172 .exported_symbols.DM_1_02_181 .exported_symbols.DM_1_02_97 .exported_symbols.DM_1_02_98 .exported_symbols.DM_1_02_99 | /usr/bin/grep -v "^#" | uniq -u);\
+test -z "$R" || { echo "Mismatch between symbols in shared library and lists in .exported_symbols.* files: $R"; false; } ;\
+LAST=;\
+for i in $(echo ./.exported_symbols.Base ./.exported_symbols.DM_1_02_100 ./.exported_symbols.DM_1_02_101 ./.exported_symbols.DM_1_02_103 ./.exported_symbols.DM_1_02_104 ./.exported_symbols.DM_1_02_105 ./.exported_symbols.DM_1_02_106 ./.exported_symbols.DM_1_02_107 ./.exported_symbols.DM_1_02_110 ./.exported_symbols.DM_1_02_113 ./.exported_symbols.DM_1_02_124 ./.exported_symbols.DM_1_02_128 ./.exported_symbols.DM_1_02_129 ./.exported_symbols.DM_1_02_131 ./.exported_symbols.DM_1_02_133 ./.exported_symbols.DM_1_02_135 ./.exported_symbols.DM_1_02_138 ./.exported_symbols.DM_1_02_141 ./.exported_symbols.DM_1_02_147 ./.exported_symbols.DM_1_02_172 ./.exported_symbols.DM_1_02_181 ./.exported_symbols.DM_1_02_97 ./.exported_symbols.DM_1_02_98 ./.exported_symbols.DM_1_02_99 | tr ' ' '\n' | /usr/bin/sort -nt_ -k5 ); do\
+	echo "${i##*.} {"; echo "	global:";\
+	/bin/sed "/^#/d;s/^/		/;s/$/;/" $i;\
+	if test -z "$LAST"; then echo "	local:"; echo "		*;";fi;\
+	echo "}$LAST;";\
+	LAST=" ${i##*.}";\
+done > .export.sym
+ioctl/libdm-iface.c: In function '_unmarshal_status':
+ioctl/libdm-iface.c:682:24: warning: cast increases required alignment of target type [-Wcast-align]
+  682 |                 spec = (struct dm_target_spec *) outptr;
+      |                        ^
+ioctl/libdm-iface.c: In function 'dm_task_get_deps':
+ioctl/libdm-iface.c:761:16: warning: cast increases required alignment of target type [-Wcast-align]
+  761 |         return (struct dm_deps *) (((char *) dmt->dmi.v4) +
+      |                ^
+ioctl/libdm-iface.c: In function 'dm_task_get_names':
+ioctl/libdm-iface.c:791:16: warning: cast increases required alignment of target type [-Wcast-align]
+  791 |         return (struct dm_names *) (((char *) dmt->dmi.v4) +
+      |                ^
+ioctl/libdm-iface.c: In function 'dm_task_get_versions':
+ioctl/libdm-iface.c:797:16: warning: cast increases required alignment of target type [-Wcast-align]
+  797 |         return (struct dm_versions *) (((char *) dmt->dmi.v4) +
+      |                ^
+ioctl/libdm-iface.c: In function '_lookup_dev_name':
+ioctl/libdm-iface.c:1122:25: warning: cast increases required alignment of target type [-Wcast-align]
+ 1122 |                 names = (struct dm_names *)((char *) names + next);
+      |                         ^
+ioctl/libdm-iface.c: In function '_flatten':
+ioctl/libdm-iface.c:1345:24: warning: cast increases required alignment of target type [-Wcast-align]
+ 1345 |                 tmsg = (struct dm_target_msg *) b;
+      |                        ^
+ioctl/libdm-iface.c: In function '_process_all_v4':
+ioctl/libdm-iface.c:1419:25: warning: cast increases required alignment of target type [-Wcast-align]
+ 1419 |                 names = (struct dm_names *)((char *) names + next);
+      |                         ^
+ioctl/libdm-iface.c: In function '_dm_ioctl_unmangle_names':
+ioctl/libdm-iface.c:1823:24: warning: cast increases required alignment of target type [-Wcast-align]
+ 1823 |             ((names = ((struct dm_name_list *) ((char *)dmi + dmi->data_start)))) &&
+      |                        ^
+ioctl/libdm-iface.c:1826:33: warning: cast increases required alignment of target type [-Wcast-align]
+ 1826 |                         names = (struct dm_name_list *)((char *) names + next);
+      |                                 ^
+In function '_lookup_dev_name',
+    inlined from '_flatten' at ioctl/libdm-iface.c:1261:8,
+    inlined from '_do_dm_ioctl' at ioctl/libdm-iface.c:1868:8,
+    inlined from 'dm_task_run' at ioctl/libdm-iface.c:2098:14:
+ioctl/libdm-iface.c:1124:25: warning: 'strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+ 1124 |                         strncpy(buf, names->name, len);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function '_flatten',
+    inlined from '_do_dm_ioctl' at ioctl/libdm-iface.c:1868:8,
+    inlined from 'dm_task_run' at ioctl/libdm-iface.c:2098:14:
+ioctl/libdm-iface.c:1279:17: warning: 'strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+ 1279 |                 strncpy(dmi->name, DEV_NAME(dmt), sizeof(dmi->name));
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ioctl/libdm-iface.c:1283:17: warning: 'strncpy' specified bound 129 equals destination size [-Wstringop-truncation]
+ 1283 |                 strncpy(dmi->uuid, DEV_UUID(dmt), sizeof(dmi->uuid));
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [CC] ioctl/libdevmapper.so.1.02
+gcc -shared -Wl,-soname,libdevmapper.so.1.02 \
+	-O2 -mabi=lp64d -march=rv64gc -fPIC -Wl,--version-script,.export.sym -Wl,-z,relro datastruct/bitset.o datastruct/hash.o datastruct/list.o libdm-common.o libdm-config.o libdm-deptree.o libdm-file.o libdm-report.o libdm-stats.o libdm-string.o libdm-targets.o libdm-timestamp.o mm/dbg_malloc.o mm/pool.o regex/matcher.o regex/parse_rx.o regex/ttree.o ioctl/libdm-iface.o  -lpthread  -ludev -lrt  -lm -o ioctl/libdevmapper.so.1.02
+    [LN] libdevmapper.so.1.02
+ln -s -f libdevmapper.so.1.02 ioctl/libdevmapper.so
+    [LN] ioctl/libdevmapper.so
+    [LN] ioctl/libdevmapper.so
+ln -s -f ioctl/libdevmapper.so libdevmapper.so
+    [CHECK] ioctl/libdevmapper.so
+ln -s -f ioctl/libdevmapper.so libdevmapper.so.1.02
+if readelf -Ws ioctl/libdevmapper.so | grep -q dm_stats_create_region@@; then \
+SYM=$(readelf -Ws ioctl/libdevmapper.so | grep dm_stats_create_region@DM_1_02_106); \
+if test -n "$SYM"; then touch .symver_check; \
+else echo >&2 "Missing versioned symbols in ioctl/libdevmapper.so"; false; fi; \
+else touch .symver_check; fi
+make[1]: Leaving directory '/home/devel/building/work/src/LVM2.2.03.18/libdm'
+/usr/bin/make -C tools device-mapper
+/usr/bin/make -C daemons device-mapper
+make[1]: Entering directory '/home/devel/building/work/src/LVM2.2.03.18/daemons'
+make[1]: Entering directory '/home/devel/building/work/src/LVM2.2.03.18/tools'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/home/devel/building/work/src/LVM2.2.03.18/daemons'
+    [GEN] command-lines-input.h
+    [GEN] command-count.h
+set -o pipefail && \
+( cat ./license.inc && \
+  echo "/* Do not edit. This file is generated by the Makefile. */" && \
+  echo -en "static const char _command_input[] =\n\n\"" && \
+  /usr/bin/grep -E -v '^#|\-\-\-|^$' ./command-lines.in | gawk 'BEGIN {ORS = "\\n\"\n\""} //' && \
+  echo "\\n\\n\";" \
+) > command-lines-input.h
+set -o pipefail && \
+( cat ../tools/license.inc && \
+  echo "/* Do not edit. This file is generated by the Makefile. */" && \
+  echo -n "#define COMMAND_COUNT " && \
+  /usr/bin/grep '^ID:' command-lines.in | /usr/bin/wc -l \
+) > command-count.h
+/bin/sh: 1: set: /bin/sh: 1: set: Illegal option -o pipefail
+Illegal option -o pipefail
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/home/devel/building/work/src/LVM2.2.03.18/tools'
++ make -j1 DESTDIR=/home/devel/building/work/pkg install_device-mapper
+/usr/bin/make -C libdm device-mapper
+make[1]: Nothing to be done for 'device-mapper'.
+/usr/bin/make -C tools device-mapper
+    [GEN] command-lines-input.h
+/bin/sh: 1: set: Illegal option -o pipefail
+make[1]: Nothing to be done for 'device-mapper'.
+/usr/bin/make -C daemons device-mapper
+make[1]: Nothing to be done for 'device-mapper'.
+/usr/bin/make -C man device-mapper
+make[1]: Nothing to be done for 'device-mapper'.
+/usr/bin/make -C libdm install_device-mapper
+/usr/bin/make -C dm-tools device-mapper
+    [CC] dmsetup.c
+dmsetup.c: In function '_process_all':
+dmsetup.c:2139:25: warning: cast increases required alignment of target type [-Wcast-align]
+ 2139 |                 names = (struct dm_names *)((char *) names + next);
+      |                         ^
+dmsetup.c: In function '_targets':
+dmsetup.c:2592:26: warning: cast increases required alignment of target type [-Wcast-align]
+ 2592 |                 target = (struct dm_versions *)((char *) target + target->next);
+      |                          ^
+    [CC] dmsetup
+/usr/bin/make -C dm-tools
+make[2]: Nothing to be done for 'all'.
+    [INSTALL] ioctl/libdevmapper.so
+    [INSTALL] libdevmapper.pc
+    [INSTALL] libdevmapper.h
+/usr/bin/make -C dm-tools install
+    [INSTALL] dmsetup
+/usr/bin/make -C dm-tools install_device-mapper
+    [INSTALL] dmsetup
+/usr/bin/make -C conf install_device-mapper
+make[1]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C daemons install_device-mapper
+make[1]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C include install_device-mapper
+make[1]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C lib install_device-mapper
+make[1]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C libdaemon install_device-mapper
+/usr/bin/make -C client install_device-mapper
+make[2]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C man install_device-mapper
+    [INSTALL] dmsetup.8 dmstats.8 blkdeactivate.8 dmeventd.8 dmfilemapd.8
+/usr/bin/make -C scripts install_device-mapper
+/usr/bin/make -C tools install_device-mapper
+    [GEN] command-lines-input.h
+/bin/sh: 1: set: Illegal option -o pipefail
+make[1]: Nothing to be done for 'install_device-mapper'.
+/usr/bin/make -C udev install_device-mapper
+/usr/bin/grep: warning: stray \ before #
+    [INSTALL] 10-dm.rules
+/usr/bin/grep: warning: stray \ before #
+    [INSTALL] 13-dm-disk.rules
+/usr/bin/grep: warning: stray \ before #
+    [INSTALL] 95-dm-notify.rules
++ install -m0644 -D udev/12-dm-permissions.rules /home/devel/building/work/pkg/etc/udev/rules.d/12-dm-permissions.rules.example
++ ln -sf dmsetup /home/devel/building/work/pkg/sbin/dmstats
++ sed -i '/^libdir=/s|${exec_prefix}|/usr|' /home/devel/building/work/pkg/usr/lib/pkgconfig/devmapper.pc
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 etc/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 etc/udev/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 etc/udev/rules.d/
+-rw-r--r--  0 root   root     3186 Feb 21 19:33 etc/udev/rules.d/12-dm-permissions.rules.example
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 lib/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 lib/udev/
+-r-xr-xr-x  0 root   root   312944 Feb 21 19:33 lib/libdevmapper.so.1.02
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 lib/udev/rules.d/
+-r--r--r--  0 root   root      479 Feb 21 19:33 lib/udev/rules.d/95-dm-notify.rules
+-r--r--r--  0 root   root     1964 Feb 21 19:33 lib/udev/rules.d/13-dm-disk.rules
+-r--r--r--  0 root   root     7254 Feb 21 19:33 lib/udev/rules.d/10-dm.rules
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 sbin/
+lrwxrwxrwx  0 root   root        0 Feb 21 19:33 sbin/dmstats -> dmsetup
+-r-xr-xr-x  0 root   root    16347 Feb 21 19:33 sbin/blkdeactivate
+-r-xr-xr-x  0 root   root   139824 Feb 21 19:33 sbin/dmsetup
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/include/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 Feb 21 19:33 usr/lib/libdevmapper.so -> ../../lib/libdevmapper.so.1.02
+-r--r--r--  0 root   root      241 Feb 21 19:33 usr/lib/pkgconfig/devmapper.pc
+-r--r--r--  0 root   root   136100 Dec 22 15:10 usr/include/libdevmapper.h
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 21 19:33 usr/share/man/man8/
+-r--r--r--  0 root   root     9012 Feb 21 19:32 usr/share/man/man8/dmsetup.8.gz
+-r--r--r--  0 root   root    10807 Feb 21 19:32 usr/share/man/man8/dmstats.8.gz
+-r--r--r--  0 root   root     1438 Feb 21 19:32 usr/share/man/man8/blkdeactivate.8.gz
+-r--r--r--  0 root   root     1745 Feb 21 19:32 usr/share/man/man8/dmeventd.8.gz
+-r--r--r--  0 root   root     2564 Feb 21 19:32 usr/share/man/man8/dmfilemapd.8.gz
+=======> Building '/home/devel/packages/libdevmapper#1.02.189-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libdevmapper 1.02.189-1
+prt-get: /usr/bin/pkgadd -u libdevmapper#1.02.189-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 19:33:21 2023
+
