@@ -1,0 +1,201 @@
+prt-get: updating /usr/ports/core-riscv64/mimalloc2
+prt-get: starting build Tue Feb 21 21:24:29 2023
+=======> Building '/home/devel/packages/mimalloc2#2.0.6-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/mimalloc2-2.0.6.tar.gz
++ build
++ cd mimalloc-2.0.6
++ mkdir build
++ cd build
++ cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DMI_INSTALL_TOPLEVEL=ON -DMI_BUILD_STATIC=OFF -DMI_BUILD_OBJECT=OFF -Wno-dev
+-- The C compiler identification is GNU 13.0.1
+-- The CXX compiler identification is GNU 13.0.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+-- Override standard malloc (MI_OVERRIDE=ON)
+-- 
+-- Library base name: mimalloc
+-- Version          : 2.0
+-- Build type       : release
+-- C Compiler       : /usr/bin/cc
+-- Compiler flags   : -Wall;-Wextra;-Wno-unknown-pragmas;-fvisibility=hidden;-Wstrict-prototypes;-ftls-model=initial-exec;-fno-builtin-malloc
+-- Compiler defines : 
+-- Link libraries   : /usr/lib/libpthread.a;/usr/lib/librt.a;atomic
+-- Build targets    : shared;tests
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/devel/building/work/src/mimalloc-2.0.6/build
++ make -O -j 8 V=1 VERBOSE=1
+/usr/bin/cmake -S/home/devel/building/work/src/mimalloc-2.0.6 -B/home/devel/building/work/src/mimalloc-2.0.6/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles /home/devel/building/work/src/mimalloc-2.0.6/build//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+/usr/bin/make  -f CMakeFiles/mimalloc.dir/build.make CMakeFiles/mimalloc.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+cd /home/devel/building/work/src/mimalloc-2.0.6/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles/mimalloc.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+/usr/bin/make  -f CMakeFiles/mimalloc.dir/build.make CMakeFiles/mimalloc.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 19%] Building C object CMakeFiles/mimalloc.dir/src/arena.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/arena.c.o -MF CMakeFiles/mimalloc.dir/src/arena.c.o.d -o CMakeFiles/mimalloc.dir/src/arena.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/arena.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 23%] Building C object CMakeFiles/mimalloc.dir/src/segment-cache.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/segment-cache.c.o -MF CMakeFiles/mimalloc.dir/src/segment-cache.c.o.d -o CMakeFiles/mimalloc.dir/src/segment-cache.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/segment-cache.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 28%] Building C object CMakeFiles/mimalloc.dir/src/bitmap.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/bitmap.c.o -MF CMakeFiles/mimalloc.dir/src/bitmap.c.o.d -o CMakeFiles/mimalloc.dir/src/bitmap.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/bitmap.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 14%] Building C object CMakeFiles/mimalloc.dir/src/stats.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/stats.c.o -MF CMakeFiles/mimalloc.dir/src/stats.c.o.d -o CMakeFiles/mimalloc.dir/src/stats.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/stats.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 14%] Building C object CMakeFiles/mimalloc.dir/src/random.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/random.c.o -MF CMakeFiles/mimalloc.dir/src/random.c.o.d -o CMakeFiles/mimalloc.dir/src/random.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/random.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 14%] Building C object CMakeFiles/mimalloc.dir/src/os.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/os.c.o -MF CMakeFiles/mimalloc.dir/src/os.c.o.d -o CMakeFiles/mimalloc.dir/src/os.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/os.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 52%] Building C object CMakeFiles/mimalloc.dir/src/alloc-posix.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/alloc-posix.c.o -MF CMakeFiles/mimalloc.dir/src/alloc-posix.c.o.d -o CMakeFiles/mimalloc.dir/src/alloc-posix.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/alloc-posix.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 47%] Building C object CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o -MF CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o.d -o CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/alloc-aligned.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 38%] Building C object CMakeFiles/mimalloc.dir/src/page.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/page.c.o -MF CMakeFiles/mimalloc.dir/src/page.c.o.d -o CMakeFiles/mimalloc.dir/src/page.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/page.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 57%] Building C object CMakeFiles/mimalloc.dir/src/heap.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/heap.c.o -MF CMakeFiles/mimalloc.dir/src/heap.c.o.d -o CMakeFiles/mimalloc.dir/src/heap.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/heap.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 66%] Building C object CMakeFiles/mimalloc.dir/src/init.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/init.c.o -MF CMakeFiles/mimalloc.dir/src/init.c.o.d -o CMakeFiles/mimalloc.dir/src/init.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/init.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 61%] Building C object CMakeFiles/mimalloc.dir/src/options.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/options.c.o -MF CMakeFiles/mimalloc.dir/src/options.c.o.d -o CMakeFiles/mimalloc.dir/src/options.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/options.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 42%] Building C object CMakeFiles/mimalloc.dir/src/alloc.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/alloc.c.o -MF CMakeFiles/mimalloc.dir/src/alloc.c.o.d -o CMakeFiles/mimalloc.dir/src/alloc.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/alloc.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 33%] Building C object CMakeFiles/mimalloc.dir/src/segment.c.o
+/usr/bin/cc -DMI_MALLOC_OVERRIDE -DMI_SHARED_LIB -DMI_SHARED_LIB_EXPORT -Dmimalloc_EXPORTS -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -fPIC -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc.dir/src/segment.c.o -MF CMakeFiles/mimalloc.dir/src/segment.c.o.d -o CMakeFiles/mimalloc.dir/src/segment.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/src/segment.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 71%] Linking C shared library libmimalloc.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mimalloc.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -shared -Wl,-soname,libmimalloc.so.2 -o libmimalloc.so.2.0 CMakeFiles/mimalloc.dir/src/stats.c.o CMakeFiles/mimalloc.dir/src/random.c.o CMakeFiles/mimalloc.dir/src/os.c.o CMakeFiles/mimalloc.dir/src/bitmap.c.o CMakeFiles/mimalloc.dir/src/arena.c.o "CMakeFiles/mimalloc.dir/src/segment-cache.c.o" CMakeFiles/mimalloc.dir/src/segment.c.o CMakeFiles/mimalloc.dir/src/page.c.o CMakeFiles/mimalloc.dir/src/alloc.c.o "CMakeFiles/mimalloc.dir/src/alloc-aligned.c.o" "CMakeFiles/mimalloc.dir/src/alloc-posix.c.o" CMakeFiles/mimalloc.dir/src/heap.c.o CMakeFiles/mimalloc.dir/src/options.c.o CMakeFiles/mimalloc.dir/src/init.c.o  -Wl,-Bstatic -lpthread -lrt -Wl,-Bdynamic -latomic 
+/usr/bin/cmake -E cmake_symlink_library libmimalloc.so.2.0 libmimalloc.so.2 libmimalloc.so
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[1]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 71%] Built target mimalloc
+make[1]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+/usr/bin/make  -f CMakeFiles/mimalloc-test-api.dir/build.make CMakeFiles/mimalloc-test-api.dir/depend
+/usr/bin/make  -f CMakeFiles/mimalloc-test-api-fill.dir/build.make CMakeFiles/mimalloc-test-api-fill.dir/depend
+/usr/bin/make  -f CMakeFiles/mimalloc-test-stress.dir/build.make CMakeFiles/mimalloc-test-stress.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+cd /home/devel/building/work/src/mimalloc-2.0.6/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles/mimalloc-test-api.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+cd /home/devel/building/work/src/mimalloc-2.0.6/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles/mimalloc-test-api-fill.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+/usr/bin/make  -f CMakeFiles/mimalloc-test-api.dir/build.make CMakeFiles/mimalloc-test-api.dir/build
+cd /home/devel/building/work/src/mimalloc-2.0.6/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6 /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles/mimalloc-test-stress.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+/usr/bin/make  -f CMakeFiles/mimalloc-test-api-fill.dir/build.make CMakeFiles/mimalloc-test-api-fill.dir/build
+/usr/bin/make  -f CMakeFiles/mimalloc-test-stress.dir/build.make CMakeFiles/mimalloc-test-stress.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 85%] Building C object CMakeFiles/mimalloc-test-api-fill.dir/test/test-api-fill.c.o
+/usr/bin/cc  -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc-test-api-fill.dir/test/test-api-fill.c.o -MF CMakeFiles/mimalloc-test-api-fill.dir/test/test-api-fill.c.o.d -o CMakeFiles/mimalloc-test-api-fill.dir/test/test-api-fill.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/test/test-api-fill.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 85%] Building C object CMakeFiles/mimalloc-test-api.dir/test/test-api.c.o
+/usr/bin/cc  -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc-test-api.dir/test/test-api.c.o -MF CMakeFiles/mimalloc-test-api.dir/test/test-api.c.o.d -o CMakeFiles/mimalloc-test-api.dir/test/test-api.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/test/test-api.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 85%] Building C object CMakeFiles/mimalloc-test-stress.dir/test/test-stress.c.o
+/usr/bin/cc  -I/home/devel/building/work/src/mimalloc-2.0.6/include -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -Wall -Wextra -Wno-unknown-pragmas -fvisibility=hidden -Wstrict-prototypes -ftls-model=initial-exec -fno-builtin-malloc -std=gnu11 -MD -MT CMakeFiles/mimalloc-test-stress.dir/test/test-stress.c.o -MF CMakeFiles/mimalloc-test-stress.dir/test/test-stress.c.o.d -o CMakeFiles/mimalloc-test-stress.dir/test/test-stress.c.o -c /home/devel/building/work/src/mimalloc-2.0.6/test/test-stress.c
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 90%] Linking C executable mimalloc-test-api-fill
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mimalloc-test-api-fill.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -rdynamic "CMakeFiles/mimalloc-test-api-fill.dir/test/test-api-fill.c.o" -o mimalloc-test-api-fill  -Wl,-rpath,/home/devel/building/work/src/mimalloc-2.0.6/build libmimalloc.so.2.0 -Wl,-Bstatic -lpthread -lrt -Wl,-Bdynamic -latomic 
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[1]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[100%] Built target mimalloc-test-api-fill
+make[1]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[ 95%] Linking C executable mimalloc-test-api
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mimalloc-test-api.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -rdynamic "CMakeFiles/mimalloc-test-api.dir/test/test-api.c.o" -o mimalloc-test-api  -Wl,-rpath,/home/devel/building/work/src/mimalloc-2.0.6/build libmimalloc.so.2.0 -Wl,-Bstatic -lpthread -lrt -Wl,-Bdynamic -latomic 
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[1]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[100%] Built target mimalloc-test-api
+make[1]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[2]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[100%] Linking C executable mimalloc-test-stress
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mimalloc-test-stress.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -mabi=lp64d -march=rv64gc -O3 -DNDEBUG -rdynamic "CMakeFiles/mimalloc-test-stress.dir/test/test-stress.c.o" -o mimalloc-test-stress  -Wl,-rpath,/home/devel/building/work/src/mimalloc-2.0.6/build libmimalloc.so.2.0 -Wl,-Bstatic -lpthread -lrt -Wl,-Bdynamic -latomic 
+make[2]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+make[1]: Entering directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+[100%] Built target mimalloc-test-stress
+make[1]: Leaving directory '/home/devel/building/work/src/mimalloc-2.0.6/build'
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/mimalloc-2.0.6/build/CMakeFiles 0
++ make DESTDIR=/home/devel/building/work/pkg install
+[ 71%] Built target mimalloc
+[ 95%] Built target mimalloc-test-api
+[ 95%] Built target mimalloc-test-api-fill
+[100%] Built target mimalloc-test-stress
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/devel/building/work/pkg/usr/lib/libmimalloc.so.2.0
+-- Installing: /home/devel/building/work/pkg/usr/lib/libmimalloc.so.2
+-- Installing: /home/devel/building/work/pkg/usr/lib/libmimalloc.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/mimalloc/mimalloc.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/mimalloc/mimalloc-release.cmake
+-- Installing: /home/devel/building/work/pkg/usr/include/mimalloc.h
+-- Installing: /home/devel/building/work/pkg/usr/include/mimalloc-override.h
+-- Installing: /home/devel/building/work/pkg/usr/include/mimalloc-new-delete.h
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/mimalloc/mimalloc-config.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/mimalloc/mimalloc-config-version.cmake
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/include/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/cmake/
+lrwxrwxrwx  0 root   root        0 Feb 21 21:24 usr/lib/libmimalloc.so -> libmimalloc.so.2
+lrwxrwxrwx  0 root   root        0 Feb 21 21:24 usr/lib/libmimalloc.so.2 -> libmimalloc.so.2.0
+-rwxr-xr-x  0 root   root   119344 Feb 21 21:24 usr/lib/libmimalloc.so.2.0
+drwxr-xr-x  0 root   root        0 Feb 21 21:24 usr/lib/cmake/mimalloc/
+-rw-r--r--  0 root   root      660 Apr 14  2022 usr/lib/cmake/mimalloc/mimalloc-config-version.cmake
+-rw-r--r--  0 root   root      841 Apr 14  2022 usr/lib/cmake/mimalloc/mimalloc-config.cmake
+-rw-r--r--  0 root   root      822 Feb 21 21:24 usr/lib/cmake/mimalloc/mimalloc-release.cmake
+-rw-r--r--  0 root   root     4439 Feb 21 21:24 usr/lib/cmake/mimalloc/mimalloc.cmake
+-rw-r--r--  0 root   root     3441 Apr 14  2022 usr/include/mimalloc-new-delete.h
+-rw-r--r--  0 root   root     3111 Apr 14  2022 usr/include/mimalloc-override.h
+-rw-r--r--  0 root   root    28550 Apr 14  2022 usr/include/mimalloc.h
+=======> Building '/home/devel/packages/mimalloc2#2.0.6-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling mimalloc2 2.0.6-1
+prt-get: /usr/bin/pkgadd -u mimalloc2#2.0.6-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 21:24:43 2023
+

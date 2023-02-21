@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpayBkNVr/+c5LMfspB6i7658cI+zGHlHzdnzlYn4XpWrPuucZau3Z2KomZLj24YK2gDHGzROLu7SCfRECKjsLAY=
+SHA256 (Pkgfile) = 2abef7ffff90affe18b20906112bd814288923aaa21d8cb9f1b7a8e88529bb1f
+SHA256 (.footprint) = 5d105554b90e8dda3800a1f70eaf69b17da94b199d33f7aba1e8578b0df3b856
+SHA256 (mimalloc2-2.0.6.tar.gz) = 9f05c94cc2b017ed13698834ac2a3567b6339a8bde27640df5a1581d49d05ce5
