@@ -1,0 +1,29 @@
+# Description:	Basic networking utilities
+# URL:		https://github.com/iputils/iputils
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libcap meson
+
+name=iputils
+version=20221126
+release=1
+source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-DNO_SETCAP_OR_SUID=true \
+		-DBUILD_MANS=false \
+		-DUSE_IDN=false \
+		-DUSE_GETTEXT=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	install -d $PKG/{{sbin,bin},usr/{bin,sbin}}
+	install build/ping/ping $PKG/bin/
+	install build/arping $PKG/sbin/
+	install build/{tracepath,clockdiff} $PKG/usr/sbin/
+
+	chmod u+s $PKG/bin/ping
+}
