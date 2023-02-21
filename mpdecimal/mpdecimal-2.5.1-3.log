@@ -1,0 +1,161 @@
+prt-get: updating /usr/ports/core-riscv64/mpdecimal
+prt-get: starting build Tue Feb 21 21:26:42 2023
+=======> Building '/home/devel/packages/mpdecimal#2.5.1-3.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/mpdecimal-2.5.1.tar.gz
++ build
++ cd mpdecimal-2.5.1
++ CFLAGS+=' -ffat-lto-objects'
++ CXXFLAGS+=' -ffat-lto-objects'
++ ./configure --prefix=/usr
+checking system as reported by uname -s... Linux
+checking build system type... riscv64-unknown-linux-gnu
+checking host system type... riscv64-unknown-linux-gnu
+checking for --enable-shared... yes
+checking for --enable-cxx... yes
+checking for --enable-profile... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for ar... ar
+checking for ranlib... ranlib
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for inttypes.h... (cached) yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for stdint.h... (cached) yes
+checking for size_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for __uint128_t... yes
+checking size of size_t... 8
+checking size of __uint128_t... 16
+checking for x64 gcc inline assembler... no
+checking for x87 gcc inline assembler... no
+checking for -O2... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for glibc _FORTIFY_SOURCE/memmove bug... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libmpdec/Makefile
+config.status: creating tests/Makefile
+config.status: creating libmpdec/mpdecimal.h
+config.status: creating libmpdec++/Makefile
+config.status: creating tests++/Makefile
+config.status: creating config.h
++ make V=1
+cd libmpdec && /usr/bin/make 
+make[1]: Entering directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec'
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c basearith.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c context.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c constants.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c convolute.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c crt.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c mpdecimal.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c mpsignal.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c difradix2.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c fnt.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c fourstep.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c io.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c mpalloc.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c numbertheory.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c sixstep.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c transpose.c
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c basearith.c -o .objs/basearith.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c context.c -o .objs/context.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c constants.c -o .objs/constants.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c convolute.c -o .objs/convolute.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c crt.c -o .objs/crt.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c mpdecimal.c -o .objs/mpdecimal.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c mpsignal.c -o .objs/mpsignal.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c difradix2.c -o .objs/difradix2.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c fnt.c -o .objs/fnt.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c fourstep.c -o .objs/fourstep.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c io.c -o .objs/io.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c mpalloc.c -o .objs/mpalloc.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c numbertheory.c -o .objs/numbertheory.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c sixstep.c -o .objs/sixstep.o
+gcc -Wall -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_64 -DANSI -DHAVE_UINT128_T -DNDEBUG -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c transpose.c -o .objs/transpose.o
+ar rc libmpdec.a basearith.o context.o constants.o convolute.o crt.o mpdecimal.o mpsignal.o difradix2.o fnt.o fourstep.o io.o mpalloc.o numbertheory.o sixstep.o transpose.o
+ranlib libmpdec.a
+gcc -shared -Wl,-soname,libmpdec.so.3 -o libmpdec.so.2.5.1 .objs/basearith.o .objs/context.o .objs/constants.o .objs/convolute.o .objs/crt.o .objs/mpdecimal.o .objs/mpsignal.o .objs/difradix2.o .objs/fnt.o .objs/fourstep.o .objs/io.o .objs/mpalloc.o .objs/numbertheory.o .objs/sixstep.o .objs/transpose.o -lm
+ln -sf libmpdec.so.2.5.1 libmpdec.so
+ln -sf libmpdec.so.2.5.1 libmpdec.so.3
+make[1]: Leaving directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec'
+cd libmpdec++ && /usr/bin/make 
+make[1]: Entering directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec++'
+g++ -pthread -I. -I../libmpdec -Wall -Wextra -std=c++11 -pedantic -DNDEBUG -O3 -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -c decimal.cc
+g++ -pthread -I. -I../libmpdec -Wall -Wextra -std=c++11 -pedantic -DNDEBUG -O3 -O2 -mabi=lp64d -march=rv64gc -ffat-lto-objects -fPIC -c decimal.cc -o .objs/decimal.o
+g++ -pthread -L../libmpdec -shared -Wl,-soname,libmpdec++.so.3 -o libmpdec++.so.2.5.1 .objs/decimal.o -lmpdec -lm
+ar rc libmpdec++.a decimal.o
+ranlib libmpdec++.a
+ln -sf libmpdec++.so.2.5.1 libmpdec++.so
+ln -sf libmpdec++.so.2.5.1 libmpdec++.so.3
+make[1]: Leaving directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec++'
++ make DESTDIR=/home/devel/building/work/pkg install
+cd libmpdec && /usr/bin/make 
+/usr/bin/install -c -d -m 755 /home/devel/building/work/pkg/usr/share/doc/mpdecimal
+cp -Rp doc/libmpdec /home/devel/building/work/pkg/usr/share/doc/mpdecimal
+cp -Rp doc/libmpdec++ /home/devel/building/work/pkg/usr/share/doc/mpdecimal
+make[1]: Entering directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec'
+/usr/bin/install -c -d -m 755 /home/devel/building/work/pkg/usr/include
+cd libmpdec++ && /usr/bin/make 
+/usr/bin/install -c -m 644 libmpdec/mpdecimal.h /home/devel/building/work/pkg/usr/include
+/usr/bin/install -c -d -m 755 /home/devel/building/work/pkg/usr/lib
+/usr/bin/install -c -m 644 libmpdec/libmpdec.a /home/devel/building/work/pkg/usr/lib
+make[1]: Entering directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec++'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/home/devel/building/work/src/mpdecimal-2.5.1/libmpdec++'
+/usr/bin/install -c -m 755 libmpdec/libmpdec.so.2.5.1 /home/devel/building/work/pkg/usr/lib
+/usr/bin/install -c -d -m 755 /home/devel/building/work/pkg/usr/include
+/usr/bin/install -c -m 644 libmpdec++/decimal.hh /home/devel/building/work/pkg/usr/include
+cd /home/devel/building/work/pkg/usr/lib && ln -sf libmpdec.so.2.5.1 libmpdec.so.3 && ln -sf libmpdec.so.2.5.1 libmpdec.so
+/usr/bin/install -c -d -m 755 /home/devel/building/work/pkg/usr/lib
+/usr/bin/install -c -m 644 libmpdec++/libmpdec++.a /home/devel/building/work/pkg/usr/lib
+/usr/bin/install -c -m 755 libmpdec++/libmpdec++.so.2.5.1 /home/devel/building/work/pkg/usr/lib
+cd /home/devel/building/work/pkg/usr/lib && ln -sf libmpdec++.so.2.5.1 libmpdec++.so.3 && ln -sf libmpdec++.so.2.5.1 libmpdec++.so
++ rm -r /home/devel/building/work/pkg/usr/share
++ find /home/devel/building/work/pkg -type f -name '*.a' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 21:27 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 21:27 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb 21 21:27 usr/include/
+-rw-r--r--  0 root   root    48991 Feb 21 21:27 usr/include/decimal.hh
+-rw-r--r--  0 root   root    40453 Feb 21 21:27 usr/include/mpdecimal.h
+lrwxrwxrwx  0 root   root        0 Feb 21 21:27 usr/lib/libmpdec++.so -> libmpdec++.so.2.5.1
+lrwxrwxrwx  0 root   root        0 Feb 21 21:27 usr/lib/libmpdec++.so.3 -> libmpdec++.so.2.5.1
+-rwxr-xr-x  0 root   root    44024 Feb 21 21:27 usr/lib/libmpdec++.so.2.5.1
+lrwxrwxrwx  0 root   root        0 Feb 21 21:27 usr/lib/libmpdec.so -> libmpdec.so.2.5.1
+lrwxrwxrwx  0 root   root        0 Feb 21 21:27 usr/lib/libmpdec.so.3 -> libmpdec.so.2.5.1
+-rwxr-xr-x  0 root   root   155256 Feb 21 21:27 usr/lib/libmpdec.so.2.5.1
+=======> Building '/home/devel/packages/mpdecimal#2.5.1-3.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling mpdecimal 2.5.1-3
+prt-get: /usr/bin/pkgadd -u mpdecimal#2.5.1-3.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 21:27:29 2023
+
