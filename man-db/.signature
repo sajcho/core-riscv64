@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpdod15BQO4ZRNeT2m63e5G3VjtOf69hS42tZTMkvu0JbFfei2w7iD0u1A+36duY1yJkxziXupNuRHjM4RTFGNQA=
+SHA256 (Pkgfile) = 1361744200e3e8e24b01fab1a9d3d8fbe0d031c38b84fc04ebd0cb848dda5ea5
+SHA256 (.footprint) = 23dd6694cd022b74f941854d63c90e19529acac750a3cd407826893369c04d4a
+SHA256 (man-db-2.11.2.tar.xz) = cffa1ee4e974be78646c46508e6dd2f37e7c589aaab2938cc1064f058fef9f8d
+SHA256 (mandb.cron) = f2e9f1210bf6b7c3335cc6f3a9551651812428109ea8c4adc9cd5cf73461e0f1
