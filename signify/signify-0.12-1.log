@@ -1,0 +1,63 @@
+prt-get: updating /usr/ports/core-riscv64/signify
+prt-get: starting build Tue Feb 21 23:47:55 2023
+=======> Building '/home/devel/packages/signify#0.12-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/outils-0.12.tar.gz
+cp cruxify.patch /home/devel/building/work/src
++ build
++ cd outils-0.12
++ patch -p0 -i /home/devel/building/work/src/cruxify.patch
+patching file src/usr.bin/signify/signify.c
++ export 'CFLAGS+= -DSIGNIFYROOT=\"/etc/ports\"'
++ CFLAGS+=' -DSIGNIFYROOT=\"/etc/ports\"'
++ make PREFIX=/usr src/usr.bin/signify/signify
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/signify.o src/usr.bin/signify/signify.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/crypto_api.o src/usr.bin/signify/crypto_api.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/fe25519.o src/usr.bin/signify/fe25519.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/mod_ed25519.o src/usr.bin/signify/mod_ed25519.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/mod_ge25519.o src/usr.bin/signify/mod_ge25519.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/sc25519.o src/usr.bin/signify/sc25519.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/usr.bin/signify/zsig.o src/usr.bin/signify/zsig.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/pledge.o src/liboutils/pledge.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/strlcpy.o src/liboutils/strlcpy.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/base64.o src/liboutils/base64.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/explicit_bzero.o src/liboutils/explicit_bzero.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/ohash.o src/liboutils/ohash.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/arc4random.o src/liboutils/arc4random.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/getentropy_linux.o src/liboutils/getentropy_linux.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/readpassphrase.o src/liboutils/readpassphrase.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/sha2.o src/liboutils/sha2.c
+src/liboutils/getentropy_linux.c:23: warning: "_POSIX_C_SOURCE" redefined
+   23 | #define _POSIX_C_SOURCE 199309L
+      | 
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:27,
+                 from ./src/liboutils/outils.h:48,
+                 from <command-line>:
+/usr/include/features.h:291: note: this is the location of the previous definition
+  291 | # define _POSIX_C_SOURCE        200809L
+      | 
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/sha256hl.o src/liboutils/sha256hl.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/sha512_256hl.o src/liboutils/sha512_256hl.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/sha512hl.o src/liboutils/sha512hl.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/timingsafe_bcmp.o src/liboutils/timingsafe_bcmp.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/bcrypt_pbkdf.o src/liboutils/bcrypt_pbkdf.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/blowfish.o src/liboutils/blowfish.c
+cc -O2 -mabi=lp64d -march=rv64gc -DSIGNIFYROOT=\"/etc/ports\" -include src/liboutils/outils.h -isystem src/liboutils/include -Isrc/bin/md5 -D_GNU_SOURCE -D_DEFAULT_SOURCE -DNO_UTIL -D_PATH_INCLUDE="\"-I/usr/share/calendar\""  -c -o src/liboutils/freezero.o src/liboutils/freezero.c
+cc -o src/usr.bin/signify/signify src/usr.bin/signify/signify.o src/usr.bin/signify/crypto_api.o src/usr.bin/signify/fe25519.o src/usr.bin/signify/mod_ed25519.o src/usr.bin/signify/mod_ge25519.o src/usr.bin/signify/sc25519.o src/usr.bin/signify/zsig.o src/liboutils/pledge.o src/liboutils/strlcpy.o src/liboutils/base64.o src/liboutils/explicit_bzero.o src/liboutils/ohash.o src/liboutils/arc4random.o src/liboutils/getentropy_linux.o src/liboutils/readpassphrase.o src/liboutils/sha2.o src/liboutils/sha256hl.o src/liboutils/sha512_256hl.o src/liboutils/sha512hl.o src/liboutils/timingsafe_bcmp.o src/liboutils/bcrypt_pbkdf.o src/liboutils/blowfish.o src/liboutils/freezero.o -Wl,--as-needed -lm
++ install -d /home/devel/building/work/pkg/usr/bin /home/devel/building/work/pkg/usr/share/man/man1
++ install -m 0755 src/usr.bin/signify/signify /home/devel/building/work/pkg/usr/bin
++ install -m 0644 src/usr.bin/signify/signify.1 /home/devel/building/work/pkg/usr/share/man/man1
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb 21 23:48 usr/
+drwxr-xr-x  0 root   root        0 Feb 21 23:48 usr/share/
+drwxr-xr-x  0 root   root        0 Feb 21 23:48 usr/bin/
+-rwxr-xr-x  0 root   root   174888 Feb 21 23:48 usr/bin/signify
+drwxr-xr-x  0 root   root        0 Feb 21 23:48 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb 21 23:48 usr/share/man/man1/
+-rw-r--r--  0 root   root     2303 Feb 21 23:48 usr/share/man/man1/signify.1.gz
+=======> Building '/home/devel/packages/signify#0.12-1.riscv64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling signify 0.12-1
+prt-get: /usr/bin/pkgadd -u signify#0.12-1.riscv64.pkg.tar.zst
+prt-get: build done Tue Feb 21 23:48:01 2023
+
