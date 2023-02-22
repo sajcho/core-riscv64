@@ -1,0 +1,31 @@
+# Description:	pciutils-like utilities for USB
+# URL:		https://github.com/gregkh/usbutils
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libusb wget
+
+name=usbutils
+version=015
+release=1
+source=(https://github.com/gregkh/usbutils/archive/v${version}/${name}-${version}.tar.gz \
+	update-usbids.sh)
+
+build() {
+	cd ${name}-${version}
+
+	autoreconf -fiv
+
+	./configure \
+		--prefix=/usr \
+		--datadir=/usr/share/hwdata \
+		--disable-zlib
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -d -m 0755 $PKG/usr/share/hwdata/
+	wget http://www.linux-usb.org/usb.ids -O $PKG/usr/share/hwdata/usb.ids
+
+	install -D -m 0754 $SRC/update-usbids.sh \
+		$PKG/etc/cron/weekly/update-usbids.sh
+}
