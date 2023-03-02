@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt-riscv64.pub
+RWRxfkjVPsZVE7xjldxlC9MEYvvrJWRi+Az2dylB+1F+RG9nTZ9XUCUTR4VsCxaIJmcir+2uhiOQr2vvAZ94F2dKR2Cg80W6RwA=
+SHA256 (Pkgfile) = 301ed327b7dc7b95bd9e6b820bf7760eec0faf949e5c81f1e1397ebadf506b0e
+SHA256 (.footprint) = 7bd837b832dba9b0125e575125a3cdbba419f41267730522c65efc3f57cd6f56
+SHA256 (libssh2-1.10.0.tar.gz) = 2d64e90f3ded394b91d3a2e774ca203a4179f69aebee03003e5a6fa621e41d51
+SHA256 (libssh2-1.10.0-upstream_fix-1.patch) = 56468c90c7b1d51d175df015e46e3b4d98eacddd3832143d15b3dafcde8b6be0
