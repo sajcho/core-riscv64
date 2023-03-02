@@ -1,0 +1,1162 @@
+=======> Building '/home/devel/packages/libgit2#1.5.2-1.riscv64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libgit2-1.5.2.tar.gz
++ build
++ cd libgit2-1.5.2
++ mkdir build
++ cd build
++ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DUSE_HTTP_PARSER=system -DUSE_HTTPS=OpenSSL -DREGEX_BACKEND=pcre2 -DUSE_SSH=ON -DBUILD_TESTS=OFF '-DCMAKE_C_FLAGS=-O2 -pipe -mabi=lp64d -march=rv64gc' -Wno-dev
+-- The C compiler identification is GNU 13.0.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.9.4") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_NSEC
+-- Performing Test HAVE_STRUCT_STAT_NSEC - Success
+-- Looking for futimens
+-- Looking for futimens - found
+-- Performing Test IS_WALL_SUPPORTED
+-- Performing Test IS_WALL_SUPPORTED - Success
+-- Performing Test IS_WEXTRA_SUPPORTED
+-- Performing Test IS_WEXTRA_SUPPORTED - Success
+-- Performing Test IS_FVISIBILITY_HIDDEN_SUPPORTED
+-- Performing Test IS_FVISIBILITY_HIDDEN_SUPPORTED - Success
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED - Failed
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED - Success
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED - Success
+-- Performing Test IS_WMISSING_DECLARATIONS_SUPPORTED
+-- Performing Test IS_WMISSING_DECLARATIONS_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED - Success
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED - Success
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED - Success
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED - Success
+-- Performing Test IS_WC11_EXTENSIONS_SUPPORTED
+-- Performing Test IS_WC11_EXTENSIONS_SUPPORTED - Failed
+-- Performing Test IS_WC99_C11_COMPAT_SUPPORTED
+-- Performing Test IS_WC99_C11_COMPAT_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SUPPORTED
+-- Performing Test IS_WFORMAT_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED - Success
+-- Checking for module 'heimdal-gssapi'
+--   Package 'heimdal-gssapi', required by 'virtual:world', not found
+-- Could NOT find GSSAPI (missing: GSSAPI_LIBRARIES GSSAPI_INCLUDE_DIR) 
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.0.7")  
+-- Found HTTP_Parser: /usr/include  
+-- Found PCRE: /usr/lib/libpcre.so  
+-- Found PCRE2: /usr/lib/libpcre2-8.so  
+-- Checking for module 'libssh2'
+--   Found libssh2, version 1.10.0
+--   Resolved libraries: /usr/lib/libssh2.so
+-- Looking for libssh2_userauth_publickey_frommemory in /usr/lib/libssh2.so
+-- Looking for libssh2_userauth_publickey_frommemory in /usr/lib/libssh2.so - found
+-- Found ZLIB: /usr/lib/libz.so (found version "1.2.13") 
+-- Checking prototype qsort_r for GIT_QSORT_R_BSD
+-- Checking prototype qsort_r for GIT_QSORT_R_BSD - False
+-- Checking prototype qsort_r for GIT_QSORT_R_GNU
+-- Checking prototype qsort_r for GIT_QSORT_R_GNU - True
+-- Looking for qsort_s
+-- Looking for qsort_s - not found
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Looking for getloadavg
+-- Looking for getloadavg - found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Performing Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED
+-- Performing Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED - Success
+-- Enabled features:
+ * nanoseconds, support nanosecond precision file mtimes and ctimes
+ * HTTPS, using OpenSSL
+ * SHA1, using CollisionDetection
+ * SHA256, using OpenSSL
+ * http-parser, http-parser support (system)
+ * regex, using system PCRE2
+ * SSH, SSH transport support
+ * zlib, using system zlib
+ * futimens, futimens support
+ * threadsafe, threadsafe support
+ * ntlmclient, NTLM authentication support for Unix
+
+-- Disabled features:
+ * debugpool, debug pool allocator
+ * debugalloc, debug strict allocators
+ * debugopen, path validation in open
+ * SPNEGO, SPNEGO authentication support
+ * iconv, iconv encoding conversion support
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/devel/building/work/src/libgit2-1.5.2/build
++ ninja
+[1/186] Building C object src/cli/CMakeFiles/git2_cli.dir/unix/sighandler.c.o
+[2/186] Building C object src/cli/CMakeFiles/git2_cli.dir/progress.c.o
+[3/186] Building C object src/cli/CMakeFiles/git2_cli.dir/opt_usage.c.o
+[4/186] Building C object src/cli/CMakeFiles/git2_cli.dir/opt.c.o
+[5/186] Building C object src/cli/CMakeFiles/git2_cli.dir/main.c.o
+[6/186] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_help.c.o
+[7/186] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_hash_object.c.o
+[8/186] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_clone.c.o
+[9/186] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_cat_file.c.o
+[10/186] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd.c.o
+[11/186] Building C object src/util/CMakeFiles/util.dir/hash/openssl.c.o
+[12/186] Building C object src/util/CMakeFiles/util.dir/hash/sha1dc/ubc_check.c.o
+[13/186] Building C object src/util/CMakeFiles/util.dir/hash/sha1dc/sha1.c.o
+[14/186] Building C object src/util/CMakeFiles/util.dir/hash/collisiondetect.c.o
+[15/186] Building C object src/util/CMakeFiles/util.dir/unix/realpath.c.o
+[16/186] Building C object src/util/CMakeFiles/util.dir/unix/map.c.o
+[17/186] Building C object src/util/CMakeFiles/util.dir/zstream.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_init':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:162:9: warning: 'SHA256_Init' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  162 |         if (SHA256_Init(&ctx->c) != 1) {
+      |         ^~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.h:14,
+                 from /home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:8:
+/usr/include/openssl/sha.h:73:27: note: declared here
+   73 | OSSL_DEPRECATEDIN_3_0 int SHA256_Init(SHA256_CTX *c);
+      |                           ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_update':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:174:9: warning: 'SHA256_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  174 |         if (SHA256_Update(&ctx->c, data, len) != 1) {
+      |         ^~
+/usr/include/openssl/sha.h:74:27: note: declared here
+   74 | OSSL_DEPRECATEDIN_3_0 int SHA256_Update(SHA256_CTX *c,
+      |                           ^~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_final':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:186:9: warning: 'SHA256_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  186 |         if (SHA256_Final(out, &ctx->c) != 1) {
+      |         ^~
+/usr/include/openssl/sha.h:76:27: note: declared here
+   76 | OSSL_DEPRECATEDIN_3_0 int SHA256_Final(unsigned char *md, SHA256_CTX *c);
+      |                           ^~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[18/186] Building C object src/util/CMakeFiles/util.dir/wildmatch.c.o
+[19/186] Building C object src/util/CMakeFiles/util.dir/vector.c.o
+[20/186] Building C object src/util/CMakeFiles/util.dir/varint.c.o
+[21/186] Building C object src/util/CMakeFiles/util.dir/util.c.o
+[22/186] Building C object src/util/CMakeFiles/util.dir/utf8.c.o
+[23/186] Building C object src/util/CMakeFiles/util.dir/tsort.c.o
+[24/186] Building C object src/util/CMakeFiles/util.dir/thread.c.o
+[25/186] Building C object src/util/CMakeFiles/util.dir/strmap.c.o
+[26/186] Building C object src/util/CMakeFiles/util.dir/str.c.o
+[27/186] Building C object src/util/CMakeFiles/util.dir/sortedcache.c.o
+[28/186] Building C object src/util/CMakeFiles/util.dir/runtime.c.o
+[29/186] Building C object src/util/CMakeFiles/util.dir/regexp.c.o
+[30/186] Building C object src/util/CMakeFiles/util.dir/rand.c.o
+[31/186] Building C object src/util/CMakeFiles/util.dir/pqueue.c.o
+[32/186] Building C object src/util/CMakeFiles/util.dir/posix.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c: In function 'git_regexp_search':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c:148:12: warning: 'error' may be used uninitialized [-Wmaybe-uninitialized]
+  148 |         if (error < 0)
+      |            ^
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c:123:13: note: 'error' was declared here
+  123 |         int error;
+      |             ^~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[33/186] Building C object src/util/CMakeFiles/util.dir/pool.c.o
+[34/186] Building C object src/util/CMakeFiles/util.dir/net.c.o
+[35/186] Building C object src/util/CMakeFiles/util.dir/hash.c.o
+[36/186] Building C object src/util/CMakeFiles/util.dir/futils.c.o
+[37/186] Building C object src/util/CMakeFiles/util.dir/fs_path.c.o
+[38/186] Building C object src/util/CMakeFiles/util.dir/filebuf.c.o
+[39/186] Building C object src/util/CMakeFiles/util.dir/date.c.o
+[40/186] Building C object src/util/CMakeFiles/util.dir/allocators/win32_leakcheck.c.o
+[41/186] Building C object src/util/CMakeFiles/util.dir/allocators/stdalloc.c.o
+[42/186] Building C object src/util/CMakeFiles/util.dir/allocators/failalloc.c.o
+[43/186] Building C object src/util/CMakeFiles/util.dir/alloc.c.o
+[44/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xutils.c.o
+[45/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xprepare.c.o
+[46/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xpatience.c.o
+[47/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xmerge.c.o
+[48/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xhistogram.c.o
+[49/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xemit.c.o
+[50/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xdiffi.c.o
+[51/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/worktree.c.o
+[52/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/tree.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c: In function 'git_fs_path_owner_is':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c:1990:45: warning: 'sudo_uid' may be used uninitialized [-Wmaybe-uninitialized]
+ 1988 |         if ((owner_type & GIT_FS_PATH_OWNER_RUNNING_SUDO) != 0 &&
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1989 |             euid == 0 &&
+      |             ~~~~~~~~~~~~                     
+ 1990 |             sudo_uid_lookup(&sudo_uid) == 0 &&
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+ 1991 |             st.st_uid == sudo_uid) {
+      |             ~~~~~~~~~~~~~~~~~~~~~            
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c:1959:21: note: 'sudo_uid' was declared here
+ 1959 |         uid_t euid, sudo_uid;
+      |                     ^~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[53/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/tree-cache.c.o
+[54/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/winhttp.c.o
+[55/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/ssh.c.o
+[56/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart_protocol.c.o
+[57/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart_pkt.c.o
+[58/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart.c.o
+[59/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/local.c.o
+[60/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/httpclient.c.o
+[61/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/http.c.o
+[62/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/git.c.o
+[63/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/credential_helpers.c.o
+[64/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/credential.c.o
+[65/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth_ntlm.c.o
+[66/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth_negotiate.c.o
+[67/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth.c.o
+[68/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transport.c.o
+[69/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/transaction.c.o
+[70/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/trailer.c.o
+[71/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/trace.c.o
+[72/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/threadstate.c.o
+[73/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/tag.c.o
+[74/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/sysdir.c.o
+[75/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/submodule.c.o
+[76/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/tls.c.o
+[77/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/stransport.c.o
+[78/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/socket.c.o
+[79/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/registry.c.o
+[80/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_legacy.c.o
+[81/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_dynamic.c.o
+[82/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl.c.o
+[83/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/mbedtls.c.o
+[84/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/strarray.c.o
+[85/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/status.c.o
+[86/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/stash.c.o
+[87/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/signature.c.o
+[88/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/revwalk.c.o
+[89/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/revparse.c.o
+[90/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/revert.c.o
+[91/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/reset.c.o
+[92/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/repository.c.o
+[93/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/remote.c.o
+[94/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/refspec.c.o
+[95/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/refs.c.o
+[96/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/reflog.c.o
+[97/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/refdb_fs.c.o
+[98/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/refdb.c.o
+[99/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/rebase.c.o
+[100/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/reader.c.o
+[101/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/push.c.o
+[102/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/proxy.c.o
+[103/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/pathspec.c.o
+[104/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/path.c.o
+[105/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch_parse.c.o
+[106/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch_generate.c.o
+[107/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch.c.o
+[108/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/parse.c.o
+[109/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/pack.c.o
+[110/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/pack-objects.c.o
+[111/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/oidmap.c.o
+[112/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/oidarray.c.o
+[113/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/oid.c.o
+[114/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/offmap.c.o
+[115/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_pack.c.o
+[116/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_mempack.c.o
+[117/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_loose.c.o
+[118/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb.c.o
+[119/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/object_api.c.o
+[120/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/object.c.o
+[121/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/notes.c.o
+[122/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/netops.c.o
+[123/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/mwindow.c.o
+[124/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/midx.c.o
+[125/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/message.c.o
+[126/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge_file.c.o
+[127/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge_driver.c.o
+[128/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge.c.o
+[129/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/mailmap.c.o
+[130/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/libgit2.c.o
+[131/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/iterator.c.o
+[132/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/indexer.c.o
+[133/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/index.c.o
+[134/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/ignore.c.o
+[135/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/idxmap.c.o
+[136/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/ident.c.o
+[137/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/hashsig.c.o
+[138/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/graph.c.o
+[139/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/filter.c.o
+[140/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/fetchhead.c.o
+[141/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/fetch.c.o
+[142/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/errors.c.o
+[143/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/email.c.o
+[144/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_xdiff.c.o
+[145/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_tform.c.o
+[146/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_stats.c.o
+[147/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_print.c.o
+[148/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_parse.c.o
+[149/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_generate.c.o
+[150/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_file.c.o
+[151/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_driver.c.o
+[152/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff.c.o
+[153/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/describe.c.o
+[154/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/delta.c.o
+[155/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/crlf.c.o
+[156/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_snapshot.c.o
+[157/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_parse.c.o
+[158/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_mem.c.o
+[159/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_file.c.o
+[160/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_entries.c.o
+[161/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_cache.c.o
+[162/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/config.c.o
+[163/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit_list.c.o
+[164/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit_graph.c.o
+[165/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit.c.o
+[166/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/clone.c.o
+[167/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/cherrypick.c.o
+[168/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/checkout.c.o
+[169/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/cache.c.o
+[170/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/buf.c.o
+[171/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/branch.c.o
+[172/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/blob.c.o
+[173/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/blame_git.c.o
+[174/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/blame.c.o
+[175/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/attrcache.c.o
+[176/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/attr_file.c.o
+[177/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/attr.c.o
+[178/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/apply.c.o
+[179/186] Building C object src/libgit2/CMakeFiles/libgit2.dir/annotated_commit.c.o
+[180/186] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/crypt_openssl.c.o
+[181/186] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/unicode_builtin.c.o
+[182/186] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/util.c.o
+[183/186] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/ntlm.c.o
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c: In function 'ntlm_crypt_init_functions':
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:130:9: warning: 'DES_set_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  130 |         ntlm->crypt_ctx.des_set_key_fn = DES_set_key;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:16:
+/usr/include/openssl/des.h:186:5: note: declared here
+  186 | int DES_set_key(const_DES_cblock *key, DES_key_schedule *schedule);
+      |     ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:131:9: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  131 |         ntlm->crypt_ctx.des_ecb_encrypt_fn = DES_ecb_encrypt;
+      |         ^~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:135:9: warning: 'HMAC_CTX_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  135 |         ntlm->crypt_ctx.hmac_ctx_new_fn = HMAC_CTX_new;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:18:
+/usr/include/openssl/hmac.h:33:33: note: declared here
+   33 | OSSL_DEPRECATEDIN_3_0 HMAC_CTX *HMAC_CTX_new(void);
+      |                                 ^~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:136:9: warning: 'HMAC_CTX_free' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  136 |         ntlm->crypt_ctx.hmac_ctx_free_fn = HMAC_CTX_free;
+      |         ^~~~
+/usr/include/openssl/hmac.h:35:28: note: declared here
+   35 | OSSL_DEPRECATEDIN_3_0 void HMAC_CTX_free(HMAC_CTX *ctx);
+      |                            ^~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:137:9: warning: 'HMAC_CTX_reset' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  137 |         ntlm->crypt_ctx.hmac_ctx_reset_fn = HMAC_CTX_reset;
+      |         ^~~~
+/usr/include/openssl/hmac.h:34:27: note: declared here
+   34 | OSSL_DEPRECATEDIN_3_0 int HMAC_CTX_reset(HMAC_CTX *ctx);
+      |                           ^~~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:139:9: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  139 |         ntlm->crypt_ctx.hmac_init_ex_fn = HMAC_Init_ex;
+      |         ^~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:140:9: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  140 |         ntlm->crypt_ctx.hmac_update_fn = HMAC_Update;
+      |         ^~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:141:9: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  141 |         ntlm->crypt_ctx.hmac_final_fn = HMAC_Final;
+      |         ^~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:142:9: warning: 'MD4' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  142 |         ntlm->crypt_ctx.md4_fn = MD4;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:17:
+/usr/include/openssl/md4.h:53:38: note: declared here
+   53 | OSSL_DEPRECATEDIN_3_0 unsigned char *MD4(const unsigned char *d, size_t n,
+      |                                      ^~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+In function 'unicode_builtin_encoding_convert',
+    inlined from 'ntlm_unicode_utf8_to_16' at /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:416:9:
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:380:37: warning: pointer 'out' may be used after 'realloc' [-Wuse-after-free]
+  380 |                 out_len = out_start - out;
+      |                           ~~~~~~~~~~^~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:375:32: note: call to 'realloc' here
+  375 |                 if ((new_out = realloc(out, out_size)) == NULL) {
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+In function 'unicode_builtin_encoding_convert',
+    inlined from 'ntlm_unicode_utf16_to_8' at /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:427:9:
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:380:37: warning: pointer 'out' may be used after 'realloc' [-Wuse-after-free]
+  380 |                 out_len = out_start - out;
+      |                           ~~~~~~~~~~^~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:375:32: note: call to 'realloc' here
+  375 |                 if ((new_out = realloc(out, out_size)) == NULL) {
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[184/186] Linking C executable git2_cli
+[185/186] Linking C shared library libgit2.so.1.5.2
+[186/186] Creating library symlink libgit2.so.1.5 libgit2.so
++ mkdir -p /home/devel/building/work/src/libgit2-1.5.2/build-static
++ cd /home/devel/building/work/src/libgit2-1.5.2/build-static
++ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DUSE_HTTP_PARSER=system -DUSE_HTTPS=OpenSSL -DREGEX_BACKEND=pcre2 -DUSE_SSH=ON -DBUILD_TESTS=OFF '-DCMAKE_C_FLAGS=-O2 -pipe -mabi=lp64d -march=rv64gc' -DBUILD_SHARED_LIBS=OFF -Wno-dev
+-- The C compiler identification is GNU 13.0.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.9.4") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_NSEC
+-- Performing Test HAVE_STRUCT_STAT_NSEC - Success
+-- Looking for futimens
+-- Looking for futimens - found
+-- Performing Test IS_WALL_SUPPORTED
+-- Performing Test IS_WALL_SUPPORTED - Success
+-- Performing Test IS_WEXTRA_SUPPORTED
+-- Performing Test IS_WEXTRA_SUPPORTED - Success
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED - Failed
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED - Success
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED - Success
+-- Performing Test IS_WMISSING_DECLARATIONS_SUPPORTED
+-- Performing Test IS_WMISSING_DECLARATIONS_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED - Success
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED - Success
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED - Success
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED - Success
+-- Performing Test IS_WC11_EXTENSIONS_SUPPORTED
+-- Performing Test IS_WC11_EXTENSIONS_SUPPORTED - Failed
+-- Performing Test IS_WC99_C11_COMPAT_SUPPORTED
+-- Performing Test IS_WC99_C11_COMPAT_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SUPPORTED
+-- Performing Test IS_WFORMAT_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED - Success
+-- Checking for module 'heimdal-gssapi'
+--   Package 'heimdal-gssapi', required by 'virtual:world', not found
+-- Could NOT find GSSAPI (missing: GSSAPI_LIBRARIES GSSAPI_INCLUDE_DIR) 
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.0.7")  
+-- Found HTTP_Parser: /usr/include  
+-- Found PCRE: /usr/lib/libpcre.so  
+-- Found PCRE2: /usr/lib/libpcre2-8.so  
+-- Checking for module 'libssh2'
+--   Found libssh2, version 1.10.0
+--   Resolved libraries: /usr/lib/libssh2.so
+-- Looking for libssh2_userauth_publickey_frommemory in /usr/lib/libssh2.so
+-- Looking for libssh2_userauth_publickey_frommemory in /usr/lib/libssh2.so - found
+-- Found ZLIB: /usr/lib/libz.so (found version "1.2.13") 
+-- Checking prototype qsort_r for GIT_QSORT_R_BSD
+-- Checking prototype qsort_r for GIT_QSORT_R_BSD - False
+-- Checking prototype qsort_r for GIT_QSORT_R_GNU
+-- Checking prototype qsort_r for GIT_QSORT_R_GNU - True
+-- Looking for qsort_s
+-- Looking for qsort_s - not found
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Looking for getloadavg
+-- Looking for getloadavg - found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Performing Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED
+-- Performing Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED - Success
+-- Enabled features:
+ * nanoseconds, support nanosecond precision file mtimes and ctimes
+ * HTTPS, using OpenSSL
+ * SHA1, using CollisionDetection
+ * SHA256, using OpenSSL
+ * http-parser, http-parser support (system)
+ * regex, using system PCRE2
+ * SSH, SSH transport support
+ * zlib, using system zlib
+ * futimens, futimens support
+ * threadsafe, threadsafe support
+ * ntlmclient, NTLM authentication support for Unix
+
+-- Disabled features:
+ * debugpool, debug pool allocator
+ * debugalloc, debug strict allocators
+ * debugopen, path validation in open
+ * SPNEGO, SPNEGO authentication support
+ * iconv, iconv encoding conversion support
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/devel/building/work/src/libgit2-1.5.2/build-static
++ ninja
+[1/185] Building C object src/cli/CMakeFiles/git2_cli.dir/unix/sighandler.c.o
+[2/185] Building C object src/cli/CMakeFiles/git2_cli.dir/progress.c.o
+[3/185] Building C object src/cli/CMakeFiles/git2_cli.dir/opt_usage.c.o
+[4/185] Building C object src/cli/CMakeFiles/git2_cli.dir/opt.c.o
+[5/185] Building C object src/cli/CMakeFiles/git2_cli.dir/main.c.o
+[6/185] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_help.c.o
+[7/185] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_hash_object.c.o
+[8/185] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_clone.c.o
+[9/185] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd_cat_file.c.o
+[10/185] Building C object src/cli/CMakeFiles/git2_cli.dir/cmd.c.o
+[11/185] Building C object src/util/CMakeFiles/util.dir/hash/openssl.c.o
+[12/185] Building C object src/util/CMakeFiles/util.dir/hash/sha1dc/ubc_check.c.o
+[13/185] Building C object src/util/CMakeFiles/util.dir/hash/sha1dc/sha1.c.o
+[14/185] Building C object src/util/CMakeFiles/util.dir/hash/collisiondetect.c.o
+[15/185] Building C object src/util/CMakeFiles/util.dir/unix/realpath.c.o
+[16/185] Building C object src/util/CMakeFiles/util.dir/unix/map.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_init':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:162:9: warning: 'SHA256_Init' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  162 |         if (SHA256_Init(&ctx->c) != 1) {
+      |         ^~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.h:14,
+                 from /home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:8:
+/usr/include/openssl/sha.h:73:27: note: declared here
+   73 | OSSL_DEPRECATEDIN_3_0 int SHA256_Init(SHA256_CTX *c);
+      |                           ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_update':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:174:9: warning: 'SHA256_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  174 |         if (SHA256_Update(&ctx->c, data, len) != 1) {
+      |         ^~
+/usr/include/openssl/sha.h:74:27: note: declared here
+   74 | OSSL_DEPRECATEDIN_3_0 int SHA256_Update(SHA256_CTX *c,
+      |                           ^~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c: In function 'git_hash_sha256_final':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/hash/openssl.c:186:9: warning: 'SHA256_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  186 |         if (SHA256_Final(out, &ctx->c) != 1) {
+      |         ^~
+/usr/include/openssl/sha.h:76:27: note: declared here
+   76 | OSSL_DEPRECATEDIN_3_0 int SHA256_Final(unsigned char *md, SHA256_CTX *c);
+      |                           ^~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[17/185] Building C object src/util/CMakeFiles/util.dir/zstream.c.o
+[18/185] Building C object src/util/CMakeFiles/util.dir/wildmatch.c.o
+[19/185] Building C object src/util/CMakeFiles/util.dir/vector.c.o
+[20/185] Building C object src/util/CMakeFiles/util.dir/varint.c.o
+[21/185] Building C object src/util/CMakeFiles/util.dir/util.c.o
+[22/185] Building C object src/util/CMakeFiles/util.dir/utf8.c.o
+[23/185] Building C object src/util/CMakeFiles/util.dir/tsort.c.o
+[24/185] Building C object src/util/CMakeFiles/util.dir/thread.c.o
+[25/185] Building C object src/util/CMakeFiles/util.dir/strmap.c.o
+[26/185] Building C object src/util/CMakeFiles/util.dir/str.c.o
+[27/185] Building C object src/util/CMakeFiles/util.dir/sortedcache.c.o
+[28/185] Building C object src/util/CMakeFiles/util.dir/runtime.c.o
+[29/185] Building C object src/util/CMakeFiles/util.dir/regexp.c.o
+[30/185] Building C object src/util/CMakeFiles/util.dir/rand.c.o
+[31/185] Building C object src/util/CMakeFiles/util.dir/pqueue.c.o
+[32/185] Building C object src/util/CMakeFiles/util.dir/posix.c.o
+[33/185] Building C object src/util/CMakeFiles/util.dir/pool.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c: In function 'git_regexp_search':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c:148:12: warning: 'error' may be used uninitialized [-Wmaybe-uninitialized]
+  148 |         if (error < 0)
+      |            ^
+/home/devel/building/work/src/libgit2-1.5.2/src/util/regexp.c:123:13: note: 'error' was declared here
+  123 |         int error;
+      |             ^~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[34/185] Building C object src/util/CMakeFiles/util.dir/net.c.o
+[35/185] Building C object src/util/CMakeFiles/util.dir/hash.c.o
+[36/185] Building C object src/util/CMakeFiles/util.dir/futils.c.o
+[37/185] Building C object src/util/CMakeFiles/util.dir/fs_path.c.o
+[38/185] Building C object src/util/CMakeFiles/util.dir/filebuf.c.o
+[39/185] Building C object src/util/CMakeFiles/util.dir/date.c.o
+[40/185] Building C object src/util/CMakeFiles/util.dir/allocators/win32_leakcheck.c.o
+[41/185] Building C object src/util/CMakeFiles/util.dir/allocators/stdalloc.c.o
+[42/185] Building C object src/util/CMakeFiles/util.dir/allocators/failalloc.c.o
+[43/185] Building C object src/util/CMakeFiles/util.dir/alloc.c.o
+[44/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xutils.c.o
+[45/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xprepare.c.o
+[46/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xpatience.c.o
+[47/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xmerge.c.o
+[48/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xhistogram.c.o
+[49/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xemit.c.o
+[50/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/xdiff/xdiffi.c.o
+[51/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/worktree.c.o
+[52/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/tree.c.o
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c: In function 'git_fs_path_owner_is':
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c:1990:45: warning: 'sudo_uid' may be used uninitialized [-Wmaybe-uninitialized]
+ 1988 |         if ((owner_type & GIT_FS_PATH_OWNER_RUNNING_SUDO) != 0 &&
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1989 |             euid == 0 &&
+      |             ~~~~~~~~~~~~                     
+ 1990 |             sudo_uid_lookup(&sudo_uid) == 0 &&
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+ 1991 |             st.st_uid == sudo_uid) {
+      |             ~~~~~~~~~~~~~~~~~~~~~            
+/home/devel/building/work/src/libgit2-1.5.2/src/util/fs_path.c:1959:21: note: 'sudo_uid' was declared here
+ 1959 |         uid_t euid, sudo_uid;
+      |                     ^~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[53/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/tree-cache.c.o
+[54/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/winhttp.c.o
+[55/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/ssh.c.o
+[56/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart_protocol.c.o
+[57/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart_pkt.c.o
+[58/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/smart.c.o
+[59/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/local.c.o
+[60/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/httpclient.c.o
+[61/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/http.c.o
+[62/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/git.c.o
+[63/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/credential_helpers.c.o
+[64/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/credential.c.o
+[65/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth_ntlm.c.o
+[66/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth_negotiate.c.o
+[67/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transports/auth.c.o
+[68/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transport.c.o
+[69/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/transaction.c.o
+[70/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/trailer.c.o
+[71/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/trace.c.o
+[72/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/threadstate.c.o
+[73/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/tag.c.o
+[74/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/sysdir.c.o
+[75/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/submodule.c.o
+[76/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/tls.c.o
+[77/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/stransport.c.o
+[78/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/socket.c.o
+[79/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/registry.c.o
+[80/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_legacy.c.o
+[81/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_dynamic.c.o
+[82/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/openssl.c.o
+[83/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/streams/mbedtls.c.o
+[84/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/strarray.c.o
+[85/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/status.c.o
+[86/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/stash.c.o
+[87/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/signature.c.o
+[88/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/revwalk.c.o
+[89/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/revparse.c.o
+[90/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/revert.c.o
+[91/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/reset.c.o
+[92/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/repository.c.o
+[93/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/remote.c.o
+[94/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/refspec.c.o
+[95/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/refs.c.o
+[96/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/reflog.c.o
+[97/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/refdb_fs.c.o
+[98/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/refdb.c.o
+[99/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/rebase.c.o
+[100/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/reader.c.o
+[101/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/push.c.o
+[102/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/proxy.c.o
+[103/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/pathspec.c.o
+[104/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/path.c.o
+[105/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch_parse.c.o
+[106/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch_generate.c.o
+[107/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/patch.c.o
+[108/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/parse.c.o
+[109/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/pack.c.o
+[110/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/pack-objects.c.o
+[111/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/oidmap.c.o
+[112/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/oidarray.c.o
+[113/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/oid.c.o
+[114/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/offmap.c.o
+[115/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_pack.c.o
+[116/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_mempack.c.o
+[117/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb_loose.c.o
+[118/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/odb.c.o
+[119/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/object_api.c.o
+[120/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/object.c.o
+[121/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/notes.c.o
+[122/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/netops.c.o
+[123/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/mwindow.c.o
+[124/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/midx.c.o
+[125/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/message.c.o
+[126/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge_file.c.o
+[127/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge_driver.c.o
+[128/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/merge.c.o
+[129/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/mailmap.c.o
+[130/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/libgit2.c.o
+[131/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/iterator.c.o
+[132/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/indexer.c.o
+[133/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/index.c.o
+[134/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/ignore.c.o
+[135/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/idxmap.c.o
+[136/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/ident.c.o
+[137/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/hashsig.c.o
+[138/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/graph.c.o
+[139/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/filter.c.o
+[140/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/fetchhead.c.o
+[141/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/fetch.c.o
+[142/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/errors.c.o
+[143/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/email.c.o
+[144/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_xdiff.c.o
+[145/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_tform.c.o
+[146/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_stats.c.o
+[147/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_print.c.o
+[148/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_parse.c.o
+[149/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_generate.c.o
+[150/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_file.c.o
+[151/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff_driver.c.o
+[152/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/diff.c.o
+[153/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/describe.c.o
+[154/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/delta.c.o
+[155/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/crlf.c.o
+[156/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_snapshot.c.o
+[157/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_parse.c.o
+[158/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_mem.c.o
+[159/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_file.c.o
+[160/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_entries.c.o
+[161/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config_cache.c.o
+[162/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/config.c.o
+[163/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit_list.c.o
+[164/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit_graph.c.o
+[165/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/commit.c.o
+[166/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/clone.c.o
+[167/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/cherrypick.c.o
+[168/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/checkout.c.o
+[169/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/cache.c.o
+[170/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/buf.c.o
+[171/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/branch.c.o
+[172/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/blob.c.o
+[173/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/blame_git.c.o
+[174/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/blame.c.o
+[175/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/attrcache.c.o
+[176/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/attr_file.c.o
+[177/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/attr.c.o
+[178/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/apply.c.o
+[179/185] Building C object src/libgit2/CMakeFiles/libgit2.dir/annotated_commit.c.o
+[180/185] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/crypt_openssl.c.o
+[181/185] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/unicode_builtin.c.o
+[182/185] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/util.c.o
+[183/185] Building C object deps/ntlmclient/CMakeFiles/ntlmclient.dir/ntlm.c.o
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c: In function 'ntlm_crypt_init_functions':
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:130:9: warning: 'DES_set_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  130 |         ntlm->crypt_ctx.des_set_key_fn = DES_set_key;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:16:
+/usr/include/openssl/des.h:186:5: note: declared here
+  186 | int DES_set_key(const_DES_cblock *key, DES_key_schedule *schedule);
+      |     ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:131:9: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  131 |         ntlm->crypt_ctx.des_ecb_encrypt_fn = DES_ecb_encrypt;
+      |         ^~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:135:9: warning: 'HMAC_CTX_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  135 |         ntlm->crypt_ctx.hmac_ctx_new_fn = HMAC_CTX_new;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:18:
+/usr/include/openssl/hmac.h:33:33: note: declared here
+   33 | OSSL_DEPRECATEDIN_3_0 HMAC_CTX *HMAC_CTX_new(void);
+      |                                 ^~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:136:9: warning: 'HMAC_CTX_free' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  136 |         ntlm->crypt_ctx.hmac_ctx_free_fn = HMAC_CTX_free;
+      |         ^~~~
+/usr/include/openssl/hmac.h:35:28: note: declared here
+   35 | OSSL_DEPRECATEDIN_3_0 void HMAC_CTX_free(HMAC_CTX *ctx);
+      |                            ^~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:137:9: warning: 'HMAC_CTX_reset' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  137 |         ntlm->crypt_ctx.hmac_ctx_reset_fn = HMAC_CTX_reset;
+      |         ^~~~
+/usr/include/openssl/hmac.h:34:27: note: declared here
+   34 | OSSL_DEPRECATEDIN_3_0 int HMAC_CTX_reset(HMAC_CTX *ctx);
+      |                           ^~~~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:139:9: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  139 |         ntlm->crypt_ctx.hmac_init_ex_fn = HMAC_Init_ex;
+      |         ^~~~
+/usr/include/openssl/hmac.h:43:27: note: declared here
+   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+      |                           ^~~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:140:9: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  140 |         ntlm->crypt_ctx.hmac_update_fn = HMAC_Update;
+      |         ^~~~
+/usr/include/openssl/hmac.h:45:27: note: declared here
+   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+      |                           ^~~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:141:9: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  141 |         ntlm->crypt_ctx.hmac_final_fn = HMAC_Final;
+      |         ^~~~
+/usr/include/openssl/hmac.h:47:27: note: declared here
+   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+      |                           ^~~~~~~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:142:9: warning: 'MD4' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  142 |         ntlm->crypt_ctx.md4_fn = MD4;
+      |         ^~~~
+In file included from /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/crypt_openssl.c:17:
+/usr/include/openssl/md4.h:53:38: note: declared here
+   53 | OSSL_DEPRECATEDIN_3_0 unsigned char *MD4(const unsigned char *d, size_t n,
+      |                                      ^~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+In function 'unicode_builtin_encoding_convert',
+    inlined from 'ntlm_unicode_utf8_to_16' at /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:416:9:
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:380:37: warning: pointer 'out' may be used after 'realloc' [-Wuse-after-free]
+  380 |                 out_len = out_start - out;
+      |                           ~~~~~~~~~~^~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:375:32: note: call to 'realloc' here
+  375 |                 if ((new_out = realloc(out, out_size)) == NULL) {
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+In function 'unicode_builtin_encoding_convert',
+    inlined from 'ntlm_unicode_utf16_to_8' at /home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:427:9:
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:380:37: warning: pointer 'out' may be used after 'realloc' [-Wuse-after-free]
+  380 |                 out_len = out_start - out;
+      |                           ~~~~~~~~~~^~~~~
+/home/devel/building/work/src/libgit2-1.5.2/deps/ntlmclient/unicode_builtin.c:375:32: note: call to 'realloc' here
+  375 |                 if ((new_out = realloc(out, out_size)) == NULL) {
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+[184/185] Linking C executable git2_cli
+[185/185] Linking C static library libgit2.a
++ cd /home/devel/building/work/src/libgit2-1.5.2
++ DESTDIR=/home/devel/building/work/pkg
++ ninja -C build install
+ninja: entering directory 'build'
+[1/1] Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/libgit2.pc
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgit2.so.1.5.2
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgit2.so.1.5
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgit2.so
+-- Installing: /home/devel/building/work/pkg/usr/include/git2
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/refspec.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/patch.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/blame.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/worktree.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/transport.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/oidarray.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/blob.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/config.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/apply.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/mailmap.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/submodule.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/version.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/reset.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/stdint.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/notes.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/rebase.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/cherrypick.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/describe.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/odb.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/buffer.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/reflog.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/repository.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/revwalk.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/odb_backend.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/global.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/refs.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/attr.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/message.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/filter.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/remote.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/clone.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/status.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/credential.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/strarray.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/common.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/merge.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/errors.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/proxy.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/refdb.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/object.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/oid.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/transaction.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/tag.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/commit.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/branch.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/revert.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/diff.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/checkout.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/credential_helpers.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/email.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/deprecated.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/stash.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/trace.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/signature.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/net.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/transport.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/stream.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/config.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/path.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/refdb_backend.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/openssl.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/mempack.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/reflog.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/repository.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/odb_backend.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/refs.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/filter.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/remote.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/credential.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/alloc.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/merge.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/midx.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/commit.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/commit_graph.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/diff.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/email.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/cred.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/hashsig.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/sys/index.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/ignore.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/cert.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/types.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/pathspec.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/indexer.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/index.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/revparse.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/cred_helpers.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/annotated_commit.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/tree.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/pack.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2/graph.h
+-- Installing: /home/devel/building/work/pkg/usr/include/git2.h
+-- Installing: /home/devel/building/work/pkg/usr/bin/git2_cli
++ DESTDIR=/home/devel/building/work/pkg
++ ninja -C build-static install
+ninja: entering directory 'build-static'
+[1/1] Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/libgit2.pc
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgit2.a
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/refspec.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/patch.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/blame.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/worktree.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/transport.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/oidarray.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/blob.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/config.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/apply.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/mailmap.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/submodule.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/version.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/reset.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/stdint.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/notes.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/rebase.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/cherrypick.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/describe.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/odb.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/buffer.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/reflog.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/repository.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/revwalk.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/odb_backend.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/global.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/refs.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/attr.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/message.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/filter.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/remote.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/clone.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/status.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/credential.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/strarray.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/common.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/merge.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/errors.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/proxy.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/refdb.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/object.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/oid.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/transaction.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/tag.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/commit.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/branch.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/revert.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/diff.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/checkout.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/credential_helpers.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/email.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/deprecated.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/stash.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/trace.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/signature.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/net.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/transport.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/stream.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/config.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/path.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/refdb_backend.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/openssl.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/mempack.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/reflog.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/repository.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/odb_backend.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/refs.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/filter.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/remote.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/credential.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/alloc.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/merge.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/midx.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/commit.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/commit_graph.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/diff.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/email.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/cred.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/hashsig.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/sys/index.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/ignore.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/cert.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/types.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/pathspec.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/indexer.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/index.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/revparse.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/cred_helpers.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/annotated_commit.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/tree.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/pack.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2/graph.h
+-- Up-to-date: /home/devel/building/work/pkg/usr/include/git2.h
+-- Installing: /home/devel/building/work/pkg/usr/bin/git2_cli
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/bin/
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/include/
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/lib/
+-rwxr-xr-x  0 root   root  1002152 Mar  1 23:20 usr/lib/libgit2.so.1.5.2
+-rw-r--r--  0 root   root  5755166 Mar  1 23:20 usr/lib/libgit2.a
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 Mar  1 23:20 usr/lib/libgit2.so.1.5 -> libgit2.so.1.5.2
+lrwxrwxrwx  0 root   root        0 Mar  1 23:20 usr/lib/libgit2.so -> libgit2.so.1.5
+-rw-r--r--  0 root   root      268 Mar  1 23:19 usr/lib/pkgconfig/libgit2.pc
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/include/git2/
+-rw-r--r--  0 root   root     1827 Feb 15 10:03 usr/include/git2.h
+-rw-r--r--  0 root   root     3302 Feb 15 10:03 usr/include/git2/refspec.h
+-rw-r--r--  0 root   root    10076 Feb 15 10:03 usr/include/git2/patch.h
+-rw-r--r--  0 root   root     7875 Feb 15 10:03 usr/include/git2/blame.h
+-rw-r--r--  0 root   root     8120 Feb 15 10:03 usr/include/git2/worktree.h
+-rw-r--r--  0 root   root     1097 Feb 15 10:03 usr/include/git2/transport.h
+-rw-r--r--  0 root   root      914 Feb 15 10:03 usr/include/git2/oidarray.h
+-rw-r--r--  0 root   root     9600 Feb 15 10:03 usr/include/git2/blob.h
+-rw-r--r--  0 root   root    26225 Feb 15 10:03 usr/include/git2/config.h
+-rw-r--r--  0 root   root     4750 Feb 15 10:03 usr/include/git2/apply.h
+-rw-r--r--  0 root   root     3625 Feb 15 10:03 usr/include/git2/mailmap.h
+-rw-r--r--  0 root   root    24747 Feb 15 10:03 usr/include/git2/submodule.h
+-rw-r--r--  0 root   root     1206 Feb 15 10:03 usr/include/git2/version.h
+-rw-r--r--  0 root   root     3396 Feb 15 10:03 usr/include/git2/reset.h
+-rw-r--r--  0 root   root     7651 Feb 15 10:03 usr/include/git2/stdint.h
+-rw-r--r--  0 root   root     8436 Feb 15 10:03 usr/include/git2/notes.h
+-rw-r--r--  0 root   root    12811 Feb 15 10:03 usr/include/git2/rebase.h
+-rw-r--r--  0 root   root     2781 Feb 15 10:03 usr/include/git2/cherrypick.h
+-rw-r--r--  0 root   root     5439 Feb 15 10:03 usr/include/git2/describe.h
+-rw-r--r--  0 root   root    20043 Feb 15 10:03 usr/include/git2/odb.h
+-rw-r--r--  0 root   root     1814 Feb 15 10:03 usr/include/git2/buffer.h
+-rw-r--r--  0 root   root     4616 Feb 15 10:03 usr/include/git2/reflog.h
+-rw-r--r--  0 root   root    31793 Feb 15 10:03 usr/include/git2/repository.h
+-rw-r--r--  0 root   root     8919 Feb 15 10:03 usr/include/git2/revwalk.h
+-rw-r--r--  0 root   root     3872 Feb 15 10:03 usr/include/git2/odb_backend.h
+-rw-r--r--  0 root   root     1215 Feb 15 10:03 usr/include/git2/global.h
+-rw-r--r--  0 root   root    27951 Feb 15 10:03 usr/include/git2/refs.h
+-rw-r--r--  0 root   root    13148 Feb 15 10:03 usr/include/git2/attr.h
+-rw-r--r--  0 root   root     2425 Feb 15 10:03 usr/include/git2/message.h
+-rw-r--r--  0 root   root     8220 Feb 15 10:03 usr/include/git2/filter.h
+-rw-r--r--  0 root   root    34686 Feb 15 10:03 usr/include/git2/remote.h
+-rw-r--r--  0 root   root     5994 Feb 15 10:03 usr/include/git2/clone.h
+-rw-r--r--  0 root   root    15029 Feb 15 10:03 usr/include/git2/status.h
+-rw-r--r--  0 root   root     9885 Feb 15 10:03 usr/include/git2/credential.h
+-rw-r--r--  0 root   root     1422 Feb 15 10:03 usr/include/git2/strarray.h
+-rw-r--r--  0 root   root    16546 Feb 15 10:03 usr/include/git2/common.h
+-rw-r--r--  0 root   root    19597 Feb 15 10:03 usr/include/git2/merge.h
+-rw-r--r--  0 root   root     6366 Feb 15 10:03 usr/include/git2/errors.h
+-rw-r--r--  0 root   root     2345 Feb 15 10:03 usr/include/git2/proxy.h
+-rw-r--r--  0 root   root     1929 Feb 15 10:03 usr/include/git2/refdb.h
+-rw-r--r--  0 root   root     7832 Feb 15 10:03 usr/include/git2/object.h
+-rw-r--r--  0 root   root     8499 Feb 15 10:03 usr/include/git2/oid.h
+-rw-r--r--  0 root   root     3824 Feb 15 10:03 usr/include/git2/transaction.h
+-rw-r--r--  0 root   root    10789 Feb 15 10:03 usr/include/git2/tag.h
+-rw-r--r--  0 root   root    18221 Feb 15 10:03 usr/include/git2/commit.h
+-rw-r--r--  0 root   root    10622 Feb 15 10:03 usr/include/git2/branch.h
+-rw-r--r--  0 root   root     2630 Feb 15 10:03 usr/include/git2/revert.h
+-rw-r--r--  0 root   root    52276 Feb 15 10:03 usr/include/git2/diff.h
+-rw-r--r--  0 root   root    14779 Feb 15 10:03 usr/include/git2/checkout.h
+-rw-r--r--  0 root   root     1636 Feb 15 10:03 usr/include/git2/credential_helpers.h
+-rw-r--r--  0 root   root     3427 Feb 15 10:03 usr/include/git2/email.h
+-rw-r--r--  0 root   root    29014 Feb 15 10:03 usr/include/git2/deprecated.h
+-rw-r--r--  0 root   root     7697 Feb 15 10:03 usr/include/git2/stash.h
+-rw-r--r--  0 root   root     1772 Feb 15 10:03 usr/include/git2/trace.h
+-rw-r--r--  0 root   root     3276 Feb 15 10:03 usr/include/git2/signature.h
+-rw-r--r--  0 root   root     1098 Feb 15 10:03 usr/include/git2/net.h
+drwxr-xr-x  0 root   root        0 Mar  1 23:20 usr/include/git2/sys/
+-rw-r--r--  0 root   root     2604 Feb 15 10:03 usr/include/git2/ignore.h
+-rw-r--r--  0 root   root     4280 Feb 15 10:03 usr/include/git2/cert.h
+-rw-r--r--  0 root   root    12214 Feb 15 10:03 usr/include/git2/types.h
+-rw-r--r--  0 root   root     9656 Feb 15 10:03 usr/include/git2/pathspec.h
+-rw-r--r--  0 root   root     4736 Feb 15 10:03 usr/include/git2/indexer.h
+-rw-r--r--  0 root   root    27779 Feb 15 10:03 usr/include/git2/index.h
+-rw-r--r--  0 root   root     3557 Feb 15 10:03 usr/include/git2/revparse.h
+-rw-r--r--  0 root   root      407 Feb 15 10:03 usr/include/git2/cred_helpers.h
+-rw-r--r--  0 root   root     3877 Feb 15 10:03 usr/include/git2/annotated_commit.h
+-rw-r--r--  0 root   root    14533 Feb 15 10:03 usr/include/git2/tree.h
+-rw-r--r--  0 root   root     7852 Feb 15 10:03 usr/include/git2/pack.h
+-rw-r--r--  0 root   root     2442 Feb 15 10:03 usr/include/git2/graph.h
+-rw-r--r--  0 root   root    13350 Feb 15 10:03 usr/include/git2/sys/transport.h
+-rw-r--r--  0 root   root     4037 Feb 15 10:03 usr/include/git2/sys/stream.h
+-rw-r--r--  0 root   root     4258 Feb 15 10:03 usr/include/git2/sys/config.h
+-rw-r--r--  0 root   root     1872 Feb 15 10:03 usr/include/git2/sys/path.h
+-rw-r--r--  0 root   root    12743 Feb 15 10:03 usr/include/git2/sys/refdb_backend.h
+-rw-r--r--  0 root   root     1105 Feb 15 10:03 usr/include/git2/sys/openssl.h
+-rw-r--r--  0 root   root     2822 Feb 15 10:03 usr/include/git2/sys/mempack.h
+-rw-r--r--  0 root   root      524 Feb 15 10:03 usr/include/git2/sys/reflog.h
+-rw-r--r--  0 root   root     5966 Feb 15 10:03 usr/include/git2/sys/repository.h
+-rw-r--r--  0 root   root     5626 Feb 15 10:03 usr/include/git2/sys/odb_backend.h
+-rw-r--r--  0 root   root     1197 Feb 15 10:03 usr/include/git2/sys/refs.h
+-rw-r--r--  0 root   root    12431 Feb 15 10:03 usr/include/git2/sys/filter.h
+-rw-r--r--  0 root   root     1260 Feb 15 10:03 usr/include/git2/sys/remote.h
+-rw-r--r--  0 root   root     2486 Feb 15 10:03 usr/include/git2/sys/credential.h
+-rw-r--r--  0 root   root     3417 Feb 15 10:03 usr/include/git2/sys/alloc.h
+-rw-r--r--  0 root   root     6474 Feb 15 10:03 usr/include/git2/sys/merge.h
+-rw-r--r--  0 root   root     1783 Feb 15 10:03 usr/include/git2/sys/midx.h
+-rw-r--r--  0 root   root     2389 Feb 15 10:03 usr/include/git2/sys/commit.h
+-rw-r--r--  0 root   root     5033 Feb 15 10:03 usr/include/git2/sys/commit_graph.h
+-rw-r--r--  0 root   root     2955 Feb 15 10:03 usr/include/git2/sys/diff.h
+-rw-r--r--  0 root   root     1289 Feb 15 10:03 usr/include/git2/sys/email.h
+-rw-r--r--  0 root   root      395 Feb 15 10:03 usr/include/git2/sys/cred.h
+-rw-r--r--  0 root   root     2889 Feb 15 10:03 usr/include/git2/sys/hashsig.h
+-rw-r--r--  0 root   root     5294 Feb 15 10:03 usr/include/git2/sys/index.h
+-rwxr-xr-x  0 root   root   923952 Mar  1 23:20 usr/bin/git2_cli
+=======> Building '/home/devel/packages/libgit2#1.5.2-1.riscv64.pkg.tar.zst' succeeded.
+2:30.70

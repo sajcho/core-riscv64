@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-riscv64.pub
+RWRxfkjVPsZVE2LYrZYi9f7CjdnXcooQQbdX67WF5tclL2/R+gLNd/QUiQ6PjAzOaxqdv6gwRPXu3Gwch6orfi6olCOufgS06Ag=
+SHA256 (Pkgfile) = a6064ddab1f19bb4a5af00038cb37ac40f23be53209154c337f342c109f4b5b6
+SHA256 (.footprint) = 0bfa29dd22d35b1a1e12523d9e0b8affe0d1a537c557450880317efd3b2257a9
+SHA256 (libgit2-1.5.2.tar.gz) = 57638ac0e319078f56a7e17570be754515e5b1276d3750904b4214c92e8fa196

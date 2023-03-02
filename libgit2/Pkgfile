@@ -1,0 +1,54 @@
+# Description:	A linkable library for Git
+# URL:		https://libgit2.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	http-parser libpcre2 libssh2
+
+name=libgit2
+version=1.5.2
+release=1
+source=(https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	mkdir build
+	cd build
+
+	cmake .. -G Ninja \
+		-DCMAKE_BUILD_TYPE=None \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DUSE_HTTP_PARSER=system \
+		-DUSE_HTTPS=OpenSSL \
+		-DREGEX_BACKEND=pcre2 \
+		-DUSE_SSH=ON \
+		-DBUILD_TESTS=OFF \
+		-DCMAKE_C_FLAGS="$CFLAGS" \
+		-Wno-dev
+
+	ninja
+
+	# Build static library
+	mkdir -p $SRC/${name}-${version}/build-static
+	cd $SRC/${name}-${version}/build-static
+
+	cmake .. -G Ninja \
+		-DCMAKE_BUILD_TYPE=None \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DUSE_HTTP_PARSER=system \
+		-DUSE_HTTPS=OpenSSL \
+		-DREGEX_BACKEND=pcre2 \
+		-DUSE_SSH=ON \
+		-DBUILD_TESTS=OFF \
+		-DCMAKE_C_FLAGS="$CFLAGS" \
+		-DBUILD_SHARED_LIBS=OFF \
+		-Wno-dev
+
+	ninja
+
+	cd $SRC/${name}-${version}
+
+	DESTDIR=$PKG ninja -C build install
+	DESTDIR=$PKG ninja -C build-static install
+}
