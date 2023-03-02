@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/core-riscv64.pub
+RWSu8eiZmupOpR3ARkQuIjKaZv3tjzWJ7KfkHaWS03tmKq+6cRMjYKKhbXNwBq2le7ac1IAdRRKlyb/l1QB34N/kxu3Cll1cnQw=
+SHA256 (Pkgfile) = df80cfd89bdcbd0bbddec7cbf1e9641272356864e6673dd20ae8c5cc1aa0e462
+SHA256 (.footprint) = 7f8f11fb3c29e71f03e59b9f33b0172ea9aa2b75f251194966084e44c379c951
+SHA256 (rustc-1.67.1-src.tar.xz) = 77e0615011f887d9533d5374bf9c15c590c3caf32bbb035b392d1c2ae502a682
+SHA256 (rust-enable-ra-for-riscv64.patch) = f9e0efa07a3f33dbc5da822629de7fefbe077d069ce2d2290768088f5a482a7a
+SHA256 (rustc-1.65.0-disable-libssh2.patch) = fdb5c5ee2270b44d8d2c6f5096a6e51537b1f30558647e75257248afde5fbd25
+SHA256 (rustc-1.65.0-no-default-pie.patch) = 49c31d97c8fa652e797ed032fec1e6aa0da795f23a6de9646825e9f77d603d62
+SHA256 (rustc-1.67.0-disable-http2.patch) = 6e3df152b661363eef18afe0a7b2e13e767f9b9bba1df2af7a244000e541cbe1
