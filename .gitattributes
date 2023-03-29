@@ -1,2 +1,0 @@
-*.riscv64.pkg.tar.zst filter=lfs diff=lfs merge=lfs -text
-*.log.zst filter=lfs diff=lfs merge=lfs -text
