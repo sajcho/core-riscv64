@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpe0vQdujSVs77l8XBX5xIuW1rBlJfXjbKLNbRF4EzbIzK4/Ep7eBRr+2jZ25N7gyyh0SNkKkxed+U0IHzewobgw=
-SHA256 (Pkgfile) = 84f7d11b267b5dd8e76ca73df25391ed5d3fd5d78d17a331edcb4145761a7209
-SHA256 (.footprint) = c372c89d428ffed96fb9a9c4a3c8318fd6b524f25afbd7e0e551f2f63795ff6c
-SHA256 (procps-ng-4.0.2.tar.xz) = ee3fcd2ea6ff94aa43a81ba5cc7912b7c9615acd2911c7a3d3ea081287fdf47a
-SHA256 (sysctl.conf) = 4d3cb2a61ded632b20740628dcd19741a180aaf3b735c6a0d26efb0d3f9e2140
