@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpa6k7MqFgPR9VtuwaXQFcVGuUHEb+C4jBzR/Q7Oew/uF7QXB9nleUvctNQD6tNvN1AzgmYadfETTV5jXRRtwyQs=
-SHA256 (Pkgfile) = 9a6fda7cdc3dde4f8c8038c83bc70952f5d79ce43f12f916b5180fbee8c8608d
-SHA256 (.footprint) = d91026e5d2ff4c01ff02aac7d5d2964b61bafc14f5640f5550e341af7303b79e
-SHA256 (less-608-beta.tar.gz) = a69abe2e0a126777e021d3b73aa3222e1b261f10e64624d41ec079685a6ac209
-SHA256 (filter) = 5d5ced375baffa004d642cf815de1c9062ee283edc7600d189aa3e146598fbd9
