@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpe786se/Lk0vIfYbvh8tJpoAg2uKzyBDTUku0vcz9VzLdxUocL0pKyBHBgk1kWouf2WA27ZCoan4QRcvsSCcQwg=
-SHA256 (Pkgfile) = 2c99c39e7f3122117d288e8db009e584ab73db2a395e15f7ee87c7cc6ab1787f
-SHA256 (.footprint) = 7f86d42a0065b9a9bed6b2c2355debc433ee2277c3f8a583a0729cd2a76f807c
-SHA256 (diffutils-3.9.tar.xz) = d80d3be90a201868de83d78dad3413ad88160cc53bcc36eb9eaf7c20dbf023f1

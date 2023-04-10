@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpSUb6FQnK9YDLcZUe/QUcmwWBwUBypowzOdukRZYzCVVJRNBFBlWHOIXLy77tDeitvCkEZqi6J4CzFIybYFqRgw=
-SHA256 (Pkgfile) = d42c7c1536403bebe4ba213ce82d09bcabbdacc7eec57ddb66bf5cd79ace48d2
-SHA256 (.footprint) = 3a7bbfc94c40691a4871ab86fb334dfcbc7f98f74ed06847f091ba0b1721d540
-SHA256 (dash-0.5.12.tar.gz) = 6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a

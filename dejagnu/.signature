@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpQRrD9CvYX3mm7i8rrbJrm6I1yp9zBR6rnUNR/wKs2TfZR979vdA4TXcBTdp49q/QYkGAXbk0AU91wnf9oo5BwA=
-SHA256 (Pkgfile) = 617dd8e5037bdb6c9c292c08fbdab5e7fab9e5ecf8f7879d1522f75c4ed80e48
-SHA256 (.footprint) = 42c34102e94e46954971aaeba7c588e63996c18dc20a1cd3e1c557a638fe153c
-SHA256 (dejagnu-1.6.3.tar.gz) = 87daefacd7958b4a69f88c6856dbd1634261963c414079d0c371f589cd66a2e3

@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpa3CrUfspBeDgYLKWQKM/M5OosZk4noyF75x4WrsZl/eN5yKeNe+CZPPU0IMX75L1Y8ZLUZNnz8M4+dmbqCBrAk=
-SHA256 (Pkgfile) = 4cc63adac773d3c1535b0eb5ca7964bfb5ea28c8b7b800667d2009652a8a973e
-SHA256 (.footprint) = f014bf78f761ec6a6889b5854e0cbf4cce15e1081fa368739cd7fe5392cf0bec
-SHA256 (elfutils-0.188.tar.bz2) = fb8b0e8d0802005b9a309c60c1d8de32dd2951b56f0c3a3cb56d21ce01595dff

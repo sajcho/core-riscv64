@@ -1,3 +1,0 @@
-drwxr-xr-x	root/root	lib/
-drwxr-xr-x	root/root	lib/security/
--rwxr-xr-x	root/root	lib/security/pam_dumb_runtime_dir.so
