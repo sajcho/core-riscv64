@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpclHhpXrNFMrFi+DVRxla0tSbmgCti1YeT7M1wl3iKooBBS8ULh3eHzuVfEy37x3154NIGhBxI+bj3vqw8a4+A4=
-SHA256 (Pkgfile) = dca5d55f18724384053bbea083c2be902cc894d5718958e8d552579381c0fd0c
-SHA256 (.footprint) = 0c8f29166730785f2d01bfedbdba6ed8189dc8f471c9d1b24dae88e4375166eb
-SHA256 (iputils-20221126.tar.gz) = 745ea711fe06d5c57d470d21acce3c3ab866eb6afb69379a16c6d60b89bd4311

@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpU6gOov+CK3zBfbxQ83uzyfeEcW0rD3TMU41TdRpFIk/hxmo/MaZTHlcIklSTX/zU27Jni+9zxXjMee9VRrs2w4=
-SHA256 (Pkgfile) = 0ca6ab23b67eb6d9ae34fbd2536c5cd7fe99ba616837a2c35b2c4b38c557fb11
-SHA256 (.footprint) = d7e00e8a135ed152dfb3663742fff59997c5efc70754cb4dd14866e866d4192d
-SHA256 (chrony-4.3.tar.gz) = 9d0da889a865f089a5a21610ffb6713e3c9438ce303a63b49c2fb6eaff5b8804
-SHA256 (chrony.conf) = 540be2ccdd6dad6bb13e72c9c31cd7c6a39b09307fb2be919e9a76e8a7a1bae2
-SHA256 (chrony.run) = be9f2b39ed729614c38e678dde6fdd1c457b5e3cc99c5be5630978c1905ab3eb

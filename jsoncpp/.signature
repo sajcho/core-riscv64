@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpbxF7WNmRigQspN5uxb1TxD0qRActpLVNoBNtnX1nBcygxbbxeQNqUZShKJZk8ZwcoDiLLdlem/GQsk8RvsD8gM=
-SHA256 (Pkgfile) = 6a0d29a169f34994fb3521b78db17abdd6560dbf9cbee5fcf735f9dbcf113051
-SHA256 (.footprint) = 4580fce6df8142de5a77f4e2aa3dae8e23efa67b6de4bfdae3d41afb16dd697e
-SHA256 (jsoncpp-1.9.5.tar.gz) = f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2
