@@ -1,47 +1,22 @@
 # Description:	The Rust language with Cargo included.
 # URL:		http://www.rust-lang.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libgit2 libssh2 llvm-toolchain
+# Depends on:	llvm-toolchain
 
 name=rust
-version=1.67.1
+version=1.68.2
 release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.xz \
-	rust-enable-ra-for-riscv64.patch \
-	rustc-1.65.0-disable-libssh2.patch \
-	rustc-1.65.0-no-default-pie.patch \
-	rustc-1.67.0-disable-http2.patch)
+	0001-bootstrap-Change-libexec-dir.patch)
 
 build() {
 	cd rustc-${version}-src
 
-	patch -p1 -i $SRC/rustc-1.65.0-disable-libssh2.patch
-	patch -p1 -i $SRC/rustc-1.67.0-disable-http2.patch
-	patch -p1 -i $SRC/rustc-1.65.0-no-default-pie.patch
-	patch -p1 -i $SRC/rust-enable-ra-for-riscv64.patch
+	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
 
 	rm -r src/llvm-project/
 	mkdir -p src/llvm-project/libunwind/
-
-	# Remove other unused vendored libraries
-	rm -r vendor/curl-sys/curl/
-	rm -r vendor/*jemalloc-sys*/jemalloc/
-	rm -r vendor/libmimalloc-sys/c_src/mimalloc/
-	rm -r vendor/libz-sys/src/zlib/
-	rm -r vendor/libz-sys/src/zlib-ng/
-	rm -r vendor/lzma-sys/xz-*/
-	rm -r vendor/openssl-src/openssl/
-	rm -r vendor/libssh2-sys/
-	rm -r vendor/libgit2-sys/libgit2/
-
-	sed -i.lzma -e '/LZMA_API_STATIC/d' src/bootstrap/tool.rs
-
-	sed -i.ffi -e '$a #[link(name = "ffi")] extern {}' \
-		compiler/rustc_llvm/src/lib.rs
-
-	find vendor -name .cargo-checksum.json \
-		-exec sed -i.uncheck -e 's/"files":{[^}]*}/"files":{ }/' '{}' '+'
 
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
@@ -87,7 +62,8 @@ EOF
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 	export RUST_BACKTRACE="1"
-	export LIBSSH2_SYS_USE_PKG_CONFIG="1"
+	export LIBGIT2_NO_PKG_CONFIG=1
+	export LIBSSH2_NO_PKG_CONFIG=1
 
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml ${JOBS:+-j ${JOBS}}
 
