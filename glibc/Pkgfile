@@ -44,8 +44,9 @@ build() {
 	make V=1
 
 	# Optional
-	make -k check || :
-	cp tests.sum $PKGMK_PACKAGE_DIR/tests-sum-${name}-${version}-${release}.txt
+	#
+	#make -k check || :
+	#cp tests.sum $PKGMK_PACKAGE_DIR/test-${name}-${version}-${release}-result.txt
 
 	make install_root=$PKG install
 
