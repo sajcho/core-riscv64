@@ -5,14 +5,14 @@
 
 name=glibc
 version=2.37
-release=1
+release=2
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.11.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-6.1.11
+	cd $SRC/linux-6.1.11
 
 	make mrproper
 	make ARCH=riscv INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -27,7 +27,7 @@ build() {
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
-		--enable-kernel=4.9 \
+		--enable-kernel=5.15 \
 		--enable-bind-now \
 		--enable-tunables \
 		--enable-memory-tagging \
@@ -44,9 +44,7 @@ build() {
 	make V=1
 
 	# Optional
-	#
 	#make -k check || :
-	#cp tests.sum $PKGMK_PACKAGE_DIR/test-${name}-${version}-${release}-result.txt
 
 	make install_root=$PKG install
 
