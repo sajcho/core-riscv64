@@ -4,16 +4,15 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.0.1
-_develversion=13-20230409
+version=13.1.0
 release=0
-source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
+source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${_develversion}
+	cd ${name}-${version}
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${_develversion}/${name}/config/riscv/t-linux
+	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/riscv/t-linux
 
 	mkdir build
 	cd build
@@ -21,12 +20,12 @@ build() {
 	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--enable-bootstrap \
+		--disable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
 		--enable-plugin \
-		--enable-threads=posix \
+		--enable-shared \
 		--enable-__cxa_atexit \
-		--enable-clocale=gnu \
+		--enable-threads=posix \
 		--enable-initfini-array \
 		--enable-linker-build-id \
 		--enable-checking=release \
@@ -41,21 +40,15 @@ build() {
 		--with-arch=rv64gc \
 		--with-system-zlib \
 		--with-linker-hash-style=gnu \
-		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX-RISCV64" \
 		--build=$CHOST \
 		--host=$CHOST
 
-	make \
-		BOOT_CFLAGS="$CFLAGS -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS" \
-		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
-		profiledbootstrap
+	make
 
 	# Optional
 	# lots of unexpacted errors - see " grep -A 6 Summary buildlog
-	#
 	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-${release}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -83,6 +76,4 @@ build() {
 	for f in $PKG/usr/bin/*; do
 		ln -s ${f##*/} $PKG/usr/bin/$CHOST-${f##*/}
 	done
-
-	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/{libstdc++.la,libsupc++.la}
 }
