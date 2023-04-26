@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.40
-release=1
+release=2
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
@@ -47,10 +47,7 @@ build() {
 	make V=1 tooldir=/usr
 
 	# Optional
-	#
-	#make check 2>&1 | tee testlog
-	#grep -A 6 Summary testlog \
-	#	> $PKGMK_PACKAGE_DIR/test-${name}-${version}-${release}-result.txt
+	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
