@@ -4,16 +4,18 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.68.2
+version=1.69.0
 release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.xz \
-	0001-bootstrap-Change-libexec-dir.patch)
+	change-libexec-bootstrap.patch \
+	change-libexec-cargo.patch)
 
 build() {
 	cd rustc-${version}-src
 
-	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
+	patch -p1 -i $SRC/change-libexec-bootstrap.patch
+	patch -p1 -i $SRC/change-libexec-cargo.patch
 
 	rm -r src/llvm-project/
 	mkdir -p src/llvm-project/libunwind/
@@ -45,7 +47,7 @@ cat <<- EOF > $SRC/config.toml
 	python = "/usr/bin/python3"
 	cargo = "/usr/bin/cargo"
 	rustc = "/usr/bin/rustc"
-	tools = ["cargo", "clippy", "rustfmt"]
+	tools = ["analysis", "cargo", "clippy", "rls", "rustfmt", "rust-analyzer", "rust-demangler", "src"]
 
 	[target.riscv64gc-unknown-linux-gnu]
 	cc = "/usr/bin/riscv64-unknown-linux-gnu-cc"
