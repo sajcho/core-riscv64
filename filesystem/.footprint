@@ -18,6 +18,7 @@ lrwxrwxrwx	root/root	etc/mtab -> /proc/self/mounts
 drwxr-xr-x	root/root	home/
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
+lrwxrwxrwx	root/root	lib/lp64d -> .
 drwxr-xr-x	root/root	lib/modules/
 lrwxrwxrwx	root/root	lib64 -> lib
 drwxr-xr-x	root/root	media/
@@ -36,6 +37,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/lp64d -> .
 lrwxrwxrwx	root/root	usr/lib64 -> lib
 drwxr-xr-x	root/root	usr/sbin/
 drwxr-xr-x	root/root	usr/share/
@@ -59,6 +61,7 @@ drwxr-xr-x	root/root	var/lib/pkg/
 lrwxrwxrwx	root/root	var/lock -> ../run/lock
 drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	root/root	var/log/old/
+drwxr-xr-x	root/root	var/log/pkgbuild/
 lrwxrwxrwx	root/root	var/mail -> spool/mail
 lrwxrwxrwx	root/root	var/run -> ../run
 drwxr-xr-x	root/root	var/spool/

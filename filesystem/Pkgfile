@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=filesystem
-version=20220113
+version=20230515
 release=1
 source=(issue motd shells group passwd shadow securetty fstab mime.types)
 
@@ -41,6 +41,7 @@ build() {
 	install -d $PKG/var/lib/pkg
 	install -d $PKG/var/log
 	install -d $PKG/var/log/old
+	install -d $PKG/var/log/pkgbuild
 	ln -s ../run $PKG/var/run
 	install -d $PKG/var/spool
 	install -d $PKG/var/ftp
@@ -54,6 +55,10 @@ build() {
 	install -d -m 1777 $PKG/var/spool/mail
 	install -d -m 1777 $PKG/var/tmp
 	install -d -m 1777 $PKG/dev/shm
+
+	# Some ports on arch riscv64 require it.
+	ln -s . $PKG/lib64/lp64d
+	ln -s . $PKG/usr/lib64/lp64d
 
 	# /dev
 	mknod $PKG/dev/console c 5 1
