@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpTFQXyJ/2C+hxRVItiLzAC5Wbblbq7FW0SaBe/EEzEDq11rNph1icyvHk96dDifQZlw+b/NQhjaHtut7fC5nOQc=
-SHA256 (Pkgfile) = 967bcb27208713dbd3bf343a366ed559d992eb620e847579173337eb480bf297
+RWSu8eiZmupOpazlDhDGPMlSkxz/YLkzEtTpH3JqwHvLMMwMEM+winV/VHT2g/b2vldU5lXwfxCMkeRKooLVKqZmLWTS05xFhgw=
+SHA256 (Pkgfile) = a96434e90ff8ec41be629f891297250cc998954901a677a1794f6e7f170f78d2
 SHA256 (.footprint) = c30c2c298f1ee107eb22144a3cd8a9047505f89e064b4b138b8c64acff623b32
 SHA256 (binutils-2.40.tar.xz) = 0f8a4c272d7f17f369ded10a4aca28b8e304828e95526da482b0ccc4dfc9d8e1
