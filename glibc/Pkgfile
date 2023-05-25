@@ -5,20 +5,24 @@
 
 name=glibc
 version=2.37
-release=2
+release=3
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.11.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.3.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.1.11
+	cd $SRC/linux-6.3.3
 
 	make mrproper
 	make ARCH=riscv INSTALL_HDR_PATH=$PKG/usr headers_install
 	chown -R root:root $PKG/usr
 
 	cd $SRC/${name}-${version}
+
+	# Fix a security issue identified upstream
+	sed '/width -=/s/workend - string/number_length/' \
+		-i stdio-common/vfprintf-process-arg.c
 
 	mkdir build
 	cd build
@@ -30,7 +34,6 @@ build() {
 		--enable-kernel=5.15 \
 		--enable-bind-now \
 		--enable-tunables \
-		--enable-memory-tagging \
 		--enable-stack-protector=strong \
 		--disable-profile \
 		--disable-timezone-tools \
@@ -44,7 +47,7 @@ build() {
 	make V=1
 
 	# Optional
-	#make -k check || :
+	make -k check || :
 
 	make install_root=$PKG install
 
