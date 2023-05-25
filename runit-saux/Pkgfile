@@ -28,7 +28,7 @@ build() {
 
 	# system is riscv64
 	[ $CARCH = "riscv64" ] &&
-	sed -i 's|Aarch64|riscv64|' $PKG/etc/runit/1
+	sed -i 's|Aarch64|RISCV64|' $PKG/etc/runit/1
 
 	[ $CARCH = "riscv64" ] &&
 		rm $PKG/etc/runit/core-services/12-cpufreq.sh
