@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.40
-release=3
+release=4
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
@@ -50,7 +50,7 @@ build() {
 	make V=1 tooldir=/usr
 
 	# Optional
-	make -k check || :
+	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
