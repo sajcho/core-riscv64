@@ -5,17 +5,12 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=16.0.4
+version=16.0.5
 release=1
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz \
-	llvm-minimal-support-riscv64.diff)
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
-	cd ${_realname}-${version}.src/llvm
-
-	patch -p1 -i $SRC/llvm-minimal-support-riscv64.diff
-
-	cd $SRC/${_realname}-${version}.src
+	cd ${_realname}-${version}.src
 
 	mkdir build
 	cd build
@@ -74,4 +69,6 @@ build() {
 		-x run-find-all-symbols.py $PKG
 	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
+
+	find $PKG -type f -name '*.a' -delete
 }
