@@ -1,5 +1,10 @@
 # core-riscv64 ports
 
+## Rootfs (2023-06-15) from core and opt ports is now available on
+
+https://sourceforge.net/projects/rootfs-riscv64/files/
+
+
 ### MACHINE (model V1.3b)
 \# cat /sys/firmware/devicetree/base/model
 
