@@ -4,8 +4,8 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.1.0
-release=3
+version=13.2.0
+release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
@@ -14,19 +14,21 @@ build() {
 
 	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/riscv/t-linux
 
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/ -pipe}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/ -pipe}"
+
 	mkdir build
 	cd build
 
 	../configure \
 		--prefix=/usr \
-		--libdir=/usr/lib \
 		--libexecdir=/usr/lib \
 		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
 		--enable-plugin \
-		--enable-shared \
-		--enable-__cxa_atexit \
 		--enable-threads=posix \
+		--enable-__cxa_atexit \
+		--enable-clocale=gnu \
 		--enable-initfini-array \
 		--enable-linker-build-id \
 		--enable-checking=release \
@@ -46,10 +48,15 @@ build() {
 		--build=$CHOST \
 		--host=$CHOST
 
-	make profiledbootstrap
+	make V=1 \
+		BOOT_CFLAGS="-O2 -mcpu=sifive-u74 -mtune=sifive-7-series -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS" \
+		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
+		profiledbootstrap
 
 	# Optional
 	#make -k check || :
+	#$SRC/${name}-${version}/contrib/test_summary \
+	#	> $PKGMK_PACKAGE_DIR/${name}-${version}-check-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
