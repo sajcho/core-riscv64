@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpaU8uljHpuit9tuhixkCcRSS+m+75u3o0gGytARGCA5LTF9VAsToEw61Ua3wrwI4l1h1SlQ2XYWQmyuDg9olFwQ=
-SHA256 (Pkgfile) = 0d2213d26bfb89fde339a8527b59a626775aec1082e312cb32b7efaf8d917480
-SHA256 (.footprint) = 28798b2a735dc8f4e9cb878353b6b6f8094b505eec4ef64d43665448d1fbe728
-SHA256 (kbd-2.5.1.tar.xz) = ccdf452387a6380973d2927363e9cbb939fa2068915a6f937ff9d24522024683
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa0097z27LtLopOlL/2/f/DSFKpGTxL6XsWxlqh4eA+wQ8BgRmZ/px4jKZ2CrtIiZHN/kazVKpP684Ztrmeep4jZiw0=
+SHA256 (Pkgfile) = dc46c1fa3d3ac012ad93626a9d0b67bd91b164e35f8ec45b53470c17107e9cd1
+SHA256 (.footprint) = daed78f795dd8b6a185093584c9784821bf535ea7a1a05c5bd458f57e7316223
+SHA256 (kbd-2.6.3.tar.xz) = 04996c08d7d1c460966fb244a3d3883352c2674b7ad522003d9f4ecb8ab48deb
