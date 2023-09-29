@@ -1,6 +1,6 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpX3jYH68CcJ1viUb8+aTpdOHExxVkaiDQRBlFuTSON/WLKmmwgj/a4Ka8nsbhDsOLpySmBtPujOt6HmKoiEvNAM=
-SHA256 (Pkgfile) = c676a7987765e95ed48d33093602c59a1e14966c56ef02de0229433906307e10
-SHA256 (.footprint) = 7c89663513f53d885ddc615973f8ef1cd0902af9bc9b805212e69f2bbae96eec
-SHA256 (util-linux-2.38.1.tar.xz) = 60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa0094TrWehFkHktcEN6IiBe8XmJCGtoi5oeuxxo3tOsxwg4TFRo2BAQqjF+2tYE191ksVzkD+APZopLMSZE3yqd5wY=
+SHA256 (Pkgfile) = 634ef66a9c97c40571722bb36af9531d2c08770ef57e149be177485571f67cf7
+SHA256 (.footprint) = 3d275e178e685e5b6db5d6583de0a55dcfb44f2f795e3f97c9f4abe7942af9dd
+SHA256 (util-linux-2.39.2.tar.xz) = 87abdfaa8e490f8be6dde976f7c80b9b5ff9f301e1b67e3899e1f05a59a1531f
 SHA256 (uuidd.run) = 04707269e2e4056d68197e991251bc6e0a810d832528f8be2087d0f773a6c8a9
