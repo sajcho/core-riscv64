@@ -4,12 +4,15 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.40
-release=4
+version=2.41
+release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
+
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
@@ -17,14 +20,12 @@ build() {
 	../configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
-		--libdir=/usr/lib  \
 		--enable-ld=default \
 		--enable-gold=no \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
-		--enable-lto \
 		--enable-64-bit-bfd \
 		--enable-pgo-build=lto \
 		--enable-install-libiberty \
@@ -41,15 +42,14 @@ build() {
 		--disable-libdecnumber \
 		--disable-readline \
 		--with-pic \
-		--with-sysroot=/ \
 		--with-system-zlib \
-		--with-pkgversion="SAUX-RISCV64" \
+		--with-pkgversion=SAUX-RISCV64 \
 		--build=$CHOST \
 		--host=$CHOST
 
 	make V=1 tooldir=/usr
 
-	# Optional
+	#  Optional
 	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
