@@ -1,10 +1,10 @@
 # Description:	Perl programming language
 # URL:		http://www.perl.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	db gdbm
+# Depends on:	db gdbm libxcrypt
 
 name=perl
-version=5.36.1
+version=5.38.0
 release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
@@ -19,10 +19,6 @@ build() {
 		-Dprivlib=/usr/lib/perl5/${version%.*} \
 		-Dsitelib=/usr/lib/perl5/site_perl/${version%.*} \
 		-Dvendorlib=/usr/lib/perl5/site_perl/${version%.*} \
-		-Dman1dir=/usr/share/man/man1 \
-		-Dman3dir=/usr/share/man/man3 \
-		-Dinstallman1dir=/usr/share/man/man1 \
-		-Dinstallman3dir=/usr/share/man/man3 \
 		-Dman1ext=1pm \
 		-Dman3ext=3pm \
 		-Di_gdbm \
@@ -36,7 +32,7 @@ build() {
 		-Dccdlflags="-Wl,--enable-new-dtags $LDFLAGS" \
 		-Dlddlflags="-shared $LDFLAGS" \
 		-Dpager="/usr/bin/less -isr" \
-		-Dcf_by="SAUX-RISC-V 64 bit"
+		-Dcf_by="SAUX-RISCV64"
 
 	make V=1
 
