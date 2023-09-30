@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpUB4FOt4lB8zhmDb7XmdcMnBSd9haAAIMUXWJVzu9tBkDlOz3hmSHmEBYwq03bsyX3KFNRIdKvbD9l09Lqf+kA4=
-SHA256 (Pkgfile) = 39d91f0fce3e4e0094cccec37caf7eaded8ad937f90b1f3df32bf460141a6241
-SHA256 (.footprint) = 65024176049a35a4a2cb1d9a5ff60872684c1df4c982eeaf2a6de534a11bc0fe
-SHA256 (llvm-project-16.0.5.src.tar.xz) = 37f540124b9cfd4680666e649f557077f9937c9178489cea285a672e714b2863
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa0098n/YQ/C9g+Y3maPzLS0OrLZTBgQnQfc6Mhc4cqyMwUQc4i5UY+a4nztFA6jkUi6PimYDU6CSbo85i29I1+VrAE=
+SHA256 (Pkgfile) = 1d424f58ecafc57ae1197447db7a25b912830af499e8940b6c8b687a3d2179f5
+SHA256 (.footprint) = 9788bda401518a1750c9286358ab8c060ccdada2fafa76dfc3e4ea0dac4c9440
+SHA256 (llvm-project-17.0.1.src.tar.xz) = b0e42aafc01ece2ca2b42e3526f54bebc4b1f1dc8de6e34f46a0446a13e882b9
