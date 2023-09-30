@@ -1,0 +1,7 @@
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa009zmejjpqGF2JArZYKELvsViqxIpjOjCBX3FS+H6i1fxDhMJR9kuzXhfdkOsj5CK6gGqPDuhkYbbwvqHLnwafcgc=
+SHA256 (Pkgfile) = b17c7a87beaaa7e2646bac0ecb062f902952ed46e9e102b17f78eaf41a78b03b
+SHA256 (.footprint) = 1fbc778688224bd663ec69295431977a83d14f39da280bac446c617445a141a1
+SHA256 (rustc-1.72.1-src.tar.gz) = 7f48845f6a52cdbb5d63fb0528fd5f520eb443275b55f98e328159f86568f895
+SHA256 (0001-bootstrap-Change-libexec-dir.patch) = b7069748dbb6651e2942931a1d41dc999d879a534a40d2ee49f7ce341908406b
+SHA256 (0001-cargo-Change-libexec-dir.patch) = 72441e1bcfdc281634835bb9b915232d1cd5b290e8d1702e93ccca25e7459c23
