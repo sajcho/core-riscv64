@@ -4,21 +4,31 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.70.0
+_realname=rustc
+version=1.73.0-beta.7
+_nameversion=beta
+realversion="rustc 1.73.0-beta.7 (7c76587ed 2023-09-22)"
 release=1
 
-source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.xz \
-	change-libexec-bootstrap.patch \
-	change-libexec-cargo.patch)
+source=(https://static.rust-lang.org/dist/${_realname}-${_nameversion}-src.tar.xz \
+	0001-dist.rs-change-dir-libexec-to-lib.patch \
+	0002-tool.rs-change-dir-libexec-to-lib.patch)
 
 build() {
-	cd rustc-${version}-src
+	cd ${_realname}-${_nameversion}-src
 
-	patch -p1 -i $SRC/change-libexec-bootstrap.patch
-	patch -p1 -i $SRC/change-libexec-cargo.patch
+	export CC="gcc"
+	export CXX="g++"
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
-	rm -r src/llvm-project/
-	mkdir -p src/llvm-project/libunwind/
+	# use /usr/lib instead of /usr/libexec
+	patch -p1 -i $SRC/0001-dist.rs-change-dir-libexec-to-lib.patch
+	patch -p1 -i $SRC/0002-tool.rs-change-dir-libexec-to-lib.patch
+
+	# Remove bundled dependencies.
+	#rm -rf src/llvm-project/*
+	#install -d src/llvm-project/libunwind
 
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
@@ -27,12 +37,17 @@ cat <<- EOF > $SRC/config.toml
 	[llvm]
 	ninja = true
 	link-shared = true
+	static-libstdcpp = false
 
 	[install]
 	prefix = "/usr"
 
 	[rust]
-	channel = "stable"
+	channel = "beta"
+	codegen-units-std = 1
+	debuginfo-level-std = 2
+	rpath = false
+	codegen-tests = false
 	description = "SAUX-RISCV64"
 
 	[build]
@@ -44,10 +59,20 @@ cat <<- EOF > $SRC/config.toml
 	extended = true
 	vendor = true
 	docs = false
+	profiler = false
+	sanitizers = true
 	python = "/usr/bin/python3"
 	cargo = "/usr/bin/cargo"
 	rustc = "/usr/bin/rustc"
-	tools = ["analysis", "cargo", "clippy", "rls", "rustfmt", "rust-analyzer", "rust-demangler", "src"]
+	tools = ["analysis",
+		"cargo",
+		"clippy",
+		"rustfmt",
+		"rust-analyzer",
+		"rust-analyzer-proc-macro-srv",
+		"rustdoc",
+		"rust-demangler",
+		"src"]
 
 	[target.riscv64gc-unknown-linux-gnu]
 	cc = "/usr/bin/riscv64-unknown-linux-gnu-cc"
@@ -64,6 +89,8 @@ EOF
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 	export RUST_BACKTRACE="1"
+
+	# prevent - if libgit2, libssh2 is installed
 	export LIBGIT2_NO_PKG_CONFIG=1
 	export LIBSSH2_NO_PKG_CONFIG=1
 
@@ -74,9 +101,10 @@ EOF
 	# Cleanup
 	rm -r $PKG/usr/share/doc
 	rm -r $PKG/usr/share/zsh
-	rm -r $PKG/etc
 	rm $PKG/usr/lib/rustlib/{components,install.log,manifest-*,rust-installer-version,uninstall.sh}
-
 	rm $PKG/usr/lib/{libstd-*,libtest-*}
+
 	ln -srft $PKG/usr/lib $PKG/usr/lib/rustlib/riscv64gc-unknown-linux-gnu/lib/*.so
+
+	find $PKG -type f -name 'README.md' -delete
 }

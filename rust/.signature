@@ -1,7 +1,7 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpchId/DkcrjIc7wlRs4THveB+ZWAhC2yXNAlWvYx6lDjl6bjnUFEZpiAPvlJSRVihKF+feE6RRb4nknQdKqvDwI=
-SHA256 (Pkgfile) = 41860a34d1f67e71eb987aeb8a2f16b00ad7caeda7ba9e9dc0d51833d3c1f891
-SHA256 (.footprint) = 106b6888c44a998c589e5f07cb29275337b7ca961cbbbbafe88a917b10890c92
-SHA256 (rustc-1.70.0-src.tar.xz) = bb8e9c564566b2d3228d95de9063a9254182446a161353f1d843bfbaf5c34639
-SHA256 (change-libexec-bootstrap.patch) = c58e84913cba47e71b75b9c387864fbf3b92fc91b454be4e499931d38f21c5d2
-SHA256 (change-libexec-cargo.patch) = aa65949624181360840b297ce14eb9af2e8bab3dc9f791836cbf098d46337eb8
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa009zSvBqGnOASbD0PN7hbz5c9HhbTiJp2YsWGh7LKQu0CreNbF82j1snPOX1uIV1G04Q7nlA2dHPqVS5IC3bIPugQ=
+SHA256 (Pkgfile) = a032d352bdb93c403aaa58aaf185beb689a734f1bf299acf31694a3928bc7edd
+SHA256 (.footprint) = e8c0299996518d3a07aa1eff97e26c4f39b943cd11fafc0962eb2bd25e44b86e
+SHA256 (rustc-beta-src.tar.xz) = 092c75597254a81c4b7ca4a1164f196aaee59e6de09ce09dff7808fdfb230c76
+SHA256 (0001-dist.rs-change-dir-libexec-to-lib.patch) = 027875cf3ced367d8552590ff44527891dadb46d5edda7282c107eea1552fbeb
+SHA256 (0002-tool.rs-change-dir-libexec-to-lib.patch) = c5fb60b7adb8516317fb83d4ae98a861342e7ec94d71dc9874242fce2fc2a14c
