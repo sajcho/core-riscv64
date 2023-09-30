@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpcrf9fwRDwlI2rvz29sPG1e8kVlO237haxOL4qDOTOAs/YEyzKuwLegOkM0U6/fb8VzrO5e419lIKKF1OwviKQc=
-SHA256 (Pkgfile) = 9db14e1e1eddbcadef173ba6eec86e4ed074842beafd164c48c4e88a6c23d4b8
-SHA256 (.footprint) = 22f9ee0983c26f6d22d53c65d44ebcfeb8c21ae8f6e2b642203a6b8bd2b41430
-SHA256 (Python-3.11.4.tar.xz) = 2f0e409df2ab57aa9fc4cbddfb976af44e4e55bf6f619eee6bc5c2297264a7f6
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa009wEgqNtWwwno8o1ZG117OdIaWmAaQL+05mWjFuI9+FUUAcWAxP/M9LpL3g3fJh21HGqOydIOWmzylOAbuF0JiQ4=
+SHA256 (Pkgfile) = 6c5c5a3c1aac621212769bd40e26be5fb1c0a9e96aa98d58c2358c5e206b4057
+SHA256 (.footprint) = 53fdc9ec184f736399e91253536b268fb50d8cf49d24e26006c5ced1f8cfcbf6
+SHA256 (Python-3.12.0rc3.tar.xz) = 96397e891e98802b1d399dee3ceaeb9bcf0aa2566c8a7b1cce4d0196c277506a
