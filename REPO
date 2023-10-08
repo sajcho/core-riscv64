@@ -99,8 +99,9 @@ f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
-f:fc23b81ae7386c564ce70ae842cedc70:glibc/Pkgfile
+f:321f48716f6d6a6324cb65e5fe7ee8c8:glibc/Pkgfile
 f:bb3e2720f1aa55560167afa2c1a5be15:glibc/.footprint
+f:545977e0b5c341ba945cf4b5de92f1e2:glibc/glibc-2.38-upstream_fixes-3.patch
 f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:b6fa98d559c3ae5877f2e25a22b9726c:glibc/README
-f:ea68a77360abb54c43f063eb6d3e3907:glibc/.signature
+f:3ecf97c7e5359d473fa31e3c35ef63f9:glibc/.signature
