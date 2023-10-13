@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-riscv64.pub
-RWSu8eiZmupOpZ7WZ+J1CS7fWSf06M0UlEd+foGxc5zXha0cV1LzSZeEKLy5HL0dobS/SfgmWWBWBfnAsr6VGZT/ZYB1RIbx4ww=
+untrusted comment: verify with core-riscv64.pub
+RWQ/uMUaKa0097zom2dN6e2F55astcprf6t57/GSYUMcJIALRQIdZ2YkFieZHXuS90cgRPo4IfV5Ep9h82KFO2QRiG4k+JsWdAE=
 SHA256 (Pkgfile) = 16d834682cf0b48c7b3cff52d31802cc26b92f62823a0c0da289592bb41d76eb
 SHA256 (.footprint) = 9f8023c1392a46edb594a2618db6c7f43d07b28ccb9cd710d5fce71dd58164a2
 SHA256 (runit-2.1.2.tar.gz) = 6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
