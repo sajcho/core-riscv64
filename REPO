@@ -2,6 +2,7 @@ d:perl
 d:util-linux
 d:gcc
 d:kbd
+d:prt-get
 d:ports
 d:python3
 d:filesystem
@@ -29,6 +30,13 @@ f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:d55965b7786b48b4e0d08718187077f7:kbd/Pkgfile
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:d5d87deadda3aa70480344d95bad3f7a:kbd/.signature
+f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
+f:2a657af971360332f31dd4d796513f54:prt-get/Pkgfile
+f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
+f:d8ce2960cdf53421ec65158d741c10d0:prt-get/prt-get.conf
+f:cb560d7197163902894ac8564722b46a:prt-get/README
+f:69520d63a588f6ce6ce03d1bda640aea:prt-get/.signature
+f:c93b5bb1816e15e941388f52c2cc4412:prt-get/prt-get-5.19.6-by-saux.patch
 f:15ddd34dce89a10e00f7ec68cd31736e:ports/opt-riscv64.pub
 f:6576f99c60ba8e0a267704ea0ff12b65:ports/xorg-x86_64.pub
 f:4229cda42db67e9dcdb506f098cc4b1a:ports/xorg-x86_64.httpup
