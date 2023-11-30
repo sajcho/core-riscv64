@@ -1,6 +1,6 @@
 untrusted comment: verify with core-riscv64.pub
-RWQ/uMUaKa0095bBYOuavgDMCTW9qPzk//pf2yFNz12XytlXB3VoUu55IdNlecn7qqjI/Li/P/1ERmIHIuoeq3lysxdtZ891eQ8=
-SHA256 (Pkgfile) = 81b75620af234b2d18bc384b26b02a44304891adaf83f0118fd661d798b7d40f
+RWQ/uMUaKa009xalPz6fXPG3EiuXnwxYlBF40edKiu5xO1UfsmOXJhoWtBFiXdNirOqDP0phT9USE+M+j4MUfU1JhwXm4N3Bwww=
+SHA256 (Pkgfile) = 8f65114dcc6237b422347dedaeb685dfd1b322d176a9da6e3cf04131978e648b
 SHA256 (.footprint) = fecde50b40e569e3c9a91482062ac1fe7ce17d7bb8ee0ed1bce842e548571c9c
-SHA256 (v1.0.0b1.tar.gz) = d61d352815e88743d0d417fa5c65ad5a8c502526ded6fa5ad7efe502f094d2da
+SHA256 (runit-saux-1.0.0b1.tar.gz) = d61d352815e88743d0d417fa5c65ad5a8c502526ded6fa5ad7efe502f094d2da
 SHA256 (vsv) = e20ce4fda95ed0a58d7b51b56bc33a92815c8084de278af9ae5a0dd34406e889
