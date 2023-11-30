@@ -77,9 +77,9 @@ f:bd1389433011c3b5b9122d170fb55ba9:runit/.signature
 f:9138e23c11a099125434d605f2763b6c:runit/utmpset-time_t.patch
 f:95ff0204b1a4f14f5a777018898b6135:runit/sv
 f:0133c00a64c55bac49cf4fbed0751dc8:pkgconf/riscv64-unknown-linux-gnu.personality
-f:46b99d398a9154b21626ee6704901252:pkgconf/Pkgfile
+f:06d1961feaa2a165930bc270c763b8a3:pkgconf/Pkgfile
 f:153759e56917291a38744fbdb20fd42f:pkgconf/.footprint
-f:8f7613f9e4aaad6ef9b32ff4363a850b:pkgconf/.signature
+f:c96c3ca825939ed8241275882fccd0d3:pkgconf/.signature
 f:9932d0f345dc1b2062a310132172cb23:psmisc/Pkgfile
 f:5c8f6fbc5ce1b7b7cf4432be51e68960:psmisc/.footprint
 f:885c80334320ffeca941f5028c62d18e:psmisc/.signature
@@ -87,9 +87,9 @@ f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:6520d772096dc0d27841c6f50ba8af8e:socklog/Pkgfile
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:2d17cf1fb46a45bd7cf9efa864ede597:socklog/.signature
-f:f1eda6c9d81c469c4c06c63e9a0ef662:runit-saux/Pkgfile
+f:0deac0331fe928b7741c85826642faa3:runit-saux/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
-f:cf7c61680b4c676c03a848c7cc38d935:runit-saux/.signature
+f:3a738d876e8a6c4f778685fa17e17796:runit-saux/.signature
 f:0d7c79ecba3104af047dd831a2e8b0c5:prt-utils/Pkgfile
 f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:b66ea058d2f93bb9419ea1c1abbc514f:prt-utils/0001-revdep-add-support-riscv.patch
