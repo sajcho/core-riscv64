@@ -15,9 +15,9 @@ d:prt-utils
 d:socklog-config
 d:binutils
 d:glibc
-f:8ca65810849ae438894bfb44fe329e9a:perl/Pkgfile
-f:a9610aa057280acc2edec0996dc0b67c:perl/.footprint
-f:581d07f7c3d7d3af214a07d3fdde6d77:perl/.signature
+f:5da755b8830a90380ee06b06f5b4bb72:perl/Pkgfile
+f:028fee9d5be0cf4e8fd0dfb822ac6ff9:perl/.footprint
+f:c56c19925ea9feaa5f343bcb63cbf5a5:perl/.signature
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:6568c6d19d16c9992dbd47aab7034544:util-linux/Pkgfile
 f:f12c36ecc79c7bd8e8d153c41c2a9712:util-linux/.footprint
