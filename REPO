@@ -19,9 +19,9 @@ f:5da755b8830a90380ee06b06f5b4bb72:perl/Pkgfile
 f:028fee9d5be0cf4e8fd0dfb822ac6ff9:perl/.footprint
 f:c56c19925ea9feaa5f343bcb63cbf5a5:perl/.signature
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:6568c6d19d16c9992dbd47aab7034544:util-linux/Pkgfile
+f:0065d18a5a7cc0347dc61ffe8368acf1:util-linux/Pkgfile
 f:f12c36ecc79c7bd8e8d153c41c2a9712:util-linux/.footprint
-f:18ad41e97ac3fbf07fa3255c88eb1e85:util-linux/.signature
+f:8567ce291588f32253b3e795a1015699:util-linux/.signature
 f:4718b5b7cd4d0f116d937c027aa24389:gcc/Pkgfile
 f:10d148bb9a0306773f114f1ea77e888e:gcc/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
