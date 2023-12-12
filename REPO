@@ -52,9 +52,9 @@ f:93b23026d0167fb60926d0b059a6ba4f:ports/core-riscv64.pub
 f:04ccb8cf78b2e4b4029ae05b3a65cf53:ports/.signature
 f:5f829e4d97c0dff01ee34a508a5f3a06:ports/opt-riscv64.httpup
 f:c2ccd4201f2ea3ce8d0872d75bfc9326:ports/opt-x86_64.pub
-f:4d571fefeb4676221bfb69f01f78527c:python3/Pkgfile
-f:db5710a6dd2ce67ddf06d4d726b432a3:python3/.footprint
-f:be5b109c0671def3a342047e661b2780:python3/.signature
+f:e1f4fd1045cc60e7384ea7d9c74123c6:python3/Pkgfile
+f:90f3ba86934046bbe955bebb8d1e007a:python3/.footprint
+f:d2f5eea5ce453c5c4611919c8e55b086:python3/.signature
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
 f:18e71ea6a2ae471816931bb7561dbc75:filesystem/fstab
