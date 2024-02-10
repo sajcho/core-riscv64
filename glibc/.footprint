@@ -258,6 +258,7 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/socket.h
 -rw-r--r--	root/root	usr/include/bits/socket2.h
 -rw-r--r--	root/root	usr/include/bits/socket_type.h
+-rw-r--r--	root/root	usr/include/bits/spawn_ext.h
 -rw-r--r--	root/root	usr/include/bits/ss_flags.h
 -rw-r--r--	root/root	usr/include/bits/stab.def
 -rw-r--r--	root/root	usr/include/bits/stat.h
@@ -266,6 +267,7 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/statx-generic.h
 -rw-r--r--	root/root	usr/include/bits/statx.h
 -rw-r--r--	root/root	usr/include/bits/stdint-intn.h
+-rw-r--r--	root/root	usr/include/bits/stdint-least.h
 -rw-r--r--	root/root	usr/include/bits/stdint-uintn.h
 -rw-r--r--	root/root	usr/include/bits/stdio-ldbl.h
 -rw-r--r--	root/root	usr/include/bits/stdio.h
@@ -1410,6 +1412,7 @@ drwxr-xr-x	root/root	usr/include/sound/sof/
 -rw-r--r--	root/root	usr/include/sound/usb_stream.h
 -rw-r--r--	root/root	usr/include/spawn.h
 -rw-r--r--	root/root	usr/include/stab.h
+-rw-r--r--	root/root	usr/include/stdbit.h
 -rw-r--r--	root/root	usr/include/stdc-predef.h
 -rw-r--r--	root/root	usr/include/stdint.h
 -rw-r--r--	root/root	usr/include/stdio.h
@@ -2066,7 +2069,6 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/POSIX
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_DJ
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_ER
--rw-r--r--	root/root	usr/share/i18n/locales/aa_ER@saaho
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_ET
 -rw-r--r--	root/root	usr/share/i18n/locales/ab_GE
 -rw-r--r--	root/root	usr/share/i18n/locales/af_ZA
@@ -2129,6 +2131,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/ckb_IQ
 -rw-r--r--	root/root	usr/share/i18n/locales/cmn_TW
 -rw-r--r--	root/root	usr/share/i18n/locales/cns11643_stroke
+-rw-r--r--	root/root	usr/share/i18n/locales/crh_RU
 -rw-r--r--	root/root	usr/share/i18n/locales/crh_UA
 -rw-r--r--	root/root	usr/share/i18n/locales/cs_CZ
 -rw-r--r--	root/root	usr/share/i18n/locales/csb_PL
@@ -2218,6 +2221,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/fy_NL
 -rw-r--r--	root/root	usr/share/i18n/locales/ga_IE
 -rw-r--r--	root/root	usr/share/i18n/locales/ga_IE@euro
+-rw-r--r--	root/root	usr/share/i18n/locales/gbm_IN
 -rw-r--r--	root/root	usr/share/i18n/locales/gd_GB
 -rw-r--r--	root/root	usr/share/i18n/locales/gez_ER
 -rw-r--r--	root/root	usr/share/i18n/locales/gez_ER@abegede
@@ -2264,6 +2268,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/ks_IN
 -rw-r--r--	root/root	usr/share/i18n/locales/ks_IN@devanagari
 -rw-r--r--	root/root	usr/share/i18n/locales/ku_TR
+-rw-r--r--	root/root	usr/share/i18n/locales/kv_RU
 -rw-r--r--	root/root	usr/share/i18n/locales/kw_GB
 -rw-r--r--	root/root	usr/share/i18n/locales/ky_KG
 -rw-r--r--	root/root	usr/share/i18n/locales/lb_LU
@@ -2357,7 +2362,9 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/sr_RS
 -rw-r--r--	root/root	usr/share/i18n/locales/sr_RS@latin
 -rw-r--r--	root/root	usr/share/i18n/locales/ss_ZA
+-rw-r--r--	root/root	usr/share/i18n/locales/ssy_ER
 -rw-r--r--	root/root	usr/share/i18n/locales/st_ZA
+-rw-r--r--	root/root	usr/share/i18n/locales/su_ID
 -rw-r--r--	root/root	usr/share/i18n/locales/sv_FI
 -rw-r--r--	root/root	usr/share/i18n/locales/sv_FI@euro
 -rw-r--r--	root/root	usr/share/i18n/locales/sv_SE
@@ -2379,6 +2386,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/tl_PH
 -rw-r--r--	root/root	usr/share/i18n/locales/tn_ZA
 -rw-r--r--	root/root	usr/share/i18n/locales/to_TO
+-rw-r--r--	root/root	usr/share/i18n/locales/tok
 -rw-r--r--	root/root	usr/share/i18n/locales/tpi_PG
 -rw-r--r--	root/root	usr/share/i18n/locales/tr_CY
 -rw-r--r--	root/root	usr/share/i18n/locales/tr_TR
@@ -2387,6 +2395,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_cjk_variants
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_combining
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_compat
+-rw-r--r--	root/root	usr/share/i18n/locales/translit_emojis
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_font
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_fraction
 -rw-r--r--	root/root	usr/share/i18n/locales/translit_hangul
@@ -2416,6 +2425,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/yo_NG
 -rw-r--r--	root/root	usr/share/i18n/locales/yue_HK
 -rw-r--r--	root/root	usr/share/i18n/locales/yuw_PG
+-rw-r--r--	root/root	usr/share/i18n/locales/zgh_MA
 -rw-r--r--	root/root	usr/share/i18n/locales/zh_CN
 -rw-r--r--	root/root	usr/share/i18n/locales/zh_HK
 -rw-r--r--	root/root	usr/share/i18n/locales/zh_SG
