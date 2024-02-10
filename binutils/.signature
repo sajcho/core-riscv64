@@ -1,5 +1,5 @@
 untrusted comment: verify with core-riscv64.pub
-RWQ/uMUaKa009xzzfWMjQ67UAC+rCpCyg3/i7fapHc/OWkTfCvJ8F82Dx2nxfdiT+Yddfe/Pg3x+EcVZM7VVXmq01BZIHeDTkQk=
-SHA256 (Pkgfile) = d5ff8d1389920ae86d9db97b1c3c950a0b1e0bc78dcad979767bef86feafe490
-SHA256 (.footprint) = edcef71e4677df64408760bd6a291b714efec51d414018cb5ff4bc5bfb9defed
-SHA256 (binutils-2.41.tar.xz) = ae9a5789e23459e59606e6714723f2d3ffc31c03174191ef0d015bdf06007450
+RWQ/uMUaKa009xGJrovx3Bi9Jae4VswNULMdnGVv76k/X7MesAoXCWsD43edciR7xeOYBd4NNS+MGN+dZdpIW+nIaELqQYbq2AI=
+SHA256 (Pkgfile) = 4424b80c3a464da6b6e6bce7905f199af5aea25c023c989b7cf8c38f43316e46
+SHA256 (.footprint) = c7d38df085e7d25b0523903a956b04183bcaef1bae79376be1c8cdfbaf114d28
+SHA256 (binutils-2.42.tar.xz) = f6e4d41fd5fc778b06b7891457b3620da5ecea1006c6a4a41ae998109f85a800
