@@ -52,9 +52,9 @@ f:8358e08d018807805dcc41d8f201aec6:ports/wayland-x86_64.pub
 f:12771ec30f93808686374330aac1ad55:ports/.signature
 f:5f829e4d97c0dff01ee34a508a5f3a06:ports/opt-riscv64.httpup
 f:c2ccd4201f2ea3ce8d0872d75bfc9326:ports/opt-x86_64.pub
-f:e1f4fd1045cc60e7384ea7d9c74123c6:python3/Pkgfile
-f:90f3ba86934046bbe955bebb8d1e007a:python3/.footprint
-f:d2f5eea5ce453c5c4611919c8e55b086:python3/.signature
+f:ec961c2480d5666329c24410218f50b3:python3/Pkgfile
+f:5b3164fb96866201dd68d9ad5590d296:python3/.footprint
+f:dfd71b992e37f8b89acd44a60ad88aea:python3/.signature
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
 f:18e71ea6a2ae471816931bb7561dbc75:filesystem/fstab
@@ -77,9 +77,9 @@ f:bd1389433011c3b5b9122d170fb55ba9:runit/.signature
 f:9138e23c11a099125434d605f2763b6c:runit/utmpset-time_t.patch
 f:95ff0204b1a4f14f5a777018898b6135:runit/sv
 f:0133c00a64c55bac49cf4fbed0751dc8:pkgconf/riscv64-unknown-linux-gnu.personality
-f:06d1961feaa2a165930bc270c763b8a3:pkgconf/Pkgfile
+f:237ceff8926bee16b6ff1e241a33a842:pkgconf/Pkgfile
 f:153759e56917291a38744fbdb20fd42f:pkgconf/.footprint
-f:c96c3ca825939ed8241275882fccd0d3:pkgconf/.signature
+f:60a4b8ab5d4524d81a392fcf339a7d8e:pkgconf/.signature
 f:9932d0f345dc1b2062a310132172cb23:psmisc/Pkgfile
 f:5c8f6fbc5ce1b7b7cf4432be51e68960:psmisc/.footprint
 f:885c80334320ffeca941f5028c62d18e:psmisc/.signature
