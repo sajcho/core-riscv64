@@ -4,7 +4,7 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.42
+version=2.43.1
 release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
@@ -18,6 +18,8 @@ build() {
 	cd build
 
 	../configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-ld=default \
@@ -44,9 +46,7 @@ build() {
 		--disable-readline \
 		--with-pic \
 		--with-system-zlib \
-		--with-pkgversion=SAUX-RISCV64 \
-		--build=$CHOST \
-		--host=$CHOST
+		--with-pkgversion=SAUX-RISCV64
 
 	make V=1 tooldir=/usr
 
