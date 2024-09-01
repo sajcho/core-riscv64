@@ -1,7 +1,7 @@
 untrusted comment: verify with core-riscv64.pub
-RWQ/uMUaKa009y7CRaK31xL+iUswulzD4MzkmImNJiwGCPp/LvSH6zWzEH7BPw6zO74t7+7u8Y/sXQotq+68Swc9QlmphYR+egU=
-SHA256 (Pkgfile) = 69efd55441cc6271cdfedd1adfabcf6c1d2fca455b78dffdb2c2baf84898079d
-SHA256 (.footprint) = 8746ff9a4d44a90d59c6aedae6985a1a8d455e8364eae02dba171a2e5498f51c
-SHA256 (gcc-13.2.0.tar.xz) = e275e76442a6067341a27f04c5c6b83d8613144004c0413528863dc6b5c743da
+RWQ/uMUaKa00944aodATmghS5y2zfIjfdnyCc5d7+or6YRVz4tB6+G4yjPkzGUEnffJsTjI4usGDoqw4osGC7OrtzqQTW2ljAAM=
+SHA256 (Pkgfile) = ac6608dfdc4b347a27d5d1592190b8e1ff709d10e435047d292509062e3d9d6d
+SHA256 (.footprint) = 6e42cf1c91d09bb7940744cd6fc7c35d8bf63652213e2e0ff40a9b04ecd6dbfc
+SHA256 (gcc-14.2.0.tar.xz) = a7b39bc69cbf9e25826c5a60ab26477001f7c08d85cec04bc0e29cabed6f3cc9
 SHA256 (c89) = de48736f6e4153f03d0a5d38ceb6c6fdb7f054e8f47ddd6af0a3dbf14f27b931
 SHA256 (c99) = 2513c6d9984dd0a2058557bf00f06d8d5181734e41dcfe07be7ed86f2959622a
