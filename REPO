@@ -38,12 +38,12 @@ f:42db51320a27b3af897e301707e4409a:python3/Pkgfile
 f:3ea81c538d268776a277536f988b9411:python3/.footprint
 f:058caac1c9d30117dc5735f1f2953c1b:python3/.signature
 f:0133c00a64c55bac49cf4fbed0751dc8:pkgconf/riscv64-unknown-linux-gnu.personality
-f:237ceff8926bee16b6ff1e241a33a842:pkgconf/Pkgfile
-f:153759e56917291a38744fbdb20fd42f:pkgconf/.footprint
-f:60a4b8ab5d4524d81a392fcf339a7d8e:pkgconf/.signature
-f:9932d0f345dc1b2062a310132172cb23:psmisc/Pkgfile
+f:7c8ba63a0d1d67f85d4a5312c1d3b044:pkgconf/Pkgfile
+f:53f2daba763d2b1c313b5e34d0057df0:pkgconf/.footprint
+f:08a6a2de96be1d83fd561afb5482f000:pkgconf/.signature
+f:2b4dc85d6592244dd5dacfce65c9007c:psmisc/Pkgfile
 f:5c8f6fbc5ce1b7b7cf4432be51e68960:psmisc/.footprint
-f:885c80334320ffeca941f5028c62d18e:psmisc/.signature
+f:ec2365336526dc74338b7a55587a1ee4:psmisc/.signature
 f:0deac0331fe928b7741c85826642faa3:runit-saux/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
 f:3a738d876e8a6c4f778685fa17e17796:runit-saux/.signature
