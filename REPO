@@ -44,9 +44,9 @@ f:08a6a2de96be1d83fd561afb5482f000:pkgconf/.signature
 f:2b4dc85d6592244dd5dacfce65c9007c:psmisc/Pkgfile
 f:5c8f6fbc5ce1b7b7cf4432be51e68960:psmisc/.footprint
 f:ec2365336526dc74338b7a55587a1ee4:psmisc/.signature
-f:0deac0331fe928b7741c85826642faa3:runit-saux/Pkgfile
+f:2630be6c1fa00ab61b1895de61dd621e:runit-saux/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
-f:3a738d876e8a6c4f778685fa17e17796:runit-saux/.signature
+f:4da8ae994198b7dda76acbabb04d6534:runit-saux/.signature
 f:7b478870b2d3d1d466eff66d42f4ca55:binutils/Pkgfile
 f:1398a5b10e5391792041775b85a13bc1:binutils/.footprint
 f:a90b4a619418150241e4e7f9f5a5e752:binutils/.signature
