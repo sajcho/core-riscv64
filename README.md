@@ -1,6 +1,6 @@
 # core-riscv64 ports
 
-## Rootfs (2023-06-15) from core and opt ports is now available on
+## Rootfs (2024-09-22) from core and opt ports is now available on
 
 https://sourceforge.net/projects/rootfs-riscv64/files/
 
